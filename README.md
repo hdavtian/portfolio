@@ -1,5 +1,3 @@
-# gulp
-
 Before you start ... make sure git, node, npm, gulp and bower are installed on your computer.
 
 ## Getting Started
