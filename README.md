@@ -36,6 +36,7 @@ gulp watch
 
 ## Uninstall instructions for windows
 Remving node_modules directory on windows is currently painful. Here's an easy way. Please keep this list updated.
+First, cd into your project root and then run 'npm uninstall' and list all package names separated by spaces.
 ```
 npm uninstall browser-sync gulp gulp-bower gulp-concat gulp-filter gulp-main-bower-files gulp-rename gulp-sass gulp-uglify
 ```
