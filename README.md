@@ -8,24 +8,19 @@ Before you start
 
 ###Step 1: git clone
 
-Create a dir on your local machine, open a terminal or cmd and type following
+Create a dir on your local machine, open a terminal or cmd in there and type the following commands:
 
 ```
+// Step 1: Clone this repository into a local directory
 git clone https://github.com/hdavtian/gulp
-```
 
-###Step 2: Bower
+// Step 2: Installing npm, this may take a short while
+npm install
 
-Run the following command to install the pre-requisite bower components (jquery and bootstrap). These are just samples and are not used in the page code just yet.
+// Step 3: Install Bower Components
+bower install
 
-```
-gulp bower-install-plugins
-```
-
-###Step 3: Gulp
-
-Run the following command to start gulp watch
-
-```
+// Step 4: Ready to run gulp (finally!)
 gulp watch
+
 ```
