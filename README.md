@@ -1,10 +1,9 @@
 # gulp
 
-This is a simple website package using gulp
+Before you start ... make sure git, node, npm, gulp and bower are installed on your computer.
 
-Before you start
-
-... make sure git, node, npm, gulp and bower are installed on your computer
+## Getting Started
+This is a simple website package using gulp. It will deploy a basic website template with browser-sync live reloading, sass compliation and javascript minification.
 
 ```
 // Step 1: Git clone
