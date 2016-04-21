@@ -4,7 +4,7 @@ This is a simple website package using gulp
 
 Before you start
 
-... make sure node, npm, gulp and bower are installed on your computer
+... make sure git, node, npm, gulp and bower are installed on your computer
 
 ```
 // Step 1: Git clone
