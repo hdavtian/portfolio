@@ -12,7 +12,7 @@ Before you start
 git clone https://github.com/hdavtian/gulp
 
 // Step 2: Installing npm, this may take a short while (3 mins or so)
-// cd into 'gulp' directory which was just created inside your dir from above
+cd gulp
 npm install
 
 // Step 3: Install Bower Components
