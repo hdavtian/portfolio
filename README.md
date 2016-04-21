@@ -15,6 +15,7 @@ Create a dir on your local machine, open a terminal or cmd in there and type the
 git clone https://github.com/hdavtian/gulp
 
 // Step 2: Installing npm, this may take a short while
+// cd into 'git' directory which was just cloned into your test dir
 npm install
 
 // Step 3: Install Bower Components
