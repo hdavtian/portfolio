@@ -128,7 +128,7 @@ gulp.task('watch', ['browser-sync'], function(){
 // Task Name: default
 // ===========================================================================================
 
-gulp.task('default', ['scripts', 'main-bower-files', 'sass', 'browser-sync', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'browser-sync', 'watch']);
 
 
 /*
