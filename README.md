@@ -12,10 +12,11 @@ git clone https://github.com/hdavtian/gulp
 cd gulp
 npm install
 
-// Step 3: Install Bower Components
+// Optional: Install Bower Components
+// If you want to install jquery and bootstrap then run this command
 bower install
 
-// Step 4: Ready to run gulp (finally!)
+// Step 3: Ready to run gulp (finally!)
 gulp watch
 
 ```
