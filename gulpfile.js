@@ -39,11 +39,11 @@ var config = {
 // ===========================================================================================
 
 gulp.task('scripts', function(){
-    gulp.src(['src/js/**/*.js', '!src/js/**/*.min.js', '!src/js/libs'])
+    return gulp.src(['src/js/**/*.js'])
         .pipe(uglify())
         .pipe(rename({suffix:'.min'}))
-        .pipe(gulp.dest('src/js'))
-        .pipe(reload({stream:true}))
+        .pipe(gulp.dest('build/js'))
+        .pipe(reload({stream:true}));
 });
 
 // ===========================================================================================
@@ -54,19 +54,32 @@ gulp.task('scripts', function(){
 gulp.task('sass', function(){
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('src/css'))
-        .pipe(reload({stream:true}))
+        .pipe(gulp.dest('build/css'))
+        .pipe(reload({stream:true}));
 });
 
 // ===========================================================================================
 // Task Name: html
-// Description: Triggers browser sync on changes to .html files
+// Description: Triggers browser sync on changes to .html files and copies html files to build folder
 // ===========================================================================================
 
 gulp.task('html', function(){
     gulp.src('src/**/*.html')
-        .pipe(reload({stream:true}))
+        .pipe(gulp.dest('./build'))
+        .pipe(reload({stream:true}));
 });
+
+
+// ===========================================================================================
+// Task Name: images
+// Description: Triggers browser sync on changes to .html files
+// ===========================================================================================
+
+gulp.task('images', function(){
+    gulp.src('src/images/**/*')
+        .pipe(gulp.dest('./build/images'));
+});
+
 
 // ===========================================================================================
 // Task Name: browser-sync
@@ -76,9 +89,9 @@ gulp.task('html', function(){
 gulp.task('browser-sync', function(){
     browserSync.init({
        server: {
-           baseDir: 'src'
+           baseDir: 'build'
        }
-   })
+   });
 });
 
 // ----------
@@ -87,14 +100,14 @@ gulp.task('browser-sync', function(){
 
 gulp.task('bower', function(){
    return bower()
-       .pipe(gulp.dest(config.bowerDir))
+       .pipe(gulp.dest(config.bowerDir));
 });
 
 gulp.task('bower-files', function(){
    return gulp.src('./bower.json')
        .pipe(mainBowerFiles())
        //.pipe(uglify())
-       .pipe(gulp.dest('./src/js/libs/'))
+       .pipe(gulp.dest('./build/js/libs/'))
 });
 
 gulp.task('main-bower-files', function() {
@@ -122,13 +135,14 @@ gulp.task('watch', ['browser-sync'], function(){
     gulp.watch('src/js/**/*.js', ['scripts']);
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('src/**/*.html', ['html']);
+    gulp.watch('src/images/**/*.*', ['images']);
 });
 
 // ===========================================================================================
 // Task Name: default
 // ===========================================================================================
 
-gulp.task('default', ['scripts', 'sass', 'browser-sync', 'watch']);
+gulp.task('default', ['html' , 'images' , 'scripts', 'sass', 'browser-sync', 'watch']);
 
 
 /*
@@ -142,4 +156,3 @@ gulp.task('default', ['scripts', 'sass', 'browser-sync', 'watch']);
 
 
  */
-
