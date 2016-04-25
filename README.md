@@ -17,7 +17,7 @@ npm install
 bower install
 
 // Step 3: Ready to run gulp (finally!)
-gulp watch
+gulp
 
 ```
 
