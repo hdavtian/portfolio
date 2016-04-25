@@ -1,3 +1,17 @@
+// the packages
+
+/*
+*
+* gulp-main-bower-files
+* https://www.npmjs.com/package/gulp-main-bower-files
+*
+*
+*
+*
+*
+*
+* */
+
 var gulp = require('gulp'),
     gulpFilter = require('gulp-filter'),
     concat = require('gulp-concat'),
@@ -5,19 +19,14 @@ var gulp = require('gulp'),
     mainBowerFiles = require('gulp-main-bower-files'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
-    order = require('gulp-order'),
     reload = browserSync.reload;
 
 // custom config objects
 
 var config = {
-    bowerDir: './bower_components',
-    buildDir: './build/',
-    sourceDir: '/src/'
+    bowerDir: './bower_components'
 };
 
 // *******************************************************************************************
@@ -38,50 +47,14 @@ gulp.task('scripts', function(){
 });
 
 // ===========================================================================================
-// Task Name: scripts-site
-// Description: concatenate js files in js/site, uglify and copy to build folder.
-//   If order of inclusion is necessary then use the order() plugin
-// ===========================================================================================
-
-gulp.task('scripts-site', function(){
-    gulp.src('./src/js/site/**/*.js')
-        .pipe(order([
-            'one.js',
-            'two.js',
-            'three.js'
-        ]))
-        .pipe(uglify())
-        .pipe(concat('site.js'))
-        .pipe(rename({suffix:'.min'}))
-        .pipe(gulp.dest('./build/js/'))
-});
-
-// ===========================================================================================
-// Task Name: scripts-site
-// Description: concatenate vendor js files in js/vendor to one file, uglify and copy to build folder
-// ===========================================================================================
-
-gulp.task('scripts-vendor', function(){
-    gulp.src('./src/js/vendor/**/*.js')
-        .pipe(order([
-            'jquery*.js'
-        ]))
-        .pipe(uglify())
-        .pipe(concat('vendor.js'))
-        .pipe(rename({suffix:'.min'}))
-        .pipe(gulp.dest('./build/js/'))
-});
-
-// ===========================================================================================
 // Task Name: sass
 // Description: compiles sass, writes to src dir and triggers browser sync
-// URL: https://www.npmjs.com/package/gulp-sass
 // ===========================================================================================
 
 gulp.task('sass', function(){
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./build/css'))
+        .pipe(gulp.dest('src/css'))
         .pipe(reload({stream:true}))
 });
 
@@ -98,7 +71,6 @@ gulp.task('html', function(){
 // ===========================================================================================
 // Task Name: browser-sync
 // Description: Initializes browserSync gulp plugin
-// URL: https://www.npmjs.com/package/browser-sync
 // ===========================================================================================
 
 gulp.task('browser-sync', function(){
@@ -109,20 +81,6 @@ gulp.task('browser-sync', function(){
    })
 });
 
-// ===========================================================================================
-// Task Name: imagemin
-// Description: Optimize images
-// URL: https://www.npmjs.com/package/gulp-imagemin
-// ===========================================================================================
-gulp.task('imagemin', function() {
-    return gulp.src('src/images/**/*')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest('build/images'));
-});
 // ----------
 // bower
 // ----------
@@ -165,37 +123,6 @@ gulp.task('watch', ['browser-sync'], function(){
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('src/**/*.html', ['html']);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-// -
-// --
-// ---
-// ----
-// -----
-// Tasks that call other tasks
-// -----
-// ----
-// ---
-// --
-// -
-
-// ===========================================================================================
-// Task Name: build
-// ===========================================================================================
-
-gulp.task('build', ['imagemin', 'scripts-site', 'scripts-vendor']);
-
-
 
 // ===========================================================================================
 // Task Name: default
