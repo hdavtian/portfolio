@@ -22,14 +22,14 @@ gulp
 ```
 
 ## Gulp plugins used
-- browser-sync 
-- gulp 
-- gulp-bower 
-- gulp-concat 
-- gulp-filter 
-- gulp-main-bower-files 
-- gulp-rename 
-- gulp-sass 
+- browser-sync
+- gulp
+- gulp-bower
+- gulp-concat
+- gulp-filter
+- gulp-main-bower-files
+- gulp-rename
+- gulp-sass
 - gulp-uglify
 
 ## Uninstall instructions for windows
@@ -42,4 +42,4 @@ npm uninstall browser-sync gulp gulp-bower gulp-concat gulp-filter gulp-main-bow
 ## Todos
 - I'd like to break the gulpfile.js up and have each task be its own file inside a gulp directory. We have a working sample of this on an internal repository and if you'd like to see it, let me know. If you'd like to do this task then please do!
 - Create a nicer (index.html), something that's more exciting!
-
+- Image minification
