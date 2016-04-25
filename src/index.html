@@ -12,10 +12,10 @@
 
 <h1>A simple website package</h1>
 
-<p>This is a simple website package powered by gulp ... will help you setup a dev site and develop faster.</p>
-<p>Once setup and running, the gulp watch command will launch a new browser window, and your html, sass and js files will be watched and upon any changes the browser will auto relaod.</p>
+<p>This is a simple website package powered by gulp ... will help you setup a dev site and develop faster!</p>
+<p>Once setup and running, the gulp watch command will launch a new browser window, and your html, sass and js files will be watched and upon any changes the browser will auto reload.</p>
 
-<h2>Current Features</h2>
+<h2>Current Features!</h2>
 
 <ul>
     <li>gulp</li>
@@ -30,12 +30,14 @@
 
 <pre>
     [.git] (ignored)
-    [bower_components] (ignored)
     [node_modules] (ignored)
+    [build]
     [src]
         [css]
         [images]
         [js]
+            [site]
+            [vendor]
         [scss]
         index.html
     .gitignore
@@ -44,7 +46,35 @@
     package.json
 </pre>
 
-<script src="js/main.min.js"></script>
+<h2>How do the .js files work</h2>
+
+<p>There are two sub-directories in the src/js folder, 1) src/js/site, 2) src/js/vendor. The idea is that you put all your custom js files in #1 and all vendor/3rd party libraries in #2. The <b>gulp</b> task will watch for changes in these folders and on each save will create a concatenate and minified file for each folder and copy to the build folder. If you need a particular .js file to load before another, then specify that setting in gulpfile.js for the approrpriate task (either <b>scripts-site</b> or <b>scripts-vendor</b>)</p>
+<p>So for example you may start with:</p>
+<pre>
+    [src]
+        [js]
+            [site]
+                one.js
+                two.js
+                three.js
+            [vendor]
+                jquery.js
+                bootstrap.js
+                angular.js
+</pre>
+<p>On each save, the <b>grunt</b> task will create the following:</p>
+<pre>
+    [build]
+        [js]
+            site.min.js
+            vendor.min.js
+</pre>
+<p>Your markup files will reference these two minified files just before the closing body tag.</p>
+
+
+<script src="js/vendor.min.js"></script>
+<script src="js/site.min.js"></script>
+
 
 </body>
 </html>

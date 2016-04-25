@@ -21,6 +21,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
+    order = require('gulp-order'),
     reload = browserSync.reload;
 
 // custom config objects
@@ -43,6 +44,43 @@ gulp.task('scripts', function(){
         .pipe(uglify())
         .pipe(rename({suffix:'.min'}))
         .pipe(gulp.dest('build/js'))
+        .pipe(reload({stream:true}));
+});
+
+// ===========================================================================================
+// Task Name: scripts-site
+// Description: concatenate js files in js/site, uglify and copy to build folder.
+//   If order of inclusion is necessary then use the order() plugin
+// ===========================================================================================
+
+gulp.task('scripts-site', function(){
+    gulp.src('./src/js/site/**/*.js')
+        .pipe(order([
+            'one.js',
+            'two.js',
+            'three.js'
+        ]))
+        .pipe(uglify())
+        .pipe(concat('site.js'))
+        .pipe(rename({suffix:'.min'}))
+        .pipe(gulp.dest('./build/js/'))
+        .pipe(reload({stream:true}));
+});
+
+// ===========================================================================================
+// Task Name: scripts-vendor
+// Description: concatenate src/js/vendor js files to one file, uglify and copy to build folder
+// ===========================================================================================
+
+gulp.task('scripts-vendor', function(){
+    gulp.src('./src/js/vendor/**/*.js')
+        .pipe(order([
+            'jquery*'
+        ]))
+        .pipe(uglify())
+        .pipe(concat('vendor.js'))
+        .pipe(rename({suffix:'.min'}))
+        .pipe(gulp.dest('./build/js/'))
         .pipe(reload({stream:true}));
 });
 
@@ -132,7 +170,7 @@ gulp.task('bower-install-plugins', ['bower']);
 // ===========================================================================================
 
 gulp.task('watch', ['browser-sync'], function(){
-    gulp.watch('src/js/**/*.js', ['scripts']);
+    gulp.watch('src/js/**/*.js', ['scripts-site', 'scripts-vendor']);
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('src/**/*.html', ['html']);
     gulp.watch('src/images/**/*.*', ['images']);
@@ -142,7 +180,7 @@ gulp.task('watch', ['browser-sync'], function(){
 // Task Name: default
 // ===========================================================================================
 
-gulp.task('default', ['html' , 'images' , 'scripts', 'sass', 'browser-sync', 'watch']);
+gulp.task('default', ['html' , 'images' , 'scripts-site', 'scripts-vendor', 'sass', 'browser-sync', 'watch']);
 
 
 /*
