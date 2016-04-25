@@ -1,4 +1,4 @@
-document.getElementById('msg1').innerHTML = 'Gulp is very cool';
+document.getElementById('msg1').innerHTML = 'Gulp is very cool.';
 
 function foo(){
     console.log('bar')
