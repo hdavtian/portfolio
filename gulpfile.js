@@ -170,14 +170,24 @@ gulp.task('bower-files', function(){
 });
 
 gulp.task('main-bower-files', function() {
+
     var filterJS = gulpFilter('**/*.js', { restore: true });
-    return gulp.src('./bower.json')
+    gulp.src('./bower.json')
         .pipe(mainBowerFiles())
         .pipe(filterJS)
         .pipe(concat('vendor.js'))
         .pipe(uglify())
-        .pipe(filterJS.restore)
+        //.pipe(filterJS.restore)
         .pipe(gulp.dest('./build/js'));
+
+    var filterCSS = gulpFilter('**/*.css', { restore: true });
+    return gulp.src('./bower.json')
+        .pipe(mainBowerFiles())
+        .pipe(filterCSS)
+        .pipe(concat('vendor.css'))
+        //.pipe(filterJS.restore)
+        .pipe(gulp.dest('./build/css'));
+
 });
 
 // ===========================================================================================
@@ -201,14 +211,14 @@ gulp.task('watch', ['browser-sync'], function(){
 // Task Name: default
 // ===========================================================================================
 
-gulp.task('default', ['html' , 'images' , 'scripts-site', 'scripts-vendor', 'sass', 'browser-sync', 'watch']);
+gulp.task('default', ['html' , 'images' , 'scripts-site', 'scripts-vendor', 'sass', 'main-bower-files' , 'browser-sync', 'watch']);
 
 
 // ===========================================================================================
 // Task Name: build
 // ===========================================================================================
 
-gulp.task('build', ['html' , 'images_compress' , 'scripts-site', 'scripts-vendor', 'sass']);
+gulp.task('build', ['html' , 'images_compress' , 'scripts-site', 'scripts-vendor', 'sass' , 'main-bower-files']);
 
 
 /*
