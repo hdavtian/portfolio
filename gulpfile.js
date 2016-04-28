@@ -22,7 +22,10 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     order = require('gulp-order'),
-    reload = browserSync.reload;
+    reload = browserSync.reload,
+    imagemin = require('gulp-imagemin'),
+        pngquant = require('imagemin-pngquant'),
+        jpegoptim = require('imagemin-jpegoptim');
 
 // custom config objects
 
@@ -120,6 +123,24 @@ gulp.task('images', function(){
 
 
 // ===========================================================================================
+// Task Name: images_compress
+// Description: Copies images from src to build and compresses them
+// ===========================================================================================
+
+gulp.task('images_compress', function(){
+    return gulp.src('src/images/**/*')
+        .pipe(imagemin({
+            svgoPlugins: [
+                {removeViewBox: false},
+                {cleanupIDs: false}
+            ],
+            use: [pngquant(),jpegoptim({progressive: true})]
+        }))
+        .pipe(gulp.dest('./build/images'));
+});
+
+
+// ===========================================================================================
 // Task Name: browser-sync
 // Description: Initializes browserSync gulp plugin
 // ===========================================================================================
@@ -145,7 +166,7 @@ gulp.task('bower-files', function(){
    return gulp.src('./bower.json')
        .pipe(mainBowerFiles())
        //.pipe(uglify())
-       .pipe(gulp.dest('./build/js/libs/'))
+       .pipe(gulp.dest('./build/js/libs/'));
 });
 
 gulp.task('main-bower-files', function() {
@@ -181,6 +202,13 @@ gulp.task('watch', ['browser-sync'], function(){
 // ===========================================================================================
 
 gulp.task('default', ['html' , 'images' , 'scripts-site', 'scripts-vendor', 'sass', 'browser-sync', 'watch']);
+
+
+// ===========================================================================================
+// Task Name: build
+// ===========================================================================================
+
+gulp.task('build', ['html' , 'images_compress' , 'scripts-site', 'scripts-vendor', 'sass']);
 
 
 /*
