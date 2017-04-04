@@ -11,6 +11,7 @@ var babel = require('gulp-babel'),
     browserSync = require('browser-sync'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
+    del = require('del'),
     folders = require('gulp-folders'),
     gulp = require('gulp'),
     gulpFilter = require('gulp-filter'),
@@ -232,6 +233,15 @@ gulp.task('main-bower-files', function() {
 gulp.task('bower-install-plugins', ['bower']);
 
 // ===========================================================================================
+// Task Name: clean:dest
+// ===========================================================================================
+gulp.task('clean:dest', function(){
+    return del([
+        config.dest.root
+    ]);
+});
+
+// ===========================================================================================
 // Task Name: watch
 // Description:
 // ===========================================================================================
@@ -260,6 +270,7 @@ gulp.task('default', [
 // Task Name: build
 // ===========================================================================================
 gulp.task('build', [
+    'clean:dest',
     'html',
     'images-compress',
     'scripts-site',
