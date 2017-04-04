@@ -21,11 +21,11 @@
     "scrollmagic": "^2.0.5"
   },
   "overrides": {
-      "bootstrap-sass": {
-          "main": [
-              "assets/stylesheets/custom-bootstrap.scss",
-              "assets/javascripts/bootstrap.js"
-          ]
-      }
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/custom-bootstrap.scss",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
   }
 }

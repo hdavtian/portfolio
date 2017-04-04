@@ -39,7 +39,9 @@ var config = {
         scss: './src/scss',
         vendorJs: './src/js/vendor',
         angularApps: './src/angular-apps',
-        images: './src/images'
+        images: './src/images',
+        fonts: './src/fonts',
+        asIs: './src/as-is'
     },
 
     dest: {
@@ -48,7 +50,9 @@ var config = {
         scss: './build/css',
         vendorJs: './build/js/vendor',
         angularApps: './build/js/angular-apps',
-        images: './build/images'
+        images: './build/images',
+        fonts: './build/fonts',
+        asIs: './build/as-is'
     }
 };
 
@@ -62,7 +66,7 @@ var config = {
 // If order of inclusion is necessary then use the order() plugin
 // ===========================================================================================
 gulp.task('scripts-site', function(){
-    gulp.src(config.src.siteJs + '**/*.js')
+    return gulp.src(config.src.siteJs + '**/*.js')
         .pipe(sourcemaps.init())
 
         // if you need to load things in order, use order like so
@@ -83,21 +87,14 @@ gulp.task('scripts-site', function(){
 });
 
 // ===========================================================================================
-// Task Name: scripts-vendor
-// Description: concatenate src/js/vendor js files to one file, uglify and copy to build folder
-// this may be unnecessary, we are now using bower
+// Task Name: as-is
+// Description: For 3rd party scripts that don't have proper bower files, include them in the
+// as-is folder, this task will just copy whatever you put in there to the build directory so
+// you can reference files on your pages
 // ===========================================================================================
-gulp.task('scripts-vendor', function(){
-    gulp.src(path.join(config.src.vendorJs, '**/*.js'))
-        .pipe(sourcemaps.init())
-        .pipe(order([
-            'jquery*'
-        ]))
-        .pipe(uglify())
-        .pipe(concat('vendor.js'))
-        .pipe(rename({suffix:'.min'}))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(config.dest.js))
+gulp.task('as-is', function(){
+    return gulp.src(path.join(config.src.asIs, '**/*'))
+        .pipe(gulp.dest(config.dest.asIs))
         .pipe(reload({stream:true}));
 });
 
@@ -118,7 +115,7 @@ gulp.task('sass', function(){
 // Description: Triggers browser sync on changes to .html files and copies html files to build folder
 // ===========================================================================================
 gulp.task('html', function(){
-    gulp.src(path.join(config.src.root, '**/*.html'))
+    return gulp.src(path.join(config.src.root, '**/*.html'))
         .pipe(gulp.dest(config.dest.root))
         .pipe(reload({stream:true}));
 });
@@ -128,8 +125,18 @@ gulp.task('html', function(){
 // Description: Triggers browser sync on changes to image files
 // ===========================================================================================
 gulp.task('images', function(){
-    gulp.src(path.join(config.src.images,'**/*'))
+    return gulp.src(path.join(config.src.images,'**/*'))
         .pipe(gulp.dest(config.dest.images));
+});
+
+// ===========================================================================================
+// Task Name: copy-fonts
+// Description: copies fonts to build folder and triggers browser reload
+// ===========================================================================================
+
+gulp.task('fonts', function () {
+    return gulp.src(path.join(config.src.fonts, '**/*.{woff2, eot, ttf, woff, svg}'))
+        .pipe(gulp.dest(config.dest.fonts));
 });
 
 // ===========================================================================================
@@ -215,7 +222,7 @@ gulp.task('main-bower-files', function() {
 
 
     var filterCSS = gulpFilter(['**/*.css', '**/*.scss'], { restore: true });
-    return gulp.src('./bower.json')
+    gulp.src('./bower.json')
         //.pipe(sourcemaps.init())
         .pipe(mainBowerFiles({ includeDev: true }))
         .pipe(filterCSS)
@@ -237,7 +244,7 @@ gulp.task('bower-install-plugins', ['bower']);
 // ===========================================================================================
 gulp.task('clean:dest', function(){
     return del([
-        config.dest.root
+        path.join(config.dest.root, '**/*')
     ]);
 });
 
@@ -259,7 +266,6 @@ gulp.task('default', [
     'html',
     'images',
     'scripts-site',
-    //'scripts-vendor',
     'sass',
     'main-bower-files',
     'browser-sync',
@@ -270,11 +276,12 @@ gulp.task('default', [
 // Task Name: build
 // ===========================================================================================
 gulp.task('build', [
-    'clean:dest',
+    //'clean:dest', // this produces random errors, I am not calling it synchronousely correctly
     'html',
     'images-compress',
+    'fonts',
+    'as-is',
     'scripts-site',
-    //'scripts-vendor',
     'sass',
     'main-bower-files'
 ]);
