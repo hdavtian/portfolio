@@ -66,7 +66,7 @@ var config = {
 // If order of inclusion is necessary then use the order() plugin
 // ===========================================================================================
 gulp.task('scripts-site', function(){
-    return gulp.src(config.src.siteJs + '**/*.js')
+    gulp.src(config.src.siteJs + '**/*.js')
         .pipe(sourcemaps.init())
 
         // if you need to load things in order, use order like so
@@ -93,7 +93,7 @@ gulp.task('scripts-site', function(){
 // you can reference files on your pages
 // ===========================================================================================
 gulp.task('as-is', function(){
-    return gulp.src(path.join(config.src.asIs, '**/*'))
+    gulp.src(path.join(config.src.asIs, '**/*'))
         .pipe(gulp.dest(config.dest.asIs))
         .pipe(reload({stream:true}));
 });
@@ -115,7 +115,7 @@ gulp.task('sass', function(){
 // Description: Triggers browser sync on changes to .html files and copies html files to build folder
 // ===========================================================================================
 gulp.task('html', function(){
-    return gulp.src(path.join(config.src.root, '**/*.html'))
+    gulp.src(path.join(config.src.root, '**/*.html'))
         .pipe(gulp.dest(config.dest.root))
         .pipe(reload({stream:true}));
 });
@@ -125,7 +125,7 @@ gulp.task('html', function(){
 // Description: Triggers browser sync on changes to image files
 // ===========================================================================================
 gulp.task('images', function(){
-    return gulp.src(path.join(config.src.images,'**/*'))
+    gulp.src(path.join(config.src.images,'**/*'))
         .pipe(gulp.dest(config.dest.images));
 });
 
@@ -135,7 +135,7 @@ gulp.task('images', function(){
 // ===========================================================================================
 
 gulp.task('fonts', function () {
-    return gulp.src(path.join(config.src.fonts, '**/*.{woff2, eot, ttf, woff, svg}'))
+    gulp.src(path.join(config.src.fonts, '**/*.{woff2, eot, ttf, woff, svg}'))
         .pipe(gulp.dest(config.dest.fonts));
 });
 
@@ -144,7 +144,7 @@ gulp.task('fonts', function () {
 // Description: Copies images from src to build and compresses them
 // ===========================================================================================
 gulp.task('images-compress', function(){
-    return gulp.src(path.join( config.src.images, '**/*'))
+    gulp.src(path.join( config.src.images, '**/*'))
         .pipe(imagemin({
             svgoPlugins: [
                 {removeViewBox: false},
