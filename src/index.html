@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>A simple website package</title>
     <link rel="stylesheet" href="css/main.css">
@@ -8,9 +9,23 @@
 </head>
 <body>
 
+<h1>Bootstrap is included</h1>
+
+<div class="row">
+
+    <div class="col-md-6">
+        Hello
+    </div>
+
+    <div class="col-md-6">
+        World
+    </div>
+
+</div>
+
 <img src="images/rpa-logo-color.svg" border="0" alt="RPA" width="250" />
 
-<h1>A simple website package</h1>
+<h1>A simple website package v2..</h1>
 
 <p>This is a simple website package powered by gulp ... will help you setup a dev site and develop faster!</p>
 <p>Once setup and running, the gulp watch command will launch a new browser window, and your html, sass and js files will be watched and upon any changes the browser will auto reload.</p>
@@ -71,8 +86,10 @@
 </pre>
 <p>Your markup files will reference these two minified files just before the closing body tag.</p>
 
+<h2>Timelinemax</h2>
 
-<script src="js/vendor.min.js"></script>
+
+<script src="js/vendor/vendor-bower.js"></script>
 <script src="js/site.min.js"></script>
 
 
