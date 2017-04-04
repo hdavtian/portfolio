@@ -19,5 +19,13 @@
     "owl.carousel": "^2.2.1",
     "gsap": "^1.19.1",
     "scrollmagic": "^2.0.5"
+  },
+  "overrides": {
+      "bootstrap-sass": {
+          "main": [
+              "assets/stylesheets/custom-bootstrap.scss",
+              "assets/javascripts/bootstrap.js"
+          ]
+      }
   }
 }

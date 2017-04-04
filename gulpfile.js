@@ -185,9 +185,9 @@ gulp.task('main-bower-files', function() {
 
     var filterJS = gulpFilter('**/*.js', { restore: true });
     gulp.src('./bower.json')
+        .pipe(sourcemaps.init())
         .pipe(mainBowerFiles({ includeDev: true }))
         .pipe(filterJS)
-        .pipe(sourcemaps.init())
         .pipe(concat('vendor-bower.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
@@ -215,14 +215,14 @@ gulp.task('main-bower-files', function() {
 
     var filterCSS = gulpFilter(['**/*.css', '**/*.scss'], { restore: true });
     return gulp.src('./bower.json')
+        //.pipe(sourcemaps.init())
         .pipe(mainBowerFiles({ includeDev: true }))
         .pipe(filterCSS)
-        .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(concat('vendor.css'))
         .pipe(cleanCSS())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./Static/css/vendor'));
+        //.pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(config.dest.scss));
 
 });
 
