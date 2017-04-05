@@ -11,36 +11,42 @@
 </head>
 <body>
 
+
+
 <h1>Bootstrap is included</h1>
 
 <div class="row">
-
-    <div class="col-md-6">
-        Hello
-    </div>
-
-    <div class="col-md-6">
-        World
-    </div>
-
+    <div class="col-sm-6" style="border:1px solid red">Hello</div>
+    <div class="col-sm-6" style="border:1px solid blue">World</div>
 </div>
 
-<h1>font-awesome</h1>
-<p>font aawesome is included, here's a <a href="http://fontawesome.io/cheatsheet/" target="_blank">cheatsheet for looking up symbols</a>.</p>
+<div class="row">
+    <div class="col-sm-6">
+        <h1>font-awesome</h1>
+        <p>font awesome is included, here's a <a href="http://fontawesome.io/cheatsheet/" target="_blank">cheatsheet for looking up symbols</a>.</p>
+        <i class="fa fa-camera-retro fa-lg"></i>
+        <i class="fa fa-camera-retro fa-2x"></i>
+        <i class="fa fa-camera-retro fa-3x"></i>
+        <i class="fa fa-camera-retro fa-4x"></i>
+        <i class="fa fa-camera-retro fa-5x"></i>
+    </div>
 
-<pre><code class="language-markup">
+    <div class="col-sm-6">
+        <pre><code class="language-markup">
 &lt;i class="fa fa-camera-retro fa-lg"&gt;&lt;/i&gt;
 &lt;i class="fa fa-camera-retro fa-2x"&gt;&lt;/i&gt;
 &lt;i class="fa fa-camera-retro fa-3x"&gt;&lt;/i&gt;
 &lt;i class="fa fa-camera-retro fa-4x"&gt;&lt;/i&gt;
 &lt;i class="fa fa-camera-retro fa-5x"&gt;&lt;/i&gt;
 </code></pre>
+    </div>
+</div>
 
-<i class="fa fa-camera-retro fa-lg"></i>
-<i class="fa fa-camera-retro fa-2x"></i>
-<i class="fa fa-camera-retro fa-3x"></i>
-<i class="fa fa-camera-retro fa-4x"></i>
-<i class="fa fa-camera-retro fa-5x"></i>
+
+
+
+
+
 
 <h1>Owl carousel</h1>
 <p>Owl carousel is included</p>
@@ -73,6 +79,20 @@
     <div class="fruit">cucumber</div>
     <div class="fruit">pair</div>
 </div>
+
+<h1>GSAP/TweenMax is included</h1>
+<p>You can use tweenmax to do some animations.</p>
+
+<input type="button" value="moveLeft" onclick="moveLeft()"> | <input type="button" value="moveRight" onclick="moveRight()">
+
+<br><br>
+
+<i class="click-to-animate fa fa-camera-retro fa-lg" style="position:relative;left:0;"></i>
+
+<pre><code class="language-js">
+    var tl = new TimelineMax();
+    tl.to('.click-to-animate', 1, {left:'+=200', ease: Power4.easeOut});
+</code></pre>
 
 <h1>A simple website package v2..</h1>
 
@@ -147,6 +167,20 @@
         items: 2,
         dots: true
     })
+</script>
+
+<script>
+    // tweenmax example
+    function moveRight(){
+        var tl = new TimelineMax();
+        tl.to('.click-to-animate', .5, {left:'+=55', ease: Power4.easeOut});
+        tl.play();
+    }
+    function moveLeft(){
+        var tl = new TimelineMax();
+        tl.to('.click-to-animate', .5, {left:'-=55', ease: Power4.easeOut});
+        tl.play();
+    }
 </script>
 
 </body>
