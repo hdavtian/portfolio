@@ -25,7 +25,10 @@ var babel = require('gulp-babel'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    webpack = require('webpack'),
+    webpackStream = require('webpack-stream'),
+    webpackConfig = require('./webpack.config.js');
 
 // storing comming paths
 
@@ -65,25 +68,31 @@ var config = {
 // Description: concatenate js files in js/site, uglify and copy to build folder.
 // If order of inclusion is necessary then use the order() plugin
 // ===========================================================================================
+// gulp.task('scripts-site', function(){
+//     // gulp.src(config.src.siteJs + '**/*.js')
+//     gulp.src(config.src.siteJs + 'app.js')
+//         .pipe(sourcemaps.init())
+//
+//         // if you need to load things in order, use order like so
+//         // .pipe(order([
+//         //     'one.js',
+//         //     'two.js',
+//         //     'three.js'
+//         // ],{base: './src/js/site'}))
+//
+//         .pipe(babel())
+//         .on('error', console.error.bind(console))
+//         .pipe(uglify())
+//         .pipe(concat('site.js'))
+//         .pipe(rename({suffix:'.min'}))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest(config.dest.js))
+//         .pipe(reload({ stream: true }));
+// });
 gulp.task('scripts-site', function(){
-    gulp.src(config.src.siteJs + '**/*.js')
-        .pipe(sourcemaps.init())
-
-        // if you need to load things in order, use order like so
-        .pipe(order([
-            'one.js',
-            'two.js',
-            'three.js'
-        ],{base: './src/js/site'}))
-
-        .pipe(babel())
-        .on('error', console.error.bind(console))
-        .pipe(uglify())
-        .pipe(concat('site.js'))
-        .pipe(rename({suffix:'.min'}))
-        .pipe(sourcemaps.write('.'))
+    gulp.src(config.src.siteJs + 'app.js')
+        .pipe(webpackStream(webpackConfig), webpack)
         .pipe(gulp.dest(config.dest.js))
-        .pipe(reload({ stream: true }));
 });
 
 // ===========================================================================================
