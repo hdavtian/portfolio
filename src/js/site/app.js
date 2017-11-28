@@ -1,14 +1,12 @@
-import $ from 'jquery';
-import angular from 'angular';
 
-$('body').css('border','15px solid red');
-
-console.log('hello there');
+import appController    from '../angularjs-test/controller';
+import solutions        from '../angularjs-test/solutions-directive';
 
 const app = angular.module('app',[]);
-const appCtrl = function($scope){
-    $scope.greeting = 'Hello World'
-};
 
-app.controller('appCtrl', appCtrl);
-appCtrl.$inject =[ '$scope'];
+app
+    .controller('appCtrl', appController)
+    .directive('solutions', solutions);
+
+// DI
+appController.$inject =['$scope'];
