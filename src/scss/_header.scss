@@ -1,0 +1,16 @@
+.app-header {
+
+  display: table;
+  width: 100%;
+  height: 75px;
+  background-color: map-get($app, header-bg-color);
+
+  .app-name {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
+    @include appname-font-family(2em);
+    color: white;
+  }
+
+}//app-header

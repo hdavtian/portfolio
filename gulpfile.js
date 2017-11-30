@@ -144,7 +144,7 @@ gulp.task('images', function(){
 // ===========================================================================================
 
 gulp.task('fonts', function () {
-    gulp.src(path.join(config.src.fonts, '**/*.{woff2, eot, ttf, woff, svg}'))
+    gulp.src(path.join(config.src.fonts, '**/*.{woff2,eot,ttf,woff,svg}'))
         .pipe(gulp.dest(config.dest.fonts));
 });
 

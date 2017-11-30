@@ -1,0 +1,22 @@
+// used for headings
+@mixin font-ubuntu(){
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+// used for leftnav
+@mixin font-roboto(){
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+// -----------------------------
+
+@mixin leftnav-font-family {
+  @include font-roboto;
+}
+
+@mixin appname-font-family($size:"") {
+  @include font-ubuntu;
+  font-size: $size;
+}
+
+

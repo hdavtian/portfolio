@@ -1,0 +1,75 @@
+// general
+@import '../general/_variables';
+@import '../general/_mixins';
+//@import '../general/_reset';
+@import '../general/_header';
+@import '../general/_footer';
+@import '../general/_fonts';
+@import '../general/_breakpoints';
+@import '../general/_colors';
+@import '../general/_h-p-tags';
+
+@mixin font-ubuntu(){
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+@mixin font-roboto(){
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  @include font-roboto;
+}
+
+h1 {
+  @include font-ubuntu;
+}
+
+.page-solutions {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url(/images/sky-clouds-blue-horizon.jpg) no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.intro {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  width: 50%;
+  color: white;
+
+  h1 {
+    font-size: 5em;
+    color: #306190;
+  }
+
+  p {
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  .action {
+    i {
+      font-size: 3em;
+      color: #306190;
+    }
+  }
+
+}//intro
+
+.digital-solutions {
+
+  position: relative;
+
+  .ds {
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+}
+

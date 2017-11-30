@@ -9,12 +9,7 @@
 @import 'general/_colors';
 @import 'general/_h-p-tags';
 
-// pages
-@import 'pages/_homepage';
-@import 'pages/_grc';
-@import 'pages/_hpd';
-@import 'pages/_indycar';
-
-// overrides
-
-// modules
+// app
+@import '_header';
+@import '_leftnav';
+@import '_footer';

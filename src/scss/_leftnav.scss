@@ -1,0 +1,38 @@
+.app-leftnav {
+
+  background-color: map-get($app, leftnav-bg-color);
+  @include leftnav-font-family;
+
+}
+
+.app-menu {
+
+  width: 100%;
+  list-style-type: none;
+
+  li {
+
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    height: 35px;
+
+    a {
+      //display: block;
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      color: white;
+      text-decoration: none;
+      padding-left: 25px;
+      border-left: 5px solid map-get($app, menu-left-border-color);
+
+      &:hover {
+        border-left: 5px solid map-get($app, menu-left-border-hover-color);
+        background-color: map-get($app, menu-bg-hover-color);
+      }
+    }
+
+  }//li
+
+}

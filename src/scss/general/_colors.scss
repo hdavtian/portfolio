@@ -1,0 +1,39 @@
+$colors: (
+  blue: #2C8AAA,
+  emerald: #3C5C3A,
+  navy: #2C6291,
+  purple: #983781,
+  green: #6BC536,
+  red: #901721,
+  orange: #E97625,
+  white: #A5A7AA
+);
+
+@mixin bg-blue {background-color: map-get($colors, blue)}
+@mixin bg-emerald {background-color: map-get($colors, emerald)}
+@mixin bg-navy {background-color: map-get($colors, navy)}
+@mixin bg-purple {background-color: map-get($colors, purple)}
+@mixin bg-green {background-color: map-get($colors, green)}
+@mixin bg-red {background-color: map-get($colors, red)}
+@mixin bg-orange {background-color: map-get($colors, orange)}
+@mixin bg-white {background-color: map-get($colors, white)}
+
+.bg-blue {@include bg-blue}
+.bg-emerald {@include bg-emerald}
+.bg-navy {@include bg-navy}
+.bg-purple {@include bg-purple}
+.bg-green {@include bg-green}
+.bg-red {@include bg-red}
+.bg-orange {@include bg-orange}
+.bg-white {@include bg-white}
+
+// ---------------
+
+$app: (
+  header-bg-color: #306190,
+  footer-bg-color: #e6e7e8,
+  leftnav-bg-color: #1e262c,
+  menu-left-border-color: #1e262c,
+  menu-left-border-hover-color: #de671a,
+  menu-bg-hover-color: #4b5158
+)
