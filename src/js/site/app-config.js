@@ -1,21 +1,29 @@
-export default function($stateProvider, $urlRouterProvider){
+export default ['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     $urlRouterProvider.otherwise("home");
 
     $stateProvider
+
         .state('home', {
             url: "/home",
-            template: `home template`
+            templateUrl: './templates/home.html'
         })
 
         .state('products', {
             url: '/products',
-            template: `products template`
+            templateUrl: './templates/products.html',
+            controller: ['$scope', function($scope){
+                $scope.greeting = "Hello from products"
+            }]
+        })
+        .state('products.product1', {
+            url: '/product1',
+            templateUrl: '/templates/products.product1.html'
         })
 
         .state('about', {
             url: '/about',
-            template: `about template`
+            templateUrl: './templates/about.html'
         })
 
-}
+}]

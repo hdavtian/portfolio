@@ -1,0 +1,13 @@
+<h1>Solutions Directive</h1>
+
+<ul>
+    <li><a ui-sref="products.product1">Show product 1</a></li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="product in products">
+    <li>{{product.name}}</li>
+</ul>
+
+<div ui-view></div>
