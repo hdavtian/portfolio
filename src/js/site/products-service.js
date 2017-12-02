@@ -1,9 +1,8 @@
 export default ['$http', function($http){
-    console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++++');
-    this.getData = function(){
+    this.getData = function(file){
         return $http({
             method: 'get',
-            url: 'data/products.json'
+            url: 'data/' + file
         })
     }
 }]

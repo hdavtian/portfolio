@@ -2,7 +2,7 @@ import uiRouter             from 'angular-ui-router';
 import appController        from './controller';
 import solutionsDirective   from './solutions-directive';
 import solutionsListDirective   from './solutions-list-directive';
-// import solutionsComponent   from './solutions-component';
+import modulesListDirective   from './modules-list-directive';
 import appConfig            from './app-config';
 import productsService      from './products-service';
 
@@ -12,7 +12,7 @@ app
     .service('productsService', productsService)
     .directive('solutions', solutionsDirective)
     .directive('solutionsList', solutionsListDirective)
-    // .component('solutionsComponent', solutionsComponent)
+    .directive('modulesList', modulesListDirective)
     .config(appConfig)
     .controller('appCtrl', appController);
 
