@@ -27,7 +27,7 @@
       border-left: 5px solid map-get($app, menu-left-border-color);
       cursor: pointer;
 
-      &:hover {
+      &:hover, &.active {
         border-left: 5px solid map-get($app, menu-left-border-hover-color);
         background-color: map-get($app, menu-bg-hover-color);
       }
