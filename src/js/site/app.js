@@ -1,10 +1,11 @@
-import uiRouter             from 'angular-ui-router';
-import appController        from './controller';
-import solutionsDirective   from './solutions-directive';
+import uiRouter                 from 'angular-ui-router';
+import appController            from './controller';
+import solutionsDirective       from './solutions-directive';
 import solutionsListDirective   from './solutions-list-directive';
-import modulesListDirective   from './modules-list-directive';
-import appConfig            from './app-config';
-import productsService      from './products-service';
+import solutionsCubicalHorizontal   from './solutions-cubical-horizontal';
+import modulesListDirective     from './modules-list-directive';
+import appConfig                from './app-config';
+import productsService          from './products-service';
 
 const app = angular.module('app',[uiRouter]);
 
@@ -12,6 +13,7 @@ app
     .service('productsService', productsService)
     .directive('solutions', solutionsDirective)
     .directive('solutionsList', solutionsListDirective)
+    .directive('solutionsCubicalHorizontal', solutionsCubicalHorizontal)
     .directive('modulesList', modulesListDirective)
     .config(appConfig)
     .controller('appCtrl', appController);
