@@ -1,9 +1,15 @@
-<ul>
-    <li>Id: {{product.id}}</li>
-    <li>Name: {{product.name}}</li>
-    <li>Description: {{product.description}}</li>
-</ul>
+<div class="product-detail">
 
-<hr>
+    <h3>{{product.name}}</h3>
 
-<modules-list all="modules" list="product.modules"></modules-list>
+    <div class="description">
+        {{product.description}}
+    </div>
+</div>
+
+<modules-cubical-horizontal all="modules" list="product.modules"></modules-cubical-horizontal>
+
+
+<!--<hr>-->
+
+<!--<modules-list all="modules" list="product.modules"></modules-list>-->

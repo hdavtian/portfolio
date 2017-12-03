@@ -1,0 +1,13 @@
+<!--<ul>-->
+    <!--<li ng-repeat="module in modules"><a href="#">{{module.title_short}}</a></li>-->
+<!--</ul>-->
+
+<div class="row modules-cubical-horizontal">
+    <div
+            class="module"
+            ng-repeat="module in modules"
+            ui-sref-active="active">
+
+        <div class="color">{{module.title_short}}</div>
+    </div>
+</div>

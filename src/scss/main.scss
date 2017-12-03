@@ -1,7 +1,7 @@
 // general
 @import 'general/_variables';
 @import 'general/_mixins';
-@import 'general/_reset';
+//@import 'general/_reset';
 @import 'general/_header';
 @import 'general/_footer';
 @import 'general/_fonts';
@@ -13,7 +13,11 @@
 @import '_header';
 @import '_leftnav';
 @import '_footer';
+@import 'angular-animations';
 
-// directives
+// pages & directives
+@import '_products';
+@import '_product-detail';
 @import '_solutions-list';
 @import '_solutions-cubical-horizontal';
+@import '_modules-cubical-horizontal';

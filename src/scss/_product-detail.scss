@@ -1,0 +1,12 @@
+.product-detail {
+
+  display: block;
+  max-width: 850px;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 3em!important;
+    @include font-ubuntu;
+  }
+
+}

@@ -1,6 +1,7 @@
 .app-leftnav {
 
   background-color: map-get($app, leftnav-bg-color);
+  min-height: 500px;
   @include leftnav-font-family;
 
 }

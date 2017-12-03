@@ -1,13 +1,15 @@
 import uiRouter                 from 'angular-ui-router';
+import ngAnimate                from 'angular-animate';
 import appController            from './controller';
 import solutionsDirective       from './solutions-directive';
 import solutionsListDirective   from './solutions-list-directive';
 import solutionsCubicalHorizontal   from './solutions-cubical-horizontal';
 import modulesListDirective     from './modules-list-directive';
+import modulesCubicalHorizontal from './modules-cubical-horizontal';
 import appConfig                from './app-config';
 import productsService          from './products-service';
 
-const app = angular.module('app',[uiRouter]);
+const app = angular.module('app',[uiRouter, ngAnimate]);
 
 app
     .service('productsService', productsService)
@@ -15,6 +17,7 @@ app
     .directive('solutionsList', solutionsListDirective)
     .directive('solutionsCubicalHorizontal', solutionsCubicalHorizontal)
     .directive('modulesList', modulesListDirective)
+    .directive('modulesCubicalHorizontal', modulesCubicalHorizontal)
     .config(appConfig)
     .controller('appCtrl', appController);
 
