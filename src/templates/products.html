@@ -1,6 +1,9 @@
 <div class="products">
-    
-    <cube ng-repeat="product in products" product="product"></cube>
+
+    <cube
+            ng-repeat="product in products"
+            product="product"
+            update-active-color="setActiveBgColor(color)"></cube>
 
     <div ui-view="productUiView" class="my-animation"></div>
 </div>

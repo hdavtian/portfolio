@@ -8,6 +8,11 @@ export default ['$scope', 'productsService', '$stateParams', '$state', function(
         $scope.modules = response.data;
     });
 
-    $scope.activeColor = "";
+    $scope.activeBgColor = "";
+
+    $scope.setActiveBgColor = function(color){
+        $scope.activeBgColor = color;
+    }
+
 
 }]

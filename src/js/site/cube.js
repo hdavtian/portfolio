@@ -4,7 +4,13 @@ export default function(){
         templateUrl: '/templates/directives/cube.html',
         replace: true,
         scope: {
-            product: '='
+            product: '=',
+            updateActiveColor: '&'
+        },
+        link: function($scope, $elem, $attrs){
+            $elem.on('click', function(){
+                $scope.updateActiveColor({'color':$scope.product.bgColor})
+            })
         }
     }
 }

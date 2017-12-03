@@ -3,7 +3,8 @@ export default function(){
         restrict: 'E',
         scope: {
             list: '=',
-            all: '='
+            all: '=',
+            activeColor: '='
         },
         templateUrl: '/templates/directives/modules-cubical-horizontal.html',
         controller: ['$scope', '$element', '$attrs', function($scope, $element, $attrs){
@@ -21,6 +22,8 @@ export default function(){
             };
 
             $scope.modules = newList;
+
+            console.log('activeBgColor:', $scope.activeColor)
 
         }]
 
