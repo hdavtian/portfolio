@@ -6,6 +6,7 @@ import solutionsListDirective   from './solutions-list-directive';
 import solutionsCubicalHorizontal   from './solutions-cubical-horizontal';
 import modulesListDirective     from './modules-list-directive';
 import modulesCubicalHorizontal from './modules-cubical-horizontal';
+import cube                     from './cube';
 import appConfig                from './app-config';
 import productsService          from './products-service';
 
@@ -18,6 +19,7 @@ app
     .directive('solutionsCubicalHorizontal', solutionsCubicalHorizontal)
     .directive('modulesList', modulesListDirective)
     .directive('modulesCubicalHorizontal', modulesCubicalHorizontal)
+    .directive('cube', cube)
     .config(appConfig)
     .controller('appCtrl', appController);
 
