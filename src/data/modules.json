@@ -2,222 +2,222 @@
   "title_short": "Da",
   "title_long": "Client Digital Advice",
   "marketing_slogan": "Risk Profile",
-  "description": "..."
+  "description": ["Account Objectives", "Risk Profile", "Multi Question/Multi Answer (MQMA)", "Create Model", "User Assist"]
 },
   {
     "title_short": "Cp",
     "title_long": "Client Portal",
     "marketing_slogan": "Client Communications",
-    "description": "..."
+    "description": ["Dashboard", "Account Views", "Allocations", "Holdings", "Transaction History", "Performance", "Document Management Vault", "Total Wealth (Aggregation)", "Canvases and Microsites", "General and Portfolio News", "Profile and Management", "Mobility", "Client Reports"]
   },
   {
     "title_short": "Ap",
     "title_long": "Advisor Portal",
     "marketing_slogan": "Client Management",
-    "description": "..."
+    "description": ["Account Management", "Become Client User/ User Assist", "Data Views", "Model Management", "Rebalance Management", "Drift Analysis", "Performance Analysis", "Compliance Management", "Post-Trade Allocations", "Secure Messaging/ Video", "Report Bundler", "Financial Planning"]
   },
   {
     "title_short": "Co",
     "title_long": "Compliance",
     "marketing_slogan": "Validation",
-    "description": "..."
+    "description": ["Multi Question/Multi Answer (MQMA)", "Asset Safe", "User Setup", "Account Funding", "e-Consent and e-Signature", "Confirmation"]
   },
   {
     "title_short": "Cr",
     "title_long": "Client Reporting",
     "marketing_slogan": "",
-    "description": "..."
+    "description": ["Activity Monitor/Behavioral Analysis", "CRM/Pipes", "Client Engagement Management"]
   },
   {
     "title_short": "Cm",
     "title_long": "Client Marketing",
     "marketing_slogan": "Lead Generation",
-    "description": "..."
+    "description": ["Marketing Website", "Search Engine Optimization (SEO)", "CRM Prospecting", "Curated Content"]
   },
   {
     "title_short": "Dw",
     "title_long": "Digital Warehouse",
     "marketing_slogan": "Information is Power",
-    "description": "..."
+    "description": ["Single Version of the Integrated Truth (SVOTIT)", "Multiple Views on Multiple Data", "See Any Moment in Time"]
   },
   {
     "title_short": "Op",
     "title_long": "Order Processing",
     "marketing_slogan": "Trading",
-    "description": "..."
+    "description": ["Online Trade Order Capture", "Validation of Security Availability", "Multi-Venue Execution"]
   },
   {
     "title_short": "Fc",
     "title_long": "Fees & Charges",
     "marketing_slogan": "Billing",
-    "description": "..."
+    "description": ["Client Fee Calculation", "Client Billing Automation", "Individual Payments", "Bulk Payments", "Retail Logic", "Payments Interface"]
   },
   {
     "title_short": "Ac",
     "title_long": "Accounting",
     "marketing_slogan": "Bookkeeping",
-    "description": "..."
+    "description": ["Multi-Currency Accounting", "Multi-Account-Type Support", "Automatic Reconciliation", "Automated Corporate Actions Processing", "Corporate Action Elections"]
   },
   {
     "title_short": "Sc",
     "title_long": "Settlement & Custody",
     "marketing_slogan": "Clearing",
-    "description": "..."
+    "description": ["Automated Settlement", "Manual Settlement", "Custodial Reconciliation"]
   },
   {
     "title_short": "Ds",
     "title_long": "Decision Support",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Making Allocations",
+    "description": ["Portfolio Dashboard", "Investment Dashboard", "What-if Scenarios", "Cash Management", "Deployment Models", "Rebalancing", "Liquidity Analytics", "Manager Fee Model Capture", "Unfunded Commitment Tracking"]
   },
   {
     "title_short": "Pa",
     "title_long": "Portfolio Analytics",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "How Am I Doing?",
+    "description": ["Exposure Management", "Holdings Look-Through", "Performance Analytics", "Public Market Equivalent", "Implied Private Premium", "Risk Metrics", "Formula Browser", "Drawdown Analytics", "Attribution"]
   },
   {
     "title_short": "Po",
     "title_long": "Portfolio Operations",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Manage Data",
+    "description": ["Data Capture", "Data Verification", "Data Publishing", "Error Shield","Manage Fund Documents", "Manage Liquidity Terms", "Cashflow Calendar", "Expense Management", "Tree Consolidation Management"]
   },
   {
     "title_short": "Pr",
     "title_long": "Portfolio Reporting",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Information is Power",
+    "description": ["Board Books", "Tear Sheets", "Time Series", "Tree-Consolidation Views", "Dimension Control", "Data Extract Builder", " Canvas"]
   },
   {
     "title_short": "Fl",
     "title_long": "Fundraising & Liability Mgmt",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Allocation Commitment Management",
+    "description": ["Contributions and Donations", "Relationship Management", "Alumni and other Networks", "Search Engine Optimization (SEO)", "Grant & Scholarship Management", "CMS", "Thought Leadership"]
   },
   {
     "title_short": "Rm",
     "title_long": "Research Management",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Investable Universe",
+    "description": ["Manager Selection", "Investment Selection", "Historical Data Storage"]
   },
   {
     "title_short": "Ts",
     "title_long": "Target Setup",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Set Policy Targets",
+    "description": ["Manage Allocation Models", "Manage Model Portfolios", "Map Client Portfolio to Models", "Manage Benchmarks", "Manage Composites"]
   },
   {
     "title_short": "Rb",
     "title_long": "Rebalancer",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Deploy Client Assets",
+    "description": ["Initial Implementation", "Rebalancer"]
   },
   {
     "title_short": "Mm",
     "title_long": "Model Management",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Identify Investment Opportunities",
+    "description": ["By Manager", "Adjustable by Client"]
   },
   {
     "title_short": "Pg",
     "title_long": "Proposal Generation",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Evaluate Investment Opportunities",
+    "description": ["Create Portfolio", "Manager Performance Over Time", "Aggregation to Model Portfolio", "Risk Against Portfolio", "Fees", "Static & Dynamic Report-Stitching"]
   },
   {
     "title_short": "Pe",
     "title_long": "Proposal Execution",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Implement Portfolio",
+    "description": ["Proposal Approval (Signature)", "Instruct Purchase of Portfolio"]
   },
   {
     "title_short": "Pm",
     "title_long": "Portfolio Management",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "How Am I Doing?",
+    "description": ["Account Relative Performance", "Growth of One Dollar", "Performance By Sector", "Performance by Security", "Performance by Asset Class"]
   },
   {
     "title_short": "Dm",
     "title_long": "Document Management",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Substantiate Investment Choices",
+    "description": ["Historical Proposals", "Historical MQMA", "Manager Insights"]
   },
   {
     "title_short": "As",
     "title_long": "Account Summary",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Portfolio Dashboard",
+    "description": ["Holdings by Account", "Consolidation Manager", "Watch List"]
   },
   {
     "title_short": "Hg",
     "title_long": "Holdings",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "What Have I Got?",
+    "description": ["Holdings Summary", "Holdings Detail", "Real Time P&L by Position", "Tax Lot Detail"]
   },
   {
     "title_short": "Tx",
     "title_long": "Transactions",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "How Did I Get Here?",
+    "description": ["Transaction History", "Realized Gain/Loss Summary"]
   },
   {
     "title_short": "Al",
     "title_long": "Allocations",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "How Am I Positioned?",
+    "description": ["Asset Allocation Summary", "Drift vs. Model", "Top Holdings"]
   },
   {
     "title_short": "Dv",
     "title_long": "Document Vault",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Traditional Reports",
+    "description": ["Document Reporting", "Document Categorization", "Document Upload Utility", "Image-Based Visualization", "Report Scheduler"]
   },
   {
     "title_short": "Rt",
     "title_long": "Real Time Analytics",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Market Responsiveness",
+    "description": ["Real-Time Account Dashboard", "Real-Time Position Dashboard", "Real-Time Performance", "Real-Time Drift Analysis", "Market Analysis"]
   },
   {
     "title_short": "Em",
     "title_long": "Exposure Management",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "How Am I Positioned?",
+    "description": ["Firm Overview", "Strategy Summary", "Account Summary", "Gains and Losses", "Transactions"]
   },
   {
     "title_short": "Ra",
     "title_long": "Risk Analytics",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "How Steady Am I?",
+    "description": ["Performance-Based Risk", "Risk Trends"]
   },
   {
     "title_short": "Ag",
     "title_long": "Aggregation",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Data Inception",
+    "description": ["Cross-Platform Integration", "Integration Partners", "Common Interface"]
   },
   {
     "title_short": "St",
     "title_long": "Digital App Store",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Data Power",
+    "description": ["Broad-Base Digital App Store", "Cross-Platform Functionality"]
   },
   {
     "title_short": "Tm",
     "title_long": "Time Machine",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Data Evolution",
+    "description": ["Full History", "Time Series"]
   },
   {
     "title_short": "Dx",
     "title_long": "Data Extraction",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Getting Data Out",
+    "description": ["Custom Data Extracts", "Extract Scheduler", "Client Navigator"]
   },
   {
     "title_short": "Ic",
     "title_long": "Innovation Center",
-    "marketing_slogan": "",
-    "description": "..."
+    "marketing_slogan": "Accelerate and Incubate",
+    "description": ["InvestCloud PLACE", "InvestCloud Sandbox", "InvestCloud Mentors"]
   }
 ]
