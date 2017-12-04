@@ -1,8 +1,10 @@
-<h3>{{module.title_short}} - {{module.title_long}}</h3>
-<!--<ng-include src="'/views/module-description/' + module.title_short.toLowerCase() + '.html'"></ng-include>-->
-<p><i>{{module.marketing_slogan}}</i></p>
-<div class="description">
-    <ul>
-        <li ng-repeat="point in module.description">{{point}}</li>
-    </ul>
+<div class="product-module-detail">
+    <h4>{{module.title_short}} - {{module.title_long}}</h4>
+
+    <p><i>{{module.marketing_slogan}}</i></p>
+    <div class="description">
+        <ul>
+            <li ng-repeat="point in module.description">{{point}}</li>
+        </ul>
+    </div>
 </div>
