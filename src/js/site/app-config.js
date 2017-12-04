@@ -17,17 +17,6 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             }]
         })
 
-        // .state('products', {
-        //     name: 'products',
-        //     url: '/products',
-        //     component: 'productsComponent'
-        // })
-
-        .state('products.product1', {
-            url: '/product1',
-            templateUrl: '/templates/products.product1.html'
-        })
-
         .state('products.product', {
             url: '/:productId',
             views: {
@@ -43,6 +32,18 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
                             }
                         }
 
+                    }]
+                }
+            }
+        })
+
+        .state('products.product.module', {
+            url: '/:moduleName',
+            views: {
+                'moduleUiView' : {
+                    templateUrl: '/templates/product-module-detail.html',
+                    controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
+                        //code
                     }]
                 }
             }
