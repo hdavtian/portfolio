@@ -4,11 +4,12 @@
 
 <div class="row modules-cubical-horizontal">
     <div
-            style="background-color:{{activeColor}}"
             class="module"
+            style="background-color:{{activeColor}}"
             ng-repeat="module in modules"
             ui-sref-active="active">
 
+        <div class="opaque-bg"></div>
         <div class="color">{{module.title_short}}</div>
     </div>
 

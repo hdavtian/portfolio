@@ -13,7 +13,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             url: '/products',
             templateUrl: './templates/products.html',
             controller: ['$scope', function($scope){
-                $scope.greeting = "Hello from products"
+                $scope.greeting = "Hello from products";
             }]
         })
 
@@ -34,7 +34,6 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
                 'productUiView' : {
                     templateUrl: '/templates/product-detail.html',
                     controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
-                        // $scope.$state = $state;
 
                         // loop through products and choose the product with the given id
                         for (var i=0, l=$scope.products.length; i<l; i++){
@@ -44,7 +43,6 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
                             }
                         }
 
-                        // $scope.product = $stateParams.productId;
                     }]
                 }
             }
