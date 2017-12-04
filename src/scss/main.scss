@@ -10,15 +10,13 @@
 @import 'general/_h-p-tags';
 
 // app
-@import '_header';
-@import '_leftnav';
-@import '_footer';
+@import 'header';
+@import 'leftnav';
+@import 'footer';
 @import 'angular-animations';
 
 // pages & directives
-@import '_products';
-@import '_product-detail';
-@import '_solutions-list';
-@import '_solutions-cubical-horizontal';
-@import '_modules-cubical-horizontal';
-@import '_cube';
+@import 'products';
+@import 'product-detail';
+@import 'product-module';
+@import 'product';

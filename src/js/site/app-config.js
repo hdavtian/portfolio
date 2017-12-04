@@ -6,12 +6,12 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
         .state('home', {
             url: "/home",
-            templateUrl: './templates/home.html'
+            templateUrl: './views/home.html'
         })
 
         .state('products', {
             url: '/products',
-            templateUrl: './templates/products.html',
+            templateUrl: './views/products.html',
             controller: ['$scope', function($scope){
                 $scope.greeting = "Hello from products";
             }]
@@ -21,7 +21,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             url: '/:productId',
             views: {
                 'productUiView' : {
-                    templateUrl: '/templates/product-detail.html',
+                    templateUrl: '/views/product-detail.html',
                     controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
 
                         // loop through products and choose the product with the given id
@@ -41,7 +41,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             url: '/:moduleName',
             views: {
                 'moduleUiView' : {
-                    templateUrl: '/templates/product-module-detail.html',
+                    templateUrl: '/views/product-module-detail.html',
                     controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
                         //code
                     }]
@@ -51,7 +51,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
         .state('about', {
             url: '/about',
-            templateUrl: './templates/about.html'
+            templateUrl: './views/about.html'
         })
 
 }]

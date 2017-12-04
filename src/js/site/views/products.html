@@ -1,0 +1,12 @@
+<div class="products">
+
+    <product
+            ng-repeat="product in products"
+            product="product"
+            update-active-color="setActiveBgColor(color)"></product>
+
+    <div ui-view="productUiView" class="my-animation"></div>
+</div>
+
+
+

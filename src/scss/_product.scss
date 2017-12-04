@@ -5,7 +5,7 @@
   margin: 0 auto;
   padding: 25px 25px 0 25px;
 
-  .cube {
+  .product {
     display: inline-block;
     position: relative;
     background-color: blue;
@@ -47,6 +47,6 @@
       @include font-roboto;
     }
 
-  }//solution
+  }//product
 
 }

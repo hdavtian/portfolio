@@ -3,9 +3,10 @@ export default function(){
         restrict: 'E',
         scope: {
             list: '=',
-            all: '='
+            all: '=',
+            activeColor: '='
         },
-        templateUrl: '/templates/directives/modules-list.html',
+        templateUrl: '/views/directives/product-module.html',
         controller: ['$scope', '$element', '$attrs', function($scope, $element, $attrs){
 
             // turn `list` into an array
@@ -21,6 +22,8 @@ export default function(){
             };
 
             $scope.modules = newList;
+
+            console.log('activeBgColor:', $scope.activeColor)
 
         }]
 

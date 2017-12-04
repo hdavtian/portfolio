@@ -37,6 +37,8 @@ var config = {
 
     src: {
         root: './src',
+        views: './src/js/site/views',
+        data: './src/data',
         js: './src/js',
         siteJs: './src/js/site',
         scss: './src/scss',
@@ -49,6 +51,8 @@ var config = {
 
     dest: {
         root: './build',
+        views: './build/views',
+        data: './build/data',
         js: './build/js',
         scss: './build/css',
         vendorJs: './build/js/vendor',
@@ -126,6 +130,26 @@ gulp.task('sass', function(){
 gulp.task('html', function(){
     gulp.src(path.join(config.src.root, '**/*.html'))
         .pipe(gulp.dest(config.dest.root))
+        .pipe(reload({stream:true}));
+});
+
+// ===========================================================================================
+// Task Name: views
+// Description: Triggers browser sync on changes to .html files in js/views and copies them to build /views
+// ===========================================================================================
+gulp.task('views', function(){
+    gulp.src(path.join(config.src.views, '**/*.html'))
+        .pipe(gulp.dest(config.dest.views))
+        .pipe(reload({stream:true}));
+});
+
+// ===========================================================================================
+// Task Name: data
+// Description: Triggers browser sync on changes to data files
+// ===========================================================================================
+gulp.task('data', function(){
+    gulp.src(path.join(config.src.data,'**/*'))
+        .pipe(gulp.dest(config.dest.data))
         .pipe(reload({stream:true}));
 });
 
@@ -265,6 +289,7 @@ gulp.task('watch', ['browser-sync'], function(){
     gulp.watch(path.join(config.src.js, '**/*.js'), ['scripts-site']);
     gulp.watch(path.join(config.src.scss, '**/*.scss'), ['sass']);
     gulp.watch(path.join(config.src.root, '**/*.html'), ['html']);
+    gulp.watch(path.join(config.src.data, '**/*'), ['data']);
     gulp.watch(path.join(config.src.images, '**/*'), ['images']);
 });
 
@@ -273,6 +298,8 @@ gulp.task('watch', ['browser-sync'], function(){
 // ===========================================================================================
 gulp.task('default', [
     'html',
+    'views',
+    'data',
     'images',
     'scripts-site',
     'sass',
@@ -287,6 +314,8 @@ gulp.task('default', [
 gulp.task('build', [
     //'clean:dest', // this produces random errors, I am not calling it synchronousely correctly
     'html',
+    'views',
+    'data',
     'images-compress',
     'fonts',
     'as-is',

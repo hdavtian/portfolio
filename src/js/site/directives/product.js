@@ -1,7 +1,7 @@
 export default function(){
     return {
         restrict: 'E',
-        templateUrl: '/templates/directives/cube.html',
+        templateUrl: '/views/directives/product.html',
         replace: true,
         scope: {
             product: '=',
