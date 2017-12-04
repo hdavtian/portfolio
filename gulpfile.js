@@ -289,6 +289,7 @@ gulp.task('watch', ['browser-sync'], function(){
     gulp.watch(path.join(config.src.js, '**/*.js'), ['scripts-site']);
     gulp.watch(path.join(config.src.scss, '**/*.scss'), ['sass']);
     gulp.watch(path.join(config.src.root, '**/*.html'), ['html']);
+    gulp.watch(path.join(config.src.views, '**/*.html'), ['views']);
     gulp.watch(path.join(config.src.data, '**/*'), ['data']);
     gulp.watch(path.join(config.src.images, '**/*'), ['images']);
 });

@@ -1,10 +1,6 @@
-<!--<ul>-->
-    <!--<li ng-repeat="module in modules"><a href="#">{{module.title_short}}</a></li>-->
-<!--</ul>-->
-
-<div class="row modules-cubical-horizontal">
+<div class="row product-module-wrapper">
     <div
-            class="module"
+            class="product-module"
             style="background-color:{{activeColor}}"
             ng-repeat="module in modules"
             ui-sref="products.product.module({moduleName:module.name})"

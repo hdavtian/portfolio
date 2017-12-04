@@ -2,8 +2,8 @@ export default function(){
     return {
         restrict: 'E',
         scope: {
-            list: '=',
             all: '=',
+            list: '=',
             activeColor: '='
         },
         templateUrl: '/views/directives/product-module.html',
