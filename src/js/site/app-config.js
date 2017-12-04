@@ -56,7 +56,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
                     templateUrl: '/views/product-module-detail.html',
                     controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
                         //code
-                        $scope.harma = "davtian";
+
                     }]
                 }
             }

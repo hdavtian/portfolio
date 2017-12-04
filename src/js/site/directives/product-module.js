@@ -10,24 +10,15 @@ export default function(){
         replace: true,
         templateUrl: '/views/directives/product-module.html',
         controller: ['$scope', '$element', '$attrs', function($scope, $element, $attrs){
-
-            // turn `list` into an array
-            // let list = $scope.list.replace(/ /g,'');
-            //     list = list.split(',');
-
-            // create an array module objects
-            // let newList = [];
-            // for (let i=0, l=$scope.all.length; i<l; i++) {
-            //     if ($scope.list.indexOf($scope.all[i].title_short) != -1) {
-            //         newList.push($scope.all[i])
-            //     }
-            // };
-
-            // $scope.productModules = newList;
-            //
-            // console.log('activeBgColor:', $scope.activeColor)
-
-        }]
+            // nothing for now
+        }],
+        link: function($scope, $elem, $attrs){
+            $elem.on('click', function(){
+                // this is hacky, need to follow more patterns
+                //@todo refactor
+                $scope.$root.module = $scope.module;
+            })
+        }
 
     }
 }
