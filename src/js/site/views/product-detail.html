@@ -8,10 +8,14 @@
 
     <h4>Modules:</h4>
 
-    <product-module
-            all="modules"
-            list="product.modules"
-            active-color="activeBgColor" />
+    <div class="row product-module-wrapper">
+        <product-module
+                ng-repeat="module in modules"
+                module="module"
+                all="modules"
+                list="product.modules"
+                active-color="activeBgColor" />
+    </div>
 
     <div ui-view="moduleUiView" class="my-animation"></div>
 

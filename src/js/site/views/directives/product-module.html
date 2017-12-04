@@ -1,13 +1,9 @@
-<div class="row product-module-wrapper">
-    <div
-            class="product-module"
-            style="background-color:{{activeColor}}"
-            ng-repeat="module in modules"
-            ui-sref="products.product.module({moduleName:module.name})"
-            ui-sref-active="active">
+<div
+        class="product-module"
+        style="background-color:{{activeColor}}"
+        ui-sref="products.product.module({moduleName:module.title_short})"
+        ui-sref-active="active">
 
-        <div class="opaque-bg"></div>
-        <div class="color">{{module.title_short}}</div>
-    </div>
-
+    <div class="opaque-bg"></div>
+    <div class="color">{{module.title_short}}</div>
 </div>
