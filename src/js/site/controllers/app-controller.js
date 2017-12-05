@@ -8,6 +8,10 @@ export default ['$scope', 'productsService', '$stateParams', '$state', function(
         $scope.modules = response.data;
     });
 
+    productsService.getData('people.json').then(function(response){
+        $scope.people = response.data;
+    });
+
     $scope.activeBgColor = "";
 
     $scope.setActiveBgColor = function(color){
