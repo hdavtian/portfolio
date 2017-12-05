@@ -5,6 +5,7 @@ import appConfig                from './app-config';
 import product                  from './directives/product';
 import productModule            from './directives/product-module';
 import productsService          from './services/products-service';
+import people                   from './directives/people';
 
 const app = angular.module('app',[uiRouter, ngAnimate]);
 
@@ -13,7 +14,8 @@ app
     .controller('appCtrl', appController)
     .service('productsService', productsService)
     .directive('productModule', productModule)
-    .directive('product', product);
+    .directive('product', product)
+    .directive('people', people);
 
 // DI
 //appController.$inject = ['$scope'];
