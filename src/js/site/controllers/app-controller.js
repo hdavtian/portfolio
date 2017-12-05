@@ -14,6 +14,8 @@ export default ['$scope', 'productsService', '$stateParams', '$state', function(
 
     $scope.activeBgColor = "";
 
+    $scope.peopleSearchTerm = "";
+
     $scope.setActiveBgColor = function(color){
         $scope.activeBgColor = color;
     }
