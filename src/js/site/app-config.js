@@ -6,12 +6,12 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
         .state('home', {
             url: "/home",
-            templateUrl: './views/home.html'
+            templateUrl: '/views/home.html'
         })
 
         .state('products', {
             url: '/products',
-            templateUrl: './views/products.html',
+            templateUrl: '/views/products.html',
             controller: ['$scope', function($scope){
                 $scope.greeting = "Hello from products";
             }]
@@ -64,7 +64,25 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
         .state('about', {
             url: '/about',
-            templateUrl: './views/about.html'
+            templateUrl: '/views/about.html'
+        })
+
+        .state('about.people', {
+            url: '/:personName',
+            views: {
+                'peopleUiView' : {
+                    templateUrl: '/views/person-detail.html',
+                    controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
+
+                        for (var i=0, l=$scope.people.length; i<l; i++) {
+                            if ($stateParams.personName == $scope.people[i].name.toLowerCase().replace(' ', '-')) {
+                                $scope.person = $scope.people[i];
+                            }
+                        }
+
+                    }]
+                }
+            }
         })
 
 }]
