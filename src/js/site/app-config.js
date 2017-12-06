@@ -64,7 +64,18 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
         .state('about', {
             url: '/about',
-            templateUrl: '/views/about.html'
+            templateUrl: '/views/about.html',
+            controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
+                $scope.viewOptions = {
+                    graphical: false,
+                    list: false
+                };
+                $scope.setViewOptions = function(config){
+                    $scope.viewOptions.graphical = config.graphical;
+                    $scope.viewOptions.list = config.list;
+                    $state.go('about');
+                }
+            }]
         })
 
         .state('about.people', {
