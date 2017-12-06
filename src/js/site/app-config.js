@@ -66,15 +66,20 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             url: '/about',
             templateUrl: '/views/about.html',
             controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
+                // set initial view options
                 $scope.viewOptions = {
-                    graphical: false,
+                    graphical: true,
                     list: false
                 };
+
                 $scope.setViewOptions = function(config){
                     $scope.viewOptions.graphical = config.graphical;
                     $scope.viewOptions.list = config.list;
                     $state.go('about');
                 }
+
+                // set initial person detail
+                $state.go('about.people', {personName: 'john-wise'});
             }]
         })
 
