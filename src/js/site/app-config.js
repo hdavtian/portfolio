@@ -1,3 +1,4 @@
+import homeCtrl         from './controllers/home-controller';
 import productCtrl      from './controllers/product-controller';
 import aboutCtrl        from './controllers/about-controller';
 import personCtrl       from './controllers/person-controller';
@@ -10,7 +11,8 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
         .state('home', {
             url: "/home",
-            templateUrl: '/views/home.html'
+            templateUrl: '/views/home.html',
+            controller: ['$scope', '$timeout', homeCtrl]
         })
 
         .state('products', {
