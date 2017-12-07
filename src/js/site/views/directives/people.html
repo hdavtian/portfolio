@@ -3,7 +3,7 @@
     <div
             class="person"
             ng-show="viewOptions.graphical"
-            ng-repeat="person in people | filter:peopleSearchTerm"
+            ng-repeat="person in people | filter: {name: peopleSearchTerm}"
             ui-sref="about.people({personName: person.name.toLowerCase().replace(' ', '-')})"
             ui-sref-active="active">
 
