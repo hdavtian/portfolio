@@ -1,3 +1,7 @@
+import productCtrl      from './controllers/product-controller';
+import aboutCtrl        from './controllers/about-controller';
+import personCtrl       from './controllers/person-controller';
+
 export default ['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
     $urlRouterProvider.otherwise("home");
@@ -11,10 +15,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
         .state('products', {
             url: '/products',
-            templateUrl: '/views/products.html',
-            controller: ['$scope', function($scope){
-                $scope.greeting = "Hello from products";
-            }]
+            templateUrl: '/views/products.html'
         })
 
         .state('products.product', {
@@ -22,29 +23,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             views: {
                 'productUiView' : {
                     templateUrl: '/views/product-detail.html',
-                    controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
-
-                        // loop through products and choose the product with the given id
-                        for (var i=0, l=$scope.products.length; i<l; i++){
-                            if ($stateParams.productId == $scope.products[i].id){
-                                $scope.product = $scope.products[i];
-                                break;
-                            }
-                        }
-
-                        // loop through products and json and create and return an array of module objects
-                        // to be available in the view so it can be passed to product-module directive as an
-                        // object
-                        let newList = [];
-                        for (let i=0, l=$scope.modules.length; i<l; i++) {
-                            if($scope.product.modules.indexOf($scope.modules[i].title_short) != -1){
-                                newList.push($scope.modules[i])
-                            }
-                        }
-                        $scope.modules = newList;
-                        console.log($scope.modules);
-
-                    }]
+                    controller: ['$scope', '$stateParams', '$state', productCtrl]
                 }
             }
         })
@@ -53,11 +32,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             url: '/:moduleName',
             views: {
                 'moduleUiView' : {
-                    templateUrl: '/views/product-module-detail.html',
-                    controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
-                        //code
-
-                    }]
+                    templateUrl: '/views/product-module-detail.html'
                 }
             }
         })
@@ -65,42 +40,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
         .state('about', {
             url: '/about',
             templateUrl: '/views/about.html',
-            controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
-                // set initial view options
-                $scope.viewOptions = {
-                    graphical: true,
-                    list: false
-                };
-
-                $scope.viewOptionsHighlighter = function(){
-
-                    let graphicalIcon = $('#graphical-icon');
-                    let listIcon = $('#list-icon');
-
-                    if ($scope.viewOptions.graphical) {
-                        graphicalIcon.addClass('active');
-                        listIcon.removeClass('active');
-                    }
-
-                    if ($scope.viewOptions.list) {
-                        listIcon.addClass('active');
-                        graphicalIcon.removeClass('active');
-                    }
-
-                };
-
-                $scope.setViewOptions = function(config){
-                    $scope.viewOptions.graphical = config.graphical;
-                    $scope.viewOptions.list = config.list;
-                    $scope.viewOptionsHighlighter();
-                    $state.go('about');
-                };
-
-                // set default selected person
-                $state.go('about.people', {personName: 'john-wise'});
-
-                $scope.viewOptionsHighlighter();
-            }]
+            controller: ['$scope', '$stateParams', '$state', aboutCtrl]
         })
 
         .state('about.people', {
@@ -108,15 +48,7 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
             views: {
                 'peopleUiView' : {
                     templateUrl: '/views/person-detail.html',
-                    controller: ['$scope', '$stateParams', '$state', function ($scope, $stateParams, $state) {
-
-                        for (var i=0, l=$scope.people.length; i<l; i++) {
-                            if ($stateParams.personName == $scope.people[i].name.toLowerCase().replace(' ', '-')) {
-                                $scope.person = $scope.people[i];
-                            }
-                        }
-
-                    }]
+                    controller: ['$scope', '$stateParams', '$state', personCtrl]
                 }
             }
         })
