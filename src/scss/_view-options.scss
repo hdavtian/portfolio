@@ -6,8 +6,12 @@
   .icons-wrapper {
     .fa {
       padding: 10px 10px 0 0;
-      color: #999;
+      color: #bbb;
       cursor: pointer;
+
+      &.active {
+        color: #666;
+      }
     }
   }
 

@@ -1,4 +1,5 @@
 <div class="people">
+
     <div
             class="person"
             ng-show="viewOptions.graphical"
@@ -10,4 +11,26 @@
             <div class="name">{{person.name}}</div>
         </div>
     </div>
+
+    <div ng-show="viewOptions.list" class="non-graphical-list">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="person in people | filter:peopleSearchTerm"
+                    ui-sref="about.people({personName: person.name.toLowerCase().replace(' ', '-')})"
+                    ui-sref-active="active">
+                    <td class="name">{{person.name}}</td>
+                    <td class="title">{{person.title}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
 </div>

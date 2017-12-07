@@ -17,8 +17,21 @@
     position: relative;
     width: 93px;
     height: 109px;
-    border-left: 1px solid #ccc;
+    border: 1px solid #ccc;
+    margin: 0 5px 15px 0;
     cursor: pointer;
+
+    &.active {
+      border:1px solid map-get($colors, blue);
+      :after {
+        position: absolute;
+        font-family: FontAwesome;
+        content: "\f077";
+        bottom: -17px;
+        text-align: center;
+        width: 100%;
+      }
+    }
 
     .photo {
       display: block;
@@ -46,4 +59,49 @@
     }
 
   }//person
+
+  .non-graphical-list {
+
+    font-size: 12px;
+
+    table {
+
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      width: 90%;
+
+      td {
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        padding: 4px;
+        vertical-align: top;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .name {
+        width: 125px;
+      }
+
+      th {
+        background-color: #ccc;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        padding: 4px;
+        vertical-align: top;
+        text-align: center;
+      }
+
+      tbody {
+        tr {
+          &:hover, &.active {
+            background-color: #eaeaea;
+          }
+        }
+      }
+
+    }
+
+  }//non-graphical-list
+
 }
