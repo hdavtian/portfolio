@@ -14,8 +14,10 @@
             <h3>{{product.name}}</h3>
             <div class="description">{{product.description}}</div>
 
-            <div class="product-modules">
-                {{product.modules}}
+            <div class="product-modules-wrapper">
+                <div class="product-module" ng-repeat="module in product.modules">
+                    {{module}}
+                </div>
             </div>
         </div>
 
