@@ -1,8 +1,9 @@
 export default function ($scope, $timeout) {
     $timeout(function(){
         $('.people-carousel').owlCarousel({
-            items: 3,
-            nav: true
+            items: 4,
+            nav: true,
+            dots: true
         })
     },0)
 }

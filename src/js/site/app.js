@@ -7,6 +7,7 @@ import productModule            from './directives/product-module';
 import productsService          from './services/products-service';
 import people                   from './directives/people';
 import peopleCarousel           from './directives/people-carousel';
+import productsCarousel         from './directives/products-carousel';
 
 const app = angular.module('app',[uiRouter, ngAnimate]);
 
@@ -17,7 +18,8 @@ app
     .directive('productModule', productModule)
     .directive('product', product)
     .directive('people', people)
-    .directive('peopleCarousel', peopleCarousel);
+    .directive('peopleCarousel', peopleCarousel)
+    .directive('productsCarousel', productsCarousel);
 
 // DI
 //appController.$inject = ['$scope'];
