@@ -5,5 +5,5 @@ export default function($scope, $timeout) {
                 items:4,
                 nav: true
             })
-    },0)
+    },0);
 }

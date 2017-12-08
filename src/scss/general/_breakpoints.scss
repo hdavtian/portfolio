@@ -1,0 +1,193 @@
+/*
+
+stats
+http://www.w3schools.com/browsers/browsers_display.asp
+
+Jan 2016
+
+other (high): 30.7%
+1920 x 1080 : 18% ---------- (desktop large, module height 800), chrome ribbon 90px
+1466 x 768 : 35% ----------- tablet, set module height to 600)
+1280 x 768 : 35%
+
+*/
+
+$breakpoints: (
+        mobile: 0px,
+        tablet: 768px,
+        desktopsm: 992px,
+        desktopmd: 1200px,
+        desktoplg: 1440px
+);
+
+// breakpoints without units for calculations
+$breakpoints-no-units: (
+        mobile: 0,
+        tablet: 768,
+        desktopsm: 992,
+        desktopmd: 1200,
+        desktoplg: 1440
+);
+
+@mixin respond-to($breakpoint) {
+
+  @if $breakpoint == "xs" {
+    @media (max-width: map-get($breakpoints, tablet) - 1px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "sm" {
+    @media (min-width: map-get($breakpoints, tablet)) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "md" {
+    @media (min-width: map-get($breakpoints, desktopsm)) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "lg" {
+    @media (min-width: map-get($breakpoints, desktopmd)) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "xl" {
+    @media (min-width: map-get($breakpoints, desktoplg)) {
+      @content;
+    }
+  }
+
+    // +++
+    // ++++++
+    // +++++++++
+    // ++++++++++++
+    // below are more clear and expressive variable names and breakpoints
+    // ++++++++++++
+    // +++++++++
+    // ++++++
+    // +++
+
+    // ---------------------------------------------------------
+
+    // mobile
+  @else if $breakpoint == "mobile" {
+    @media (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1px) {
+      @content;
+    }
+  }
+
+    // mobile+
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('mobile+')
+  @else if $breakpoint == "mobile+" {
+    @media (min-width: map-get($breakpoints, mobile)) {
+      @content;
+    }
+  }
+
+    // ---------------------------------------------------------
+
+    // tablet-
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('tablet-')
+  @else if $breakpoint == "tablet-" {
+    @media (max-width: map-get($breakpoints, desktopsm) - 1px) {
+      @content;
+    }
+  }
+
+    // tablet
+  @else if $breakpoint == "tablet" {
+    @media (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktopsm) - 1px) {
+      @content;
+    }
+  }
+
+    // tablet+
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('tablet+')
+  @else if $breakpoint == "tablet+" {
+    @media (min-width: map-get($breakpoints, tablet)) {
+      @content;
+    }
+  }
+
+    // ---------------------------------------------------------
+
+    // desktopsm-
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('desktopsm-')
+  @else if $breakpoint == "desktopsm-" {
+    @media (max-width: map-get($breakpoints, desktopmd) - 1px) {
+      @content;
+    }
+  }
+
+    // desktopsm
+  @else if $breakpoint == "desktopsm" {
+    @media (min-width: map-get($breakpoints, desktopsm)) and (max-width: map-get($breakpoints, desktopmd) - 1px) {
+      @content;
+    }
+  }
+
+    // desktopsm+
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('desktopsm+')
+  @else if $breakpoint == "desktopsm+" {
+    @media (min-width: map-get($breakpoints, desktopsm)) {
+      @content;
+    }
+  }
+
+    // ---------------------------------------------------------
+
+    // desktopmd-
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('desktopmd-')
+  @else if $breakpoint == "desktopmd-" {
+    @media (max-width: map-get($breakpoints, desktoplg) - 1px) {
+      @content;
+    }
+  }
+
+    // desktopmd
+  @else if $breakpoint == "desktopmd" {
+    @media (min-width: map-get($breakpoints, desktopmd)) and (max-width: map-get($breakpoints, desktoplg) - 1px) {
+      @content;
+    }
+  }
+
+    // desktopmd+
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('desktopmd+')
+  @else if $breakpoint == "desktopmd+" {
+    @media (min-width: map-get($breakpoints, desktopmd)) {
+      @content;
+    }
+  }
+
+    // ---------------------------------------------------------
+
+    // desktoplg-
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('desktoplg-')
+  @else if $breakpoint == "desktoplg-" {
+    @media (max-width: map-get($breakpoints, desktoplg) - 1px) {
+      @content;
+    }
+  }
+
+    // desktoplg+
+    // for usage, enclose in quotes with string contains symbols
+    // so: respond-to('desktoplg+')
+  @else if $breakpoint == "desktoplg+" {
+    @media (min-width: map-get($breakpoints, desktoplg)) {
+      @content;
+    }
+  }
+
+}//end mixin respond-to

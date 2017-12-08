@@ -1,8 +1,8 @@
 <div class="people">
 
     <div
-            class="person"
             ng-show="viewOptions.graphical"
+            class="person"
             ng-repeat="person in people | filter: {name: peopleSearchTerm}"
             ui-sref="about.people({personName: person.name.toLowerCase().replace(' ', '-')})"
             ui-sref-active="active">
@@ -31,6 +31,10 @@
             </tbody>
         </table>
 
+    </div>
+
+    <div ng-show="viewOptions.carousel">
+        <div>show on homepage</div>
     </div>
 
 </div>

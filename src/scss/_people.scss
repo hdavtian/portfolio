@@ -1,6 +1,7 @@
 .people {
 
-  max-height: 315px;
+  max-height: 415px;
+  margin-bottom: 100px;
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
@@ -22,7 +23,9 @@
     cursor: pointer;
 
     &.active {
+
       border:1px solid map-get($colors, blue);
+
       :after {
         position: absolute;
         font-family: FontAwesome;
