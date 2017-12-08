@@ -4,10 +4,19 @@
 <!--product="product"-->
 <!--update-active-color="setActiveBgColor(color)" />-->
 
-    <div class="products-carousel owl-carousel">
+    <div class="products-carousel owl-carousel owl-theme">
 
-        <div ng-repeat="product in products">
+        <div
+                class="product"
+                ng-repeat="product in products"
+                style="border-color: {{product.bgColor}}">
+
             <h3>{{product.name}}</h3>
+            <div class="description">{{product.description}}</div>
+
+            <div class="product-modules">
+                {{product.modules}}
+            </div>
         </div>
 
     </div>

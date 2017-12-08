@@ -8,6 +8,7 @@
 @import 'general/_breakpoints';
 @import 'general/_colors';
 @import 'general/_h-p-tags';
+@import 'dotify';
 
 // app
 @import 'header';
@@ -18,6 +19,7 @@
 
 // pages & directives
 @import 'products';
+@import 'products-carousel';
 @import 'product';
 @import 'product-detail';
 @import 'product-module';
