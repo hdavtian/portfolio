@@ -1,0 +1,10 @@
+<div class="people-carousel-wrapper">
+
+    <div class="people-carousel owl-carousel">
+        <div ng-repeat="person in people" ui-sref="about.people({personName: person.name.toLowerCase().replace(' ', '-')})">
+            {{person.name}}<br>
+            {{person.title}}
+        </div>
+    </div>
+
+</div>

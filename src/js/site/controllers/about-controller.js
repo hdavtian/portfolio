@@ -29,8 +29,12 @@ export default function($scope, $stateParams, $state){
         $state.go('about');
     };
 
-    // set default selected person
-    $state.go('about.people', {personName: 'john-wise'});
+    // set default selected person when none provided
+    if ($state.params.personName == undefined) {
+        $state.go('about.people', {personName: 'john-wise'});
+    }
+    console.log('stateparams =============')
+    console.log($state);
 
     $scope.viewOptionsHighlighter();
 }
