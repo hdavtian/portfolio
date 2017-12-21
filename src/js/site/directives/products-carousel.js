@@ -1,5 +1,8 @@
 export default function(){
     return {
+        scope: {
+          data: '='
+        },
         templateUrl: 'views/directives/products-carousel.html',
         controller: ['$scope', '$timeout', function($scope, $timeout){
 
