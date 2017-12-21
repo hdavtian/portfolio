@@ -14,4 +14,10 @@
     padding: 25px;
   }
 
+  .product-img1 {
+    @include respond-to('desktopsm+'){
+      margin-top: 30px;
+    }
+  }
+
 }

@@ -1,0 +1,14 @@
+.edit-video {
+  // border color set inline {{product.bgColor}}
+  border-style: solid;
+  border-width: 15px;
+  background-color: white;
+  padding: 15px;
+
+  .close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+}

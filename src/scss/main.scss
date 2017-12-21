@@ -18,14 +18,22 @@
 @import 'angular-animations';
 
 // pages & directives
+@import 'home';
 @import 'products';
 @import 'products-carousel';
 @import 'product';
 @import 'product-detail';
-@import 'product-module';
+@import 'modules';
 @import 'product-module-detail';
 @import 'about';
 @import 'people';
 @import 'people-carousel';
 @import 'view-options';
 @import 'searchbox';
+@import 'settings-page';
+@import 'edit-product';
+@import 'edit-person';
+@import 'edit-video';
+@import 'videos-page';
+@import 'add';
+@import 'edit';

@@ -4,7 +4,7 @@
     <p><i>{{module.marketing_slogan}}</i></p>
     <div class="description">
         <ul>
-            <li ng-repeat="point in module.description">{{point}}</li>
+            <li ng-repeat="point in module.description track by $index">{{point}}</li>
         </ul>
     </div>
 </div>

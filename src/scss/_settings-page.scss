@@ -1,0 +1,119 @@
+.settings {
+
+  overflow: hidden;
+
+  h2 {
+    margin-bottom: 45px;
+  }
+
+  .heading-wrapper {
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 75px;
+    margin-bottom: 25px;
+
+    .title, .instructions {
+      display: table;
+      h3,p {
+        display: table-cell;
+        height: 75px;
+        vertical-align: middle;
+      }
+    }
+    .title {
+      float: left;
+    }
+    .instructions {
+      float: right;
+    }
+  }//heading-wrapper
+
+
+  // overriding bootstrap navtabs
+  .nav-tabs {
+    li.active {
+      a {
+        border-top-color: #ccc;
+        border-left-color: #ccc;
+        border-right-color: #ccc;
+        background-color: #eaeaea;
+      }
+    }
+    .badge {
+      background-color: #ccc;
+    }
+  }
+
+  input, textarea {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  .listing-table {
+    tr {
+      &:hover {
+        td {
+          //cursor: pointer;
+          background-color: #e7e7e7;
+        }
+      }
+      &.active {
+        td {
+          background-color: #ccc;
+        }
+      }
+    }
+
+    // hide all columns except id and actions for mobile mode
+
+    @include respond-to('mobile'){
+      .tcol-id, .tcol-color, .tcol-modules, .tcol-title {
+        display: none;
+      }
+    }
+
+  }//listing-table
+
+  .actions {
+    text-align: center;
+  }
+
+  i.edit {
+    color: #999;
+    margin-right: 20px;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+
+  i.remove {
+    color: #999;
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+
+  i.add {
+    position: relative;
+    top: 5px;
+    margin:0 8px;
+    cursor: pointer;
+    color: #999;
+    &:hover {
+      color: black
+    }
+  }
+
+}

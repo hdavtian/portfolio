@@ -7,7 +7,7 @@
             ui-sref="about.people({personName: person.name.toLowerCase().replace(' ', '-')})"
             ui-sref-active="active">
 
-        <div class="photo" style="background-image:url(/images/people/{{person.name.toLowerCase().replace(' ', '-')}}.jpg)">
+        <div class="photo" style="background-image:url({{person.img}})">
             <div class="name">{{person.name}}</div>
         </div>
     </div>
@@ -17,12 +17,16 @@
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Title</th>
+                    <th>
+                        <column-sorter title="name" config="peopleListConfig"></column-sorter>
+                    </th>
+                    <th>
+                        <column-sorter title="title" config="peopleListConfig"></column-sorter>
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="person in people | filter:peopleSearchTerm"
+                <tr ng-repeat="person in people | filter:peopleSearchTerm | orderBy:peopleListConfig.sortType:peopleListConfig.sortReverse"
                     ui-sref="about.people({personName: person.name.toLowerCase().replace(' ', '-')})"
                     ui-sref-active="active">
                     <td class="name">{{person.name}}</td>

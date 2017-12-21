@@ -1,191 +1,191 @@
 [
   {
-    "id": "",
+    "id": 10,
     "name": "John Wise",
     "title": "CEO, Chairman of the Board & Co-Founder",
     "bio": "I love InvestCloud because of the imagination, creativity, and innovation that happen here every day. We’ve built a platform designed to empower all types of investors with unparalleled access to first-class information. We’ve built a company designed to empower every person who works here to dream big – from engineers to sales – and it shows with the kind of products and services we’ve developed and we’re developing. I’m infinitely proud of the work we do for our clients at InvestCloud. It’s the best chapter yet in my career of building companies that unleash the power of information.",
-    "img": ""
+    "img": "images/people/john-wise.jpg"
   },
   {
-    "id": "",
+    "id": 20,
     "name": "Fiona Francois",
     "title": "Chief of Staff",
     "bio": "My role at InvestCloud is about relationships. I look after our people and how we approach the market as a company. I keep my finger on the pulse of our culture – both internally and within the vibrant LA tech scene (I serve as president of the board of directors for the British American Business Council of LA). No better way to stay connected to local and global perspectives. Want to know more? Call me.",
-    "img": ""
+    "img": "images/people/fiona-francois.jpg"
   },
   {
-    "id": "",
+    "id": 30,
     "name": "Mark Trousdale",
     "title": "Chief Marketing Officer and EVP",
     "bio": "Music has been a huge influence in my life – whether I’m playing music or listening to music. It’s a constant accompaniment to food and wine and stories and people… all of life’s good stuff. I love working at InvestCloud because it taps into the same feeling – it’s a fulfilling place to work. There’s always a challenge, there’s always comradery, there’s always opportunity to push yourself and a fantastic team to support the ambition. I’m so excited to share the new products and services that are on our horizon…it’s only going to make this journey more exhilarating. If you’d like to connect, give me a ring.",
-    "img": ""
+    "img": "images/people/mark-trousdale.jpg"
   },
   {
-    "id": "",
+    "id": 40,
     "name": "Yaela Shamberg",
     "title": "Chief Product Officer & Co-Founder",
     "bio": "I am a culture junkie who loves art, laughing at my own jokes, eclectic places and interesting people. As a founder of InvestCloud, I’m exceedingly proud of our culture, our innovation, our design and all the fun we have while building beautiful things. My product role serves as a platform to further our shared vision and create value for our clients. I am happiest when eating ice cream and talking about InvestCloud – reach out any time to share in either.",
-    "img": ""
+    "img": "images/people/yaela-shamberg.jpg"
   },
   {
-    "id": "",
+    "id": 50,
     "name": "Michael Smith",
     "title": "Institutional Sales & Co-Founder",
     "bio": "I’m a big believer in the power and potential of change – on the individual level and within companies. I’ve also always been fascinated with technology as a catalyst. So when the opportunity came to be part of the founding team of InvestCloud, I jumped at the chance. We keep pushing the boundaries of what’s possible as an industry, and I’m thrilled every day to spread that message all over the world. I’d love to chat – call me.",
-    "img": ""
+    "img": "images/people/michael-smith.jpg"
   },
   {
-    "id": "",
+    "id": 60,
     "name": "Lori Brisbois",
     "title": "Eastern Region Wealth and Asset Management Sales",
     "bio": "I believe every business – no matter how small or big – deserves access to first-class tools. Throughout my career I’ve worked with small wealth managers all the way up to the largest asset managers in the world, and I take pride in InvestCloud’s delivery at every level. Every investor and manager can benefit from what we’re doing. I’d love to tell you more, let’s chat!",
-    "img": ""
+    "img": "images/people/lori-brisbois.jpg"
   },
   {
-    "id": "",
+    "id": 70,
     "name": "Will Bailey",
     "title": "EVP, Europe",
     "bio": "At my core, I’m a builder. My drive to create tangible solutions started as a kid when I would take apart TVs, lawnmowers, cars, and anything else I could get my hands on – this eventually drew me to become an engineer. As a result I’ve worked my entire career to make businesses better with technology. Now I’m in a role at InvestCloud where I’m building a business within our business – In Europe. I love working at InvestCloud because of the diversity of opportunities, and I love making a difference. Reach out – I’d be happy to tell you more about our journey and where we’re headed next.",
-    "img": ""
+    "img": "images/people/will-bailey.jpg"
   },
   {
-    "id": "",
+    "id": 80,
     "name": "Kim Wise",
     "title": "Western Region Institutional Sales",
     "bio": "As a lifelong writer, I thrive in InvestCloud’s environment of creativity. Every day we create – not only in the realm of product but also in tailoring solutions to make businesses better. I get to be part of that magic with all of the clients I speak with, and that is an incredibly fulfilling part of my role. I’d love to tell you more. Feel free to call me.",
-    "img": ""
+    "img": "images/people/kim-wise.jpg"
   },
   {
-    "id": "",
+    "id": 90,
     "name": "Andrew Lewis",
     "title": "New Markets Development, Channels & Partnerships",
     "bio": "I’m a connector, because I love people, and I love ideas. In consulting, consular affairs and here at InvestCloud, I’ve prided myself on helping connect the dots to see new possibilities. InvestCloud is an incredibly rich platform serving a truly global investor and manager base, and I love enabling better solutions directly through our extensive partner network. I’d love to hear from you and discuss how we can build something together.",
-    "img": ""
+    "img": "images/people/andrew-lewis.jpg"
   },
   {
-    "id": "",
+    "id": 100,
     "name": "Megan Schmit",
     "title": "Western Region Wealth and Asset Management Sales",
     "bio": "I believe in the designed life – making life what you want it to be. I also represent a generation of forward-thinking “millennials” in an industry that is just starting to understand the potential of digital transformation. InvestCloud has given me a platform to bring designed, intuitive solutions to a broad range of businesses. The future is now. Cut through the noise. Be different. Call me to find out how.",
-    "img": ""
+    "img": "images/people/megan-schmit.jpg"
   },
   {
-    "id": "",
+    "id": 110,
     "name": "John Stuart",
     "title": "Channels & Partnerships",
     "bio": "I like to understand what makes things tick – from products to business to industries. That yearning drove me to study and then build information systems in financial services companies – including working inside of wealth management. Now I’m fortunate to solve the classic and evolving business problems with an infinitely better InvestCloud toolkit. But it’s the next level of leverage – business partnerships – that I think will be most exciting. Let’s talk.",
-    "img": ""
+    "img": "images/people/john-stuart.jpg"
   },
   {
-    "id": "",
+    "id": 120,
     "name": "Katie Sessions",
     "title": "Western Region Institutional Investor Sales",
     "bio": "I love discovery – especially the discovery of amazing food and traveling the world. I’m also on a path of discovery here at InvestCloud. Every day I help clients find better solutions to their business challenges. As part of that, I work with a lot of institutional investors – like pensions, endowments and foundations – that are on a mission to make this world a better place. If you’d like to discover how we do it, give me a call.",
-    "img": ""
+    "img": "images/people/katie-sessions.jpg"
   },
   {
-    "id": "",
+    "id": 130,
     "name": "Wendu Nwakanma",
     "title": "Eastern Region Institutional Sales",
     "bio": "I’m a global citizen, and throughout my life, I’ve been fascinated with technology, globalization and connecting people. I’m especially excited by how technology and information have the power to bring people closer across the globe. That’s why I love my role at InvestCloud. A confluence of my personal interests in an environment that constantly challenging me to dream bigger. I’d love to connect with you – call me.",
-    "img": ""
+    "img": "images/people/wendu-nwakanma.jpg"
   },
   {
-    "id": "",
+    "id": 140,
     "name": "Barb Stutz",
     "title": "Eastern Region Institutional Investor Sales",
     "bio": "Adventure and adaptability are strong suits for me. Case in point, I’ve been scuba diving off of three continents, I’ve hiked Machu Picchu and I’ve skydived in New Zealand. But I’m also a true-blue New Yorker. InvestCloud gives me a lot of room to spread my wings and figure out creative, adaptable solutions with my clients, at home in New York and farther afield. Please reach out if you’d like to connect.",
-    "img": ""
+    "img": "images/people/barb-stutz.jpg"
   },
   {
-    "id": "",
+    "id": 150,
     "name": "Gray Bigler",
     "title": "Pre-Sales",
     "bio": "From growing up in Bahrain, South Africa, Dubai and the UK – and ultimately working abroad in Asia and Australia – to being chased by warthogs in the African bush, to getting myself stuck in the Cu Chi tunnels of Vietnam, I have led and continue to lead a pretty exciting life. This global exposure has given me a truly unique ability to understand different situations and their associated solutions, much in the same way that InvestCloud listens closely to the needs of each of its clients and delivers results that add real value. This is what inspired me to join InvestCloud and why I'm so captivated by the work that we do. Give me a shout to find out more.",
-    "img": ""
+    "img": "images/people/gray-bigler.jpg"
   },
   {
-    "id": "",
+    "id": 160,
     "name": "Harriet Downing",
     "title": "Europe Sales",
     "bio": "I definitely see myself as a people person, both in and out of the business context. With a background in financial services and a keen interest in our clients’ businesses, InvestCloud has been an incredible opportunity to work with companies looking to be at the forefront of digital. I love truly understanding a client’s business and helping solve the problems they face. Being part of a Californian company in London is fantastic - and the company’s culture is obvious as soon as you walk into our London office. Fun and friendly but with our clients’ needs at the centre - that’s InvestCloud. Call me to hear about it.",
-    "img": ""
+    "img": "images/people/harriet-downing.jpg"
   },
   {
-    "id": "",
+    "id": 170,
     "name": "Christian Ward",
     "title": "Europe Pre-Sales",
     "bio": "I’m part musician, part globetrotter and part hipster glasses enthusiast. I harness my passion for creativity, adventure and connecting with people to define our clients' needs. I love collaboratively creating new solutions in Functional Studies and helping to define digital journeys with our clients. Between running Functional Studies and managing projects I can be found working my way through every cocktail menu in Europe. I’d love to connect with you – please reach out.",
-    "img": ""
+    "img": "images/people/christian-ward.jpg"
   },
   {
-    "id": "",
+    "id": 180,
     "name": "Jeff Harvey",
     "title": "Pre-Sales",
     "bio": "When I’m not busy finding solutions for my clients, you’ll find me working out, entertaining, fishing and watching sports. I like to think that they all feed off each other – all of these activities require dedication to improvement and constant practice. I love that with InvestCloud I’m part of a company that feels the same way: we always push ourselves to be better – to be great. I’d love to tell you more about how we’re bringing our mission to life – drop me a line anytime.",
-    "img": ""
+    "img": "images/people/jeff-harvey.jpg"
   },
   {
-    "id": "",
+    "id": 190,
     "name": "Jennie Wang",
     "title": "Product, Digital Warehouse, Aggregation, Analytics & Reporting (DWAAR) Division",
     "bio": "Being a Product Head at InvestCloud requires many technical abilities, but it also requires that you like ice cream, so it was an easy fit for me! Outside of my passion for work and ice cream, I’m most at home with my friends and family, exploring the great state of California, camping and playing beach volleyball. My diverse interests and background in engineering have made product design in a multi-faceted business division a perfect fit. I love how much of a direct impact I can have on product solutions at InvestCloud. Call me so I can tell you about it.",
-    "img": ""
+    "img": "images/people/jennie-wang.jpg"
   },
   {
-    "id": "",
+    "id": 200,
     "name": "Michael Rodgers",
     "title": "Pre-Sales, Innovation Center",
     "bio": "I’m a lover of the arts – opera, poetry, painting – probably because of how they combine such high human achievement with an expression of equally deep feeling. The same qualities inspire me in InvestCloud’s platform: first-class functional tools that are highly designed and built with the goal of empowering an industry to be better. Call me so I can tell you how we do it.",
-    "img": ""
+    "img": "images/people/michael-rodgers.jpg"
   },
   {
-    "id": "",
+    "id": 210,
     "name": "Kirk Littleton",
     "title": "Trading & Accounting Sales",
     "bio": "I’m always up for a challenge and have a keen sense of adventure…a bit of wanderlust. When I’m not traveling, you will find me mountain biking or fishing the Florida Keys (usually with a craft beer in my hand). I have spent most of my career helping to build what are now thought of as the behemoth, legacy FinTech companies. These legacy companies focused on the nuts and bolts of internal operations and invested very little in the delivery of critical investment information to their clients. InvestCloud helps our clients to think differently and to provide a greatly enhanced digital reporting experience for their investors. Please give me a call to exchange insights on anything from FinTech to Fishing.",
-    "img": ""
+    "img": "images/people/kirk-littleton.jpg"
   },
   {
-    "id": "",
+    "id": 220,
     "name": "Vincent Sos",
     "title": "Chief Architectural Officer & Co-Founder",
     "bio": "I thrive on building elegant solutions – everything that is essential without any of the fluff. InvestCloud is wholeheartedly a company embodying that vision – that’s what we intended when we founded it, and it’s simply the way we do business. In my career I’ve worked all over the world, but the best place to work by far is in California in 2017. It’s alive with creativity, technology and innovation. I love most what I’m able to do now at InvestCloud because I am responsible for the Programs Writing Programs (PWP) technology that enables non-technologists to build the future of FinTech. It is a massive achievement to behold. Call me to find out how we do it.",
-    "img": ""
+    "img": "images/people/vincent-sos.jpg"
   },
   {
-    "id": "",
+    "id": 230,
     "name": "Julian Bowden",
     "title": "Chief Technology Officer & Co-Founder",
     "bio": "What I love most about InvestCloud is the combination of serious commitment to excellence with an unbridled ability to have fun, and that’s how we founded it to be. While I’ve been on this journey with John Wise for most of the last three decades, InvestCloud is the first company with unbounded technological freedom – when we say everything is possible, we mean it. I’d love to tell you about the possibilities.",
-    "img": ""
+    "img": "images/people/julian-bowden.jpg"
   },
   {
-    "id": "",
+    "id": 240,
     "name": "Jason Nicholls",
     "title": "Chief Data Officer",
     "bio": "There’s an old saying – “Garbage in, garbage out.” But we believe the same is true for Excellence. When you have excellent inputs, you get excellent outputs. Your data is our first priority – always. I am incredibly proud to work for a company that is completely committed to excellence and accuracy in data quality and management. ",
-    "img": ""
+    "img": "images/people/jason-nicholls.jpg"
   },
   {
-    "id": "",
+    "id": 250,
     "name": "Steve Wise",
     "title": "Product, Modeling, Accounting & Custody (icMAC) Division",
     "bio": "As the named ‘veteran’ of the group, I love the vibrancy of the InvestCloud crew. I’ve been designing FinTech systems my entire life, with a lot of success. Thankfully our software has always done better than my Football Club - Charlton! At InvestCloud I spearhead our Books of Record products, and it’s amazing now that Babel and InvestCloud have joined forces to see the power of the whole product solution. Call me to find out more.",
-    "img": ""
+    "img": "images/people/steve-wise.jpg"
   },
   {
-    "id": "",
+    "id": 260,
     "name": "Laura McLaughlin",
     "title": "Product, Modeling, Accounting & Custody (icMAC) Division",
     "bio": "I’ve spent most of my career working with the Wise brothers – which is a testament to them and their innovations! The research and development behind new products is what inspires me, and at InvestCloud I have the opportunity to create inventive solutions for our clients. Whether I’m canvasing the UK or visiting teams abroad, I’m always seeking the best solution for business problems. Call me to find out more.",
-    "img": ""
+    "img": "images/people/laura-mclaughlin.jpg"
   },
   {
-    "id": "",
+    "id": 270,
     "name": "Colin Close",
     "title": "President & Co-Founder",
     "bio": "For several decades now, I’ve prided myself on applying technology for the purpose of improving businesses in the financial sector, all along the value chain of investment. We founded InvestCloud to make a difference by bringing superior functional capability to businesses via the cloud – thus freeing businesses from the shackles of enterprise solutions, making financial technology beautiful and helpful. Your success is our success. When you become a client, you also become a partner. Call me to find out what partnership is all about.",
-    "img": ""
+    "img": "images/people/colin-close.jpg"
   }
 ]

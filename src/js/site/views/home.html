@@ -1,16 +1,30 @@
-<h2>Explore Our Cloud-Based Financial Apps</h2>
+<div class="home-page">
+    <h2>Explore Our Cloud-Based Financial Apps</h2>
 
-<products-carousel></products-carousel>
+    <products-carousel></products-carousel>
 
-<h2>Our Team</h2>
+    <h2>Our Team</h2>
 
-<people-carousel></people-carousel>
+    <people-carousel></people-carousel>
 
-<hr>
+    <h2>Test Chart</h2>
 
-<!--<div class="hp-products-wrapper owl-carousel">-->
-    <!--<product-->
-            <!--ng-repeat="product in products"-->
-            <!--product="product"-->
-            <!--update-active-color="setActiveBgColor(color)" />-->
-<!--</div>-->
+    <p>Here are two 3rd part directives working together: <a href="http://jtblin.github.io/angular-chart.js/" target="_blank">angular-chart.js</a> and
+        <a href="https://github.com/angular-slider/angularjs-slider" target="_blank">angularjs-slider</a></p>
+
+    <canvas id="pie" class="chart chart-pie"
+            chart-data="data" chart-labels="labels" chart-options="options">
+    </canvas>
+
+    <rzslider
+            rz-slider-model="slider.a.value"
+            rz-slider-options="slider.a.options"></rzslider>
+
+    <rzslider
+            rz-slider-model="slider.b.value"
+            rz-slider-options="slider.b.options"></rzslider>
+
+    <rzslider
+            rz-slider-model="slider.c.value"
+            rz-slider-options="slider.c.options"></rzslider>
+</div>

@@ -6,7 +6,7 @@
     "bgColor": "#2C8AAA",
     "description": "InvestCloud Blue empowers wealth managers to build and maintain intuitive and responsive client relationships – tailored to be appropriate for your specific client base. With InvestCloud Blue, client engagement, advice, reporting and management are digitized in cloud-based apps. This allows wealth managers to get a whole view of their clients – instantaneously and at scale – providing unparalleled client service that is involved, intuitive and individualized.",
     "modules": ["Da", "Cp", "Ap", "Co", "Cr", "Cm", "Dw"],
-    "img1": "blue2a.png",
+    "img1": "images/products/blue2a.png",
     "img2": ""
   },
   {
@@ -16,7 +16,7 @@
     "bgColor": "#3C5C3A",
     "description": "InvestCloud Emerald empowers robo-advisors as well as wealth managers with a full-stack solution for portfolio management, trading, operations, accounting, payments and fees. Welcome to the future of Robo.",
     "modules": ["Pm", "Op", "Co", "Fc", "Ac", "Sc", "Dw"],
-    "img1": "emerald2a.png",
+    "img1": "images/products/emerald2a.png",
     "img2": ""
   },
   {
@@ -26,7 +26,7 @@
     "bgColor": "#2C6291",
     "description": "InvestCloud Navy empowers institutional investors with robust tools for data aggregation, performance analytics and operational efficiencies, designed to scale your investment office. Whether you're managing hedge fund, private equity or real estate fund allocations, as well as traditional asset classes, Navy's multi-asset-class portfolio management tools are second to none. When information is digitized, accurate and error-proof, your team can trust in the data they are evaluating, and focus on ideas instead of validating numbers.",
     "modules": ["Ds", "Pa", "Po", "Pr", "Fl", "Rm", "Dw"],
-    "img1": "navy2a.png",
+    "img1": "images/products/navy2a.png",
     "img2": ""
   },
   {
@@ -36,7 +36,7 @@
     "bgColor": "#983781",
     "description": "InvestCloud Purple empowers outsourced CIOs and family offices to manage, deploy and report on diverse assets. Purple is comprised of a full suite of onboarding, portfolio operations, analytics and client reporting solutions. Experience a whole new confidence in decision-making and client service.",
     "modules": ["Co", "Ts", "Rb", "Po", "Pa", "Cr", "Dw"],
-    "img1": "purple2a.png",
+    "img1": "images/products/purple2a.png",
     "img2": ""
   },
   {
@@ -46,7 +46,7 @@
     "bgColor": "#6BC536",
     "description": "InvestCloud Green empowers investment consultants to get the most out of their research for financial advisors, using a powerful, automated investment proposal generator. Green represents the digital automation of investment advice, from opportunity identification through implementation. The results: better decisions and more successful investing.",
     "modules": ["Mm", "Pg", "Ac", "Pe", "Pm", "Dm", "Dw"],
-    "img1": "Green2a.png",
+    "img1": "images/products/Green2a.png",
     "img2": ""
   },
   {
@@ -56,7 +56,7 @@
     "bgColor": "#901721",
     "description": "InvestCloud Red empowers institutional client advisors to better engage their sophisticated client base. These are clients that demand transparency and access to robust analytical tools. Red is powered by trusted data, managed in InvestCloud’s world-class Digital Warehouse, making even the most complex calculations effortless and accurate.",
     "modules": ["As", "Hg", "Tx", "Al", "Pm", "Dv", "Dw"],
-    "img1": "Red2a.png",
+    "img1": "images/products/Red2a.png",
     "img2": ""
   },
   {
@@ -66,7 +66,7 @@
     "bgColor": "#E97625",
     "description": "InvestCloud Orange empowers institutional asset managers to make better investment decisions. InvestCloud’s Digital Warehouse centralizes your activity and optimizes information analytics with a Primary Location of Access, Control and Entry (PLACE). This ensures accurate, automated, always-available information to help you and your clients succeed.",
     "modules": ["Rt", "Em", "Mm", "Rb", "Pa", "Ra", "Dw"],
-    "img1": "orange2a.png",
+    "img1": "images/products/orange2a.png",
     "img2": ""
   },
   {
@@ -76,7 +76,7 @@
     "bgColor": "#A5A7AA",
     "description": "InvestCloud White puts InvestCloud’s proprietary tools to work, inspiring innovation for mature businesses and startups alike. Incubated within the InvestCloud Room, White allows you to create customized digital solutions at an accelerated pace in collaboration with a team of InvestCloud mentors.",
     "modules": ["Ag", "St", "Dv", "Tm", "Dx", "Ic", "Dw"],
-    "img1": "white2a.png",
+    "img1": "images/products/white2a.png",
     "img2": ""
   }
 ]

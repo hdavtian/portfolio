@@ -1,0 +1,7 @@
+<product
+        ng-repeat="product in products"
+        product="product"
+        update-active-color="setActiveBgColor(color)"
+        ui-sref="products.product({productId:product.id})"
+        ui-sref-active="active"
+/>

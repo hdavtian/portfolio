@@ -5,7 +5,7 @@
   @include respond-to('mobile') {
     width: 100%;
     left: 0;
-    top: 150px;
+    top: 100px;
   }
 
   @include respond-to('tablet+') {

@@ -1,4 +1,5 @@
-export default function($scope, $stateParams, $state){
+export default function($scope, $stateParams, $state, dataService){
+
     // set initial view options
     $scope.viewOptions = {
         graphical: true,
@@ -32,9 +33,12 @@ export default function($scope, $stateParams, $state){
     // set default selected person when none provided
     if ($state.params.personName == undefined) {
         $state.go('about.people', {personName: 'john-wise'});
-    }
-    console.log('stateparams =============')
-    console.log($state);
+    };
+
+    $scope.peopleListConfig = {
+        sortType: 'name',
+        sortReverse: false
+    };
 
     $scope.viewOptionsHighlighter();
 }

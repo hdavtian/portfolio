@@ -1,8 +1,4 @@
 <div class="products-carousel-wrapper">
-<!--<product-->
-<!--ng-repeat="product in products"-->
-<!--product="product"-->
-<!--update-active-color="setActiveBgColor(color)" />-->
 
     <div class="products-carousel owl-carousel owl-theme">
 
@@ -15,9 +11,9 @@
             <div class="description">{{product.description}}</div>
 
             <div class="product-modules-wrapper">
-                <div class="product-module" ng-repeat="module in product.modules">
-                    {{module}}
-                </div>
+
+                <modules product="product"></modules>
+
             </div>
         </div>
 

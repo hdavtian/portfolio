@@ -1,0 +1,17 @@
+<div class="videos-page">
+
+    <h3>Videos</h3>
+
+    <div ng-repeat="video in videos" class="video">
+        <ng-youtube-embed
+                video='video.url'
+                autoplay="false"
+                width="350"
+                height="200"
+                color="white"
+                disablekb="true"
+                end="20">
+        </ng-youtube-embed>
+    </div>
+
+</div>

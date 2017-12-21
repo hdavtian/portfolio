@@ -97,6 +97,7 @@ gulp.task('scripts-site', function(){
     gulp.src(config.src.siteJs + 'app.js')
         .pipe(webpackStream(webpackConfig), webpack)
         .pipe(gulp.dest(config.dest.js))
+        .pipe(reload({stream:true}));
 });
 
 // ===========================================================================================

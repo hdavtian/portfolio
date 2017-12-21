@@ -80,16 +80,16 @@
             };
 
             // testing
-            console.log('---------');
-            console.log('max: ' + max);
-            console.log('dotCharacters: ' + dotCharacters);
-            console.log('$el: ' + $el);
-            console.log('$el.el: ' + $el.el);
-            console.log('$el.value: ' + $el.value);
-            console.log('$el.charCount: ' + $el.charCount);
-            console.log('$el.wordArray: ' + $el.wordArray);
-            console.log('$el.wordArrayCount: ' + $el.wordArrayCount);
-            console.log('newWordArray: ' + insertDots());
+            // console.log('---------');
+            // console.log('max: ' + max);
+            // console.log('dotCharacters: ' + dotCharacters);
+            // console.log('$el: ' + $el);
+            // console.log('$el.el: ' + $el.el);
+            // console.log('$el.value: ' + $el.value);
+            // console.log('$el.charCount: ' + $el.charCount);
+            // console.log('$el.wordArray: ' + $el.wordArray);
+            // console.log('$el.wordArrayCount: ' + $el.wordArrayCount);
+            // console.log('newWordArray: ' + insertDots());
 
             // execute the main function
             _$el.html(insertDots());
