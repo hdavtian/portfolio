@@ -1,12 +1,14 @@
+// imports --------------------------------------------------------------
+
 import uiRouter                 from 'angular-ui-router';
 import ngAnimate                from 'angular-animate';
 import appController            from './controllers/app-ctrl';
 import appConfig                from './app-config';
+import dataService              from './services/data-service';
 import products                 from './directives/products';
 import product                  from './directives/product';
 import modules                  from './directives/modules';
 import module                   from './directives/module';
-import dataService              from './services/data-service';
 import people                   from './directives/people';
 import peopleCarousel           from './directives/people-carousel';
 import productsCarousel         from './directives/products-carousel';
@@ -28,6 +30,8 @@ via bower
 
 */
 
+// app --------------------------------------------------------------
+
 const app = angular.module('app',[uiRouter, ngAnimate, angularChart, 'ngYoutubeEmbed', 'color.picker', 'rzModule']);
 
 app
@@ -44,7 +48,3 @@ app
     .directive('edit', edit)
     .directive('add', add)
     .directive('columnSorter', columnSorter);
-
-// DI
-//appController.$inject = ['$scope'];
-//appConfig.$inject = ['$stateProvider', '$urlRouterProvider'];

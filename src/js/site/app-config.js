@@ -4,12 +4,12 @@ import productDetailPageCtrl    from './controllers/product-detail-page-ctrl';
 import productModuleDetailPageCtrl    from './controllers/product-module-detail-page-ctrl';
 import aboutPageCtrl            from './controllers/about-page-ctrl';
 import personPageCtrl           from './controllers/person-page-ctrl';
-import videosPageCtrl             from './controllers/videos-page-ctrl';
-import settingsPageCtrl           from './controllers/settings-page-ctrl';
-import editPageCtrl                 from './controllers/edit-page-ctrl';
-import editPersonPageCtrl         from './controllers/edit-person-page-ctrl';
-import editVideoPageCtrl         from './controllers/edit-video-page-ctrl';
-import editModulePageCtrl         from './controllers/edit-module-page-ctrl';
+import videosPageCtrl           from './controllers/videos-page-ctrl';
+import settingsPageCtrl         from './controllers/settings-page-ctrl';
+import editPageCtrl             from './controllers/edit-page-ctrl';
+import editPersonPageCtrl       from './controllers/edit-person-page-ctrl';
+import editVideoPageCtrl        from './controllers/edit-video-page-ctrl';
+import editModulePageCtrl       from './controllers/edit-module-page-ctrl';
 
 export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', 'ChartJsProvider', function($stateProvider, $urlRouterProvider, $locationProvider, ChartJsProvider){
 
