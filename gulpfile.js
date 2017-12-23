@@ -216,7 +216,7 @@ gulp.task('main-bower-files', function() {
     //              ]
     //          }
     //      }
-    require('fs').writeFileSync(config.bowerDir + '/bootstrap-sass/assets/stylesheets/custom-bootstrap.scss', '@import "_bootstrap";');
+    // require('fs').writeFileSync(config.bowerDir + '/bootstrap-sass/assets/stylesheets/custom-bootstrap.scss', '@import "_bootstrap";');
 
 
 
