@@ -37,7 +37,7 @@ var config = {
 
     src: {
         root: './src',
-        views: './src/js/site/views',
+        views: './src/js/site',
         data: './src/data',
         js: './src/js',
         siteJs: './src/js/site',
@@ -45,21 +45,19 @@ var config = {
         vendorJs: './src/js/vendor',
         angularApps: './src/angular-apps',
         images: './src/images',
-        fonts: './src/fonts',
-        asIs: './src/as-is'
+        fonts: './src/fonts'
     },
 
     dest: {
         root: './build',
-        views: './build/views',
+        views: './build',
         data: './build/data',
         js: './build/js',
         scss: './build/css',
         vendorJs: './build/js/vendor',
         angularApps: './build/js/angular-apps',
         images: './build/images',
-        fonts: './build/fonts',
-        asIs: './build/as-is'
+        fonts: './build/fonts'
     }
 };
 
@@ -67,62 +65,6 @@ var config = {
 // Tasks
 // *******************************************************************************************
 
-// ===========================================================================================
-// Task Name: scripts-site
-// Description: concatenate js files in js/site, uglify and copy to build folder.
-// If order of inclusion is necessary then use the order() plugin
-// ===========================================================================================
-// gulp.task('scripts-site', function(){
-//     // gulp.src(config.src.siteJs + '**/*.js')
-//     gulp.src(config.src.siteJs + 'app.js')
-//         .pipe(sourcemaps.init())
-//
-//         // if you need to load things in order, use order like so
-//         // .pipe(order([
-//         //     'one.js',
-//         //     'two.js',
-//         //     'three.js'
-//         // ],{base: './src/js/site'}))
-//
-//         .pipe(babel())
-//         .on('error', console.error.bind(console))
-//         .pipe(uglify())
-//         .pipe(concat('site.js'))
-//         .pipe(rename({suffix:'.min'}))
-//         .pipe(sourcemaps.write('.'))
-//         .pipe(gulp.dest(config.dest.js))
-//         .pipe(reload({ stream: true }));
-// });
-gulp.task('scripts-site', function(){
-    gulp.src(config.src.siteJs + 'app.js')
-        .pipe(webpackStream(webpackConfig), webpack)
-        .pipe(gulp.dest(config.dest.js))
-        .pipe(reload({stream:true}));
-});
-
-// ===========================================================================================
-// Task Name: as-is
-// Description: For 3rd party scripts that don't have proper bower files, include them in the
-// as-is folder, this task will just copy whatever you put in there to the build directory so
-// you can reference files on your pages
-// ===========================================================================================
-gulp.task('as-is', function(){
-    gulp.src(path.join(config.src.asIs, '**/*'))
-        .pipe(gulp.dest(config.dest.asIs))
-        .pipe(reload({stream:true}));
-});
-
-// ===========================================================================================
-// Task Name: sass
-// Description: compiles sass, writes to src dir and triggers browser sync
-// ===========================================================================================
-gulp.task('sass', function(){
-    return gulp.src(path.join(config.src.scss, '**/*.scss'))
-        .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
-        .pipe(gulp.dest(config.dest.scss))
-        .pipe(reload({stream:true}));
-});
 
 // ===========================================================================================
 // Task Name: html
@@ -135,12 +77,35 @@ gulp.task('html', function(){
 });
 
 // ===========================================================================================
+// Task Name: webpack
+// Description: Gets webpack to bundle starting at app.js
+// ===========================================================================================
+gulp.task('webpack', function(){
+    gulp.src(config.src.siteJs + 'app.js')
+        .pipe(webpackStream(webpackConfig), webpack)
+        .pipe(gulp.dest(config.dest.js))
+        .pipe(reload({stream:true}));
+});
+
+// ===========================================================================================
+// Task Name: sass
+// Description: compiles sass, writes to dest dir and triggers browser sync
+// ===========================================================================================
+gulp.task('sass', function(){
+    return gulp.src(path.join(config.src.scss, '**/*.scss'))
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
+        .pipe(gulp.dest(config.dest.scss))
+        .pipe(reload({stream:true}));
+});
+
+// ===========================================================================================
 // Task Name: views
 // Description: Triggers browser sync on changes to .html files in js/views and copies them to build /views
 // ===========================================================================================
 gulp.task('views', function(){
     gulp.src(path.join(config.src.views, '**/*.html'))
-        .pipe(gulp.dest(config.dest.views))
+        .pipe(gulp.dest(config.dest.root))
         .pipe(reload({stream:true}));
 });
 
@@ -287,8 +252,8 @@ gulp.task('clean:dest', function(){
 // Description:
 // ===========================================================================================
 gulp.task('watch', ['browser-sync'], function(){
-    gulp.watch(path.join(config.src.js, '**/*.js'), ['scripts-site']);
-    gulp.watch(path.join(config.src.scss, '**/*.scss'), ['sass']);
+    gulp.watch(path.join(config.src.js, '**/*.js'), ['webpack']);
+    gulp.watch(path.join(config.src.root, '**/*.scss'), ['sass']);
     gulp.watch(path.join(config.src.root, '**/*.html'), ['html']);
     gulp.watch(path.join(config.src.views, '**/*.html'), ['views']);
     gulp.watch(path.join(config.src.data, '**/*'), ['data']);
@@ -303,7 +268,7 @@ gulp.task('default', [
     'views',
     'data',
     'images',
-    'scripts-site',
+    'webpack',
     'sass',
     'main-bower-files',
     'browser-sync',
@@ -320,8 +285,7 @@ gulp.task('build', [
     'data',
     'images-compress',
     'fonts',
-    'as-is',
-    'scripts-site',
+    'webpack',
     'sass',
     'main-bower-files'
 ]);
