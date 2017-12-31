@@ -1,2 +1,106 @@
-<h1>new resume</h1>
-{{resume}}
+<div class="resume-wrapper" ng-cloak>
+
+    <div class="section-head">
+       <h1>Harma Davtian, Senior Front-End Web Developer</h1>
+    </div>
+
+    <div class="row section">
+
+        <div class="col-sm-3 col1">
+            Github
+        </div>
+
+        <div class="col-sm-8 col2">
+
+            <h3>Technical Skills</h3>
+
+            <table>
+                <tr ng-repeat="technicalSkill in resume.technicalSkills">
+                    <th>{{technicalSkill.category}}</th>
+                    <td>{{technicalSkill.description}}</td>
+                </tr>
+            </table>
+
+            <h3>Experience Summary</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Title</th>
+                        <th>Dates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="company in resume.experience">
+                        <td>{{company.name}}</td>
+                        <td>{{company.title}}</td>
+                        <td>{{company.dates}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Education</h3>
+
+            <ul>
+                <li ng-repeat="school in resume.education">
+                    {{school.name}} - {{school.dates}} - {{school.notes}}
+                </li>
+            </ul>
+
+            <h3>Strengths</h3>
+
+            <ul>
+                <li ng-repeat="strength in resume.strengths">{{strength}}</li>
+            </ul>
+
+            <h3>Hobbies & Interestes</h3>
+
+            <ul>
+                <li ng-repeat="interest in resume.interests">{{interest}}</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="section-head">
+        <h1>Experience</h1>
+    </div>
+
+    <div class="row section" ng-repeat="company in resume.experience">
+
+        <div class="col-sm-3 col1">
+            <h4>{{company.name}}</h4>
+            <span>{{company.domain}}</span><br>
+            <span>{{company.location}}</span><br><br>
+            <span>{{company.dates}}</span>
+        </div>
+
+        <div class="col-sm-8 col2">
+            <h4>{{company.title}}</h4>
+
+            <div class="description">
+                {{company.jobDescription}}
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>{{company.section1Title}}</h5>
+                    <ul>
+                        <li ng-repeat="detail in company.section1Details">{{detail}}</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <h5>{{company.section2Title}}</h5>
+                    <ul>
+                        <li ng-repeat="detail in company.section2Details">{{detail}}</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

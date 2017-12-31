@@ -2,12 +2,13 @@
 	"personalInfo" : {
 		"firstName" : "Harma",
 		"lastName" : "Davtian",
-		"title" : "Web Developer",
+		"title" : "Senior Web Developer",
 		"email1" : "harmadavtian@gmail.com",
 		"phone1" : "818.632.1804",
 		"github" : "https://github.com/hdavtian",
 		"youtube" : "https://www.youtube.com/channel/UC1dexFA4URh76zmAbz-4o3A",
 		"linkedin" : "http://www.linkedin.com/pub/harma-davtian",
+		"codepen" : "https://codepen.io/hdavtian",
 		"statement" : "Personal statement bla bla bla.",
 
 		"address1" : {
@@ -20,32 +21,48 @@
 
 	"technicalSkills" : [
 		{
-			"name" : "html",
-			"years" : "13"
+			"category" : "Javascript Frameworks",
+			"description" : "AngularJs (3 yrs), React (6 months)"
 		},
 		{
-			"name" : "css",
-			"years" : "13"
+			"category" : "JS Tooling",
+			"description" : "Webpack, Gulp, Npm, Bower"
 		},
 		{
-			"name" : "Javascript",
-			"years" : "10"
+			"category" : "JavaScript",
+			"description" : "Object Oriented, Revealing Module Pattern, Es6"
 		},
 		{
-			"name" : "jQuery",
-			"years" : "4"
+			"category" : "JS Animation",
+			"description" : "Greensock, ScrollMagic, Skrollr"
 		},
 		{
-			"name" : "php",
-			"years" : "13"
+			"category" : "CSS",
+			"description" : "Sass, Bootstrap, Css (1,2,3)"
 		},
 		{
-			"name" : "mysql",
-			"years" : "13"
+			"category" : "Version Control",
+			"description" : "Git, Svn, Cvs"
 		},
 		{
-			"name" : "angularjs",
-			"years" : "1"
+			"category" : "PHP",
+			"description" : "Procedural, OOP, Laravel Mvc"
+		},
+		{
+			"category" : "HTML",
+			"description" : "Responsive, Semantic, Html5"
+		},
+		{
+			"category" : "Other Server Side Lang",
+			"description" : "Java, .Net web forms and mvc (basic setup and updates)"
+		},
+		{
+			"category" : "LAMP",
+			"description" : "Apache, Mysql, Php"
+		},
+		{
+			"category": "CMS",
+			"description": "Wordpress, Sitecore (light)"
 		}
 	],
 
@@ -57,12 +74,52 @@
 		}
 	],
 
-	"interests" : ["Anything WWII", "Wingchun Kung fu", "Running", "Photography", "Basketball", "Design", "Coding"],
+	"strengths": ["Coding", "Creativity", "Initiative", "Communication", "Clear presentation", "Research", "`Big picture` approach", "Natural tendency to help"],
+
+	"interests" : ["Anything WWII", "Running/Exercise", "Photography", "Chess", "Various Programming Languages", "Dynamic Randomness", "Basketball, Volleyball, Tennis, Pingpong"],
 
 	"software" : ["Eclipse IDE", "Adobe Suite (Photoshop, fireworks, flash, dw", "CVS/SVN/GIT", "Firebug, Camtasia Studio (Video editing)", "VI/VIM", "MAMP/WAMP", "Charles Proxy", "Putty", "Confluence/Jira", "Amazon Web Services"],
 
 	"experience" : [
+
 		{
+			"id": 100,
+			"name" : "RPA",
+			"domain" : "rpa.com",
+			"location" : "Santa Monica, CA",
+			"dates" : "Oct 2014 - Jul 2017",
+			"employmentDateStart" : "",
+			"employmentDateEnd" : "",
+			"about" : "",
+			"title" : "Senior Web Developer",
+			"jobDescription" : "As a Senior Web Developer within the digital group, my primary responsibility has been to work on multiple projects in parallel, introduce/train cutting edge technologies to more junior developers, work with cross functional groups UX, Creative, Business to scope, plan, develop and deploy websites.",
+
+			"section1Title": "responsibilities",
+			"section1Details": [
+				"Racewithhonda.com",
+				"Hondacertified.com (offers and calculator page, angular)",
+				"Hondafasttrack.com (animation)",
+				"Farmers Hall of Claims",
+				"RPA.com redesign",
+				"Honda Fit-EV vehicle locator (Bing Api)",
+				"Automobiles.honda.com"
+			],
+			"section2Title": "projects",
+			"section2Details": [
+				"Html: Semantic, responsive",
+				"Css: Sass, Compass, Bootstrap, Susy grids",
+				"JavaScript: OOP, module pattern, AngularJs",
+				"Task-runners: Gulp, Webpack",
+				"Animation: Skrollr, ScrollMagic, Greensock",
+				"Php: Laravel (5.4+) mvc",
+				".NET: Web forms",
+				"Version Control: git, svn (legacy)",
+				"Lamp: local and staging servers"
+			]
+		},
+
+		{
+			"id": 125,
 			"name" : "Boingo Wireless Inc.",
 			"domain" : "boingo.com",
 			"location" : "Los Angeles, CA",
@@ -71,47 +128,69 @@
 			"employmentDateEnd" : "",
 			"about" : "Boingo Wireless (NASDAQ: WIFI) helps the world stay connected, in places as varied as airports, stadiums, shopping malls, restaurants, universities, and military bases.",
 			"title" : "Web Engineer",
-			"jobDescription" : "As a front-end web engineer at Boingo, I am responsible for updating the corporate and other web systems, creating markup (HTML/CSS) and logic (PHP/JS/Jquery) as required. In my manager's absence I supervise our group's deliverables and prioritizations and manage expectations with stakeholders. We work both as an Agile (Scrum) and Kanban group and deliver multiple web builds to production on a weekly basis. I also setup and support A/B test campaigns for our Marketing and Product groups using Adobe's Omniture platform. I've helped develop our current process workflow: 1) Ticket creation, 2) Communication with Stakeholder, 3) Prioritization, 4) Analysis/Diagnose/Design/Development/Unit test, 5) QA Handoff/iteration, 6) Certification, 7) Delivery/Resolution.",
-			"responsibilities" : [
-				"Update/troubleshoot: boingo.com (PHP), boingohotspot.net (.NET), Signup/Selfcare Systems (JAVA)",
-				"Create A/B campaigns for Marketing and Product departments using Adobe's Omniture service and resolve ensuing conflicts (Markup/JS/Jquery)",
-				"Deliver weekly web builds to production",
-				"Manage web group in our Director's absence, overseeing Sprint planning, task prioritization, communicating risk with stakeholders, managing production hotfixes"
+			"jobDescription" : "As a Web Engineer at Boingo my primary role was to update various websites including corporate (Php), selfcare/members (Java) and airport/lounge websites (.Net web forms). Worked in Agile/Scrum and Kanban team settings, delivered multiple weekly production builds, A/B testing for marketing using Test/Target, and at times acted as scrum-master, product owner, PM and build engineer.",
+
+			"section1Title": "responsibilities",
+			"section1Details": [
+				"Boingo.com (PHP)",
+				"Boingohotspot.net (.NET)",
+				"Signup/Selfcare Systems (JAVA)",
+				"Test&Target A/B campaigns",
+				"Weekly web builds to prod",
+				"Hotfixes & maintenance windows",
+				"Agile: Sprint planning, scrum-master"
 			],
-			"projects" : [
-				"Boingo's Wifinder App: created web pages used in version 1 of app, supporting iOS and Android mobile and tablet layouts.",
-				"Create/maintain many of our venues websites, most recently using responsive design",
-				"Converted first generation venues existing graphical based layouts to proper markup to streamline updating/new venue creation tasks"
+
+			"section2Title": "projects",
+			"section2Details": [
+				"Html: Semantic, responsive",
+				"Css: Css 1,2,3, bootstrap",
+				"JavaScript: Oop, procedural, Jquery",
+				"Php: procedural",
+				"Java: basic updates",
+				".Net: web-forms, basic updates",
+				"Version Control: cvs, svn"
 			]
 		},
 
 		{
+			"id": 150,
 			"name" : "Capital Group Companies",
 			"domain" : "americanfunds.com",
 			"location" : "Los Angeles, CA",
 			"dates" : "Apr 2008 - Apr 2009",
 			"about" : "American Funds is a sub-division of Cap Group Companies (Global company) and is a privately held investment management firm.",
 			"title" : "Front-End Coder",
-			"jobDescription" : "Completed two 6-month contract terms with Cap Group. Working in a collaborative environment and communicating with copy editors, migration specialists, senior coders, project managers and business analysts, my primary responsibility was to respond to submitted CRs (change requests), update files and test locally on “Alpha desktops” and after proper review to deliver them to staging servers. Updated files included html, css, xml, some .jsp and .js.",
-			"responsibilities" : [
-				"Update americanfunds.com",
-				"Work closely with production and migration specialists, copy editors, business analysts, project managers and back-end developers",
-				"Attend weekly front-end coder and back-end developer meetings"
+			"jobDescription" : "As a Front-End Coder at Capital Group Companies my primary responsibility was to update pages on americanfunds.com (html, css, js, jsp).",
+
+			"section1Title": "responsibilities",
+			"section1Details": [
+				"Update Americanfunds.com",
+				"Work closely with production and migration specialists, PMs, back-end engineers, UX and copy editors",
+				"Use IBM ClearCase and ClearQuest"
 			],
-			"projects" : [
-				"'Year-end' project: Updated a large number of pages on americanfunds.com containing year specific tax information"
+
+			"section2Title": "projects",
+			"section2Details": [
+				"Html: semantic",
+				"Css: css (rigid/corporate)",
+				"JavaScript: procedural/jquery",
+				"JSP: basic updates"
 			]
 		},
 
 		{
+			"id": 175,
 			"name" : "Murad Inc.",
 			"domain" : "murad.com",
 			"location" : "El Segundo, CA",
 			"dates" : "May 2005 - Apr 2008",
 			"about" : "Murad is a leader in the skincare industry creating, marketing and selling award winning skincare products throughout the USA and globally.",
 			"title" : "Web Designer",
-			"jobDescription" : "As the company's only Web developer, worked closely with the marketing, creative and IT departments, to build optimized and cross-browser & platform compliant landing pages, mini-sites and other related websites for murad.com. Also created weekly HTML marketing emails, and performed most front-end content updates on murad.com.",
-			"responsibilities" : [
+			"jobDescription" : "As a web developer/Designer with Murad, my primary role was to build optimized and cross-browser & platform compliant landing pages and mini-sites for murad.com, create html marketing, and manage Murad’s products using Ibm Istore Ecommerce platform.",
+
+			"section1Title": "responsibilities",
+			"section1Details": [
 				"Web development (HTML/CSS)",
 				"HTML Marketing Emails",
 				"Updating products on murad.com via Oracle Applications (Istore)",
@@ -123,7 +202,9 @@
 				"Manage link exchange program",
 				"Manage domain name acquisitions"
 			],
-			"projects" : [
+
+			"section2Title": "projects",
+			"section2Details": [
 				"Web-chat and Email management by InstantService",
 				"Web analytics by SiteCatalyst",
 				"Flash video by VitalStream",
@@ -144,20 +225,25 @@
 		},
 
 		{
+			"id": 200,
 			"name" : "Stormscape Studios",
 			"domain" : "stormscape.com",
 			"location" : "Glendale, CA",
 			"dates" : "2000 - Present",
 			"about" : "As an entrepreneur, I have been building websites under this DBA since 2000. Freelancing satisfies my creative instincts and enables me to experiment with technologies and manage projects from wireframes to launch to support.",
 			"title" : "Freelancer",
-			"jobDescription" : "Working as an independent web designer/developer and entrepreneur, I have been creating websites professionally for the last 10 years. Development philosophy is: Simple is good. Clients include attorneys, politicians, medical groups, teachers associations, restaurants and other small businesses. Visit stormscape.com/portfolio to see a listing of web projects.",
-			"responsibilities" : [
+			"jobDescription" : "Working as an independent web designer/developer and entrepreneur, I have been creating websites professionally since 2000. Clients include attorneys, politicians, medical groups, teacher associations, restaurants and other small businesses. Visit stormscape.com/portfolio to see a listing of web projects.",
+
+			"section1Title": "responsibilities",
+			"section1Details": [
 				"Web Development",
 				"Sales and marketing",
 				"Client site maintenance and support",
 				"Web hosting"
 			],
-			"projects" : [
+
+			"section2Title": "projects",
+			"section2Details": [
 				"Smith Brothers Restaurants",
 				"UCLA based Medical Groups",
 				"Office equipment resellers"
@@ -165,32 +251,40 @@
 		},
 
 		{
+			"id": 225,
 			"name" : "Unitedlayer Inc.",
 			"domain" : "unitedlayer.com",
 			"location" : "Los Angeles, CA",
 			"dates" : "Dec 2001 - Jun 2002",
 			"about" : "UnitedLayer is a small server collocation and management company with data centers in San Francisco and Los Angeles.",
 			"title" : "Web Designer",
-			"jobDescription" : "Contracted on-location for a full year (Los Angeles and San Francisco) my main duty was to research the current hosting collocation industry and redesign the UnitedLayer website, improving its functionality and implementing new communication ideology focused on selling complex services through clear presentation and understandable content.",
-			"responsibilities" : [
+			"jobDescription" : "Working as a Web Designer/Developer for UnitedLayer Inc, a web hosting and collocation company, my primary role was to create and code a new website. Secondary responsibilities included server setup, datacenter management and support. I wore many hats, from wiring servers, to moving server racks and cabinets, to photography to coding and launching the new website.",
+
+			"section1Title": "responsibilties",
+			"section1Details": [
 				"Website design and development including page/template design, photography and image optimization",
 				"Heavy industry/competitor research",
 				"Writing technical content to appeal to the business “Decision-Maker” audience"
 			],
-			"projects" : [
+
+			"section2Title": "projects",
+			"section2Details": [
 				"Complete website redesign"
 			]
 		},
 
 		{
+			"id": 250,
 			"name" : "HostPro LLC",
 			"domain" : "hostpro.net",
 			"location" : "Los Angeles, CA",
 			"dates" : "Mar 1997 - Jun 2001",
 			"about" : "HostPro was a web hosting company during the .com boom. It grew in size and was acquired by Micron PC and later by Interland.",
 			"title" : "Web Hosting/Ecommerce Sales, Sales Manager",
-			"jobDescription" : "As a Sales Representative at HostPro, my primary responsibilities included selling hosting technologies to clients by phone and email. This is where I had an opportunity to really learn about internet infrastructure, DNS, server management and datacenter operations. Initially we sold shared web hosting accounts, but soon started offering ecommerce solutions and finally dedicated server packages. I was promoted to Sales Manager and was responsible for hiring and training a staff of 8 sales reps in our Los Angeles office.",
-			"responsibilities" : [
+			"jobDescription" : "As a Sales Representative at HostPro, my primary responsibilities included selling hosting technologies to clients by phone and email. This is where I learned about internet infrastructure, DNS, server management and datacenter operations. We sold shared web hosting accounts, ecommerce solutions and dedicated server packages. I was promoted to Sales Manager and was responsible for hiring and training a staff of 8 in our Los Angeles office. Company went under after the .com bubble burst.",
+
+			"section1Title": "responsibilities",
+			"section1Details": [
 				"Selling shared web hosting plans, ecommerce solutions, and dedicated server packages",
 				"Managing Los Angeles based hosting resellers and training junior sales staff about web hosting",
 				"Hiring, training and managing a staff of 8 in Los Angeles",
@@ -199,21 +293,26 @@
 				"Managing company booths in several internet conventions (Internet World in Los Angeles and Boston)",
 				"Assisted with company intranet usability design"
 			],
-			"projects" : [
+
+			"section2Title": "projects",
+			"section2Details": [
 				"Authored Ecommerce whitepapers which were published on website",
 				"Top salesmen and a leader in client retention and satisfaction"
 			]
 		},
 
 		{
+			"id": 275,
 			"name" : "Earthlink Network",
 			"domain" : "earthlink.net",
 			"location" : "Pasadena, CA",
 			"dates" : "Mar 1994 - Jan 1997",
 			"about" : "EarthLink Network is one of the largest ISP's in the United States.",
 			"title" : "Technical Support Representative",
-			"jobDescription" : "",
-			"responsibilities" : [
+			"jobDescription" : "My first job after graduating from college was with Earthlink Network where as a tech support rep I answered incoming calls from customers and resolved internet connectivity problems. Later as a sales agent, my role changed to selling internet access dialup and faster ISDN accounts.",
+
+			"section1Title": "responsilibies",
+			"section1Details": [
 				"Trouble-shooting customer internet connectivity problems",
 				"Assisting customers with browser and email setup",
 				"Selling EarthLink connectivity plans by phone & email",
@@ -222,7 +321,9 @@
 				"Helping agents with escalated support tickets",
 				"Managing support email queues"
 			],
-			"projects" : [
+
+			"section2Title": "projects",
+			"section2Details": [
 				"Competed 18,000 support and sales calls in three years",
 				"Recognized for exemplary work attitude",
 				"Earned several sales quota awards"
@@ -233,47 +334,30 @@
 
 	"references" : [
 		{
+			"name" : "Karl Atienza",
+			"title" : "Web developer",
+			"company" : "RPA Advertising",
+			"email" : "karl_atienza@sbcglobal.net | katienza@rpa.com",
+			"phone" : "818.562.0074",
+			"relationship": "Colleague within the digital technology group, fellow coder"
+		},
+		{
+			"name" : "Jason Hines",
+			"title" : "Creative Director",
+			"company" : "RPA Advertising",
+			"email" : "Jasonhines123@gmail.com | jhines@rpa.com",
+			"phone" : "720.937.8195",
+			"relationship": "Manager, cross functional group"
+		},
+		{
 			"name" : "John Han",
-			"title" : "Director, Technical Account Management",
+			"title" : "Director, Product Management",
 			"company" : "Boingo",
-			"email" : "jhan@boingo.com",
-			"phone" : "917.215.5724"
-		},
-		{
-			"name" : "Gene Dahilig",
-			"title" : "Principal Software Engineer",
-			"company" : "Boingo Wireless",
-			"email" : "geno@dahilig.com",
-			"phone" : "818.723.1655"
-		},
-		{
-			"name" : "Nosa Olomu",
-			"title" : "Manager, Configuration and Release Engineering",
-			"company" : "Boingo Wireless",
-			"email" : "nolomu@boingo.com",
-			"phone" : "310.561.8892"
-		},
-		{
-			"name" : "Kishore Raja",
-			"title" : "Director, Strategic Programs",
-			"company" : "Boingo Wireless",
-			"email" : "kraja@boingo.com",
-			"phone" : "239.223.8615"
-		},
-		{
-			"name" : "Yolanda Kline",
-			"title" : "Director, Customer Care",
-			"company" : "Boingo Wireless",
-			"email" : "ykline@boingo.com",
-			"phone" : "310.780.6374"
-		},
-		{
-			"name" : "Azhar Kazi",
-			"title" : "Quality System Manager",
-			"company" : "Boingo Wireless",
-			"email" : "aalikazi@yahoo.com",
-			"phone" : "310.740.6824"
+			"email" : "john.han@nyu.edu | jhan@boingo.com",
+			"phone" : "917.215.5724",
+			"relationship": "Manager, cross functional group"
 		}
+
 	]
 
 }
