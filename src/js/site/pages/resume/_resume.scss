@@ -1,11 +1,23 @@
 .resume-wrapper {
 
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+
   .section-head {
 
   }
 
   .section {
     border-top: 1px solid black;
+
+    .col1, .col2 {
+      padding: 25px;
+    }
+
+    .job-description {
+      margin: 25px 0;
+    }
+
   }
 
   .col1 {

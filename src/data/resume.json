@@ -94,7 +94,7 @@
 			"title" : "Senior Web Developer",
 			"jobDescription" : "As a Senior Web Developer within the digital group, my primary responsibility has been to work on multiple projects in parallel, introduce/train cutting edge technologies to more junior developers, work with cross functional groups UX, Creative, Business to scope, plan, develop and deploy websites.",
 
-			"section1Title": "responsibilities",
+			"section1Title": "Responsibilities",
 			"section1Details": [
 				"Racewithhonda.com",
 				"Hondacertified.com (offers and calculator page, angular)",
@@ -104,7 +104,7 @@
 				"Honda Fit-EV vehicle locator (Bing Api)",
 				"Automobiles.honda.com"
 			],
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Html: Semantic, responsive",
 				"Css: Sass, Compass, Bootstrap, Susy grids",
@@ -130,7 +130,7 @@
 			"title" : "Web Engineer",
 			"jobDescription" : "As a Web Engineer at Boingo my primary role was to update various websites including corporate (Php), selfcare/members (Java) and airport/lounge websites (.Net web forms). Worked in Agile/Scrum and Kanban team settings, delivered multiple weekly production builds, A/B testing for marketing using Test/Target, and at times acted as scrum-master, product owner, PM and build engineer.",
 
-			"section1Title": "responsibilities",
+			"section1Title": "Responsibilities",
 			"section1Details": [
 				"Boingo.com (PHP)",
 				"Boingohotspot.net (.NET)",
@@ -141,7 +141,7 @@
 				"Agile: Sprint planning, scrum-master"
 			],
 
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Html: Semantic, responsive",
 				"Css: Css 1,2,3, bootstrap",
@@ -163,14 +163,14 @@
 			"title" : "Front-End Coder",
 			"jobDescription" : "As a Front-End Coder at Capital Group Companies my primary responsibility was to update pages on americanfunds.com (html, css, js, jsp).",
 
-			"section1Title": "responsibilities",
+			"section1Title": "Responsibilities",
 			"section1Details": [
 				"Update Americanfunds.com",
 				"Work closely with production and migration specialists, PMs, back-end engineers, UX and copy editors",
 				"Use IBM ClearCase and ClearQuest"
 			],
 
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Html: semantic",
 				"Css: css (rigid/corporate)",
@@ -189,7 +189,7 @@
 			"title" : "Web Designer",
 			"jobDescription" : "As a web developer/Designer with Murad, my primary role was to build optimized and cross-browser & platform compliant landing pages and mini-sites for murad.com, create html marketing, and manage Murad’s products using Ibm Istore Ecommerce platform.",
 
-			"section1Title": "responsibilities",
+			"section1Title": "Responsibilities",
 			"section1Details": [
 				"Web development (HTML/CSS)",
 				"HTML Marketing Emails",
@@ -203,7 +203,7 @@
 				"Manage domain name acquisitions"
 			],
 
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Web-chat and Email management by InstantService",
 				"Web analytics by SiteCatalyst",
@@ -234,7 +234,7 @@
 			"title" : "Freelancer",
 			"jobDescription" : "Working as an independent web designer/developer and entrepreneur, I have been creating websites professionally since 2000. Clients include attorneys, politicians, medical groups, teacher associations, restaurants and other small businesses. Visit stormscape.com/portfolio to see a listing of web projects.",
 
-			"section1Title": "responsibilities",
+			"section1Title": "Responsibilities",
 			"section1Details": [
 				"Web Development",
 				"Sales and marketing",
@@ -242,7 +242,7 @@
 				"Web hosting"
 			],
 
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Smith Brothers Restaurants",
 				"UCLA based Medical Groups",
@@ -267,7 +267,7 @@
 				"Writing technical content to appeal to the business “Decision-Maker” audience"
 			],
 
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Complete website redesign"
 			]
@@ -283,7 +283,7 @@
 			"title" : "Web Hosting/Ecommerce Sales, Sales Manager",
 			"jobDescription" : "As a Sales Representative at HostPro, my primary responsibilities included selling hosting technologies to clients by phone and email. This is where I learned about internet infrastructure, DNS, server management and datacenter operations. We sold shared web hosting accounts, ecommerce solutions and dedicated server packages. I was promoted to Sales Manager and was responsible for hiring and training a staff of 8 in our Los Angeles office. Company went under after the .com bubble burst.",
 
-			"section1Title": "responsibilities",
+			"section1Title": "Responsibilities",
 			"section1Details": [
 				"Selling shared web hosting plans, ecommerce solutions, and dedicated server packages",
 				"Managing Los Angeles based hosting resellers and training junior sales staff about web hosting",
@@ -294,7 +294,7 @@
 				"Assisted with company intranet usability design"
 			],
 
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Authored Ecommerce whitepapers which were published on website",
 				"Top salesmen and a leader in client retention and satisfaction"
@@ -322,7 +322,7 @@
 				"Managing support email queues"
 			],
 
-			"section2Title": "projects",
+			"section2Title": "Projects",
 			"section2Details": [
 				"Competed 18,000 support and sales calls in three years",
 				"Recognized for exemplary work attitude",
