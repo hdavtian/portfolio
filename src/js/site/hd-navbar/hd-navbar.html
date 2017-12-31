@@ -1,5 +1,9 @@
 <div class="hd-navbar-container">
+
     <ul>
-        <li class="btn btn-primary" ng-repeat="item in config.menuItems" ui-sref="{{item}}">{{item}}</li>
+        <li ng-repeat="menu in config.menuItems">
+            <a href="javascript:void(0)" ui-sref="{{menu.state}}">{{menu.title}}</a>
+        </li>
     </ul>
+
 </div>

@@ -1,3 +1,6 @@
+import portfolioPageCtrl from './pages/portfolio/portfolio-ctrl';
+import resumePageCtrl from './pages/resume/resume-ctrl';
+
 export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider){
 
     // $locationProvider.html5Mode({
@@ -14,5 +17,49 @@ export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
     //         templateUrl: 'views/home.html',
     //         controller: ['$scope', '$interval', '$timeout', homePageCtrl]
     //     })
+
+    $stateProvider
+
+        .state('home', {
+            url: '/home',
+            views: {
+                'mainSection': {
+                    template: '<h1>home</h1>'
+                }
+            }
+
+        })
+
+        .state('about', {
+            url: '/about',
+            views: {
+                'mainSection': {
+                    template: '<h1>about</h1>'
+                }
+            }
+
+        })
+
+        .state('resume', {
+            url: '/resume',
+            views: {
+                'mainSection': {
+                    templateUrl: 'pages/resume/resume.html',
+                    controller: ['$scope', 'dataService', resumePageCtrl]
+                }
+            }
+
+        })
+
+        .state('portfolio', {
+            url: '/portfolio',
+            views: {
+                'mainSection': {
+                    templateUrl: 'pages/portfolio/portfolio.html',
+                    controller: ['$scope', 'dataService', portfolioPageCtrl]
+                }
+            }
+
+        })
 
 }]

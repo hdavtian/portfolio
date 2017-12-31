@@ -1,5 +1,12 @@
 .hd-navbar-container {
-  border:5px solid red;
+
+  border:1px solid red;
   padding: 15px;
   margin: 15px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
 }
