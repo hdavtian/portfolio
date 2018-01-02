@@ -1,7 +1,16 @@
 <div class="resume-wrapper" ng-cloak>
 
     <div class="section-head">
-       <h1>Harma Davtian, Senior Front-End Web Developer</h1>
+       <h1>Harma Davtian</h1>
+        <h4>
+            {{resume.personalInfo.title}}
+            | <a href="mailto:{{resume.personalInfo.email1}}">{{resume.personalInfo.email1}}</a>
+            | {{resume.personalInfo.phone1}}
+            | <a href="{{resume.personalInfo.github}}" target="_blank">Github</a>
+            | <a href="{{resume.personalInfo.linkedin}}" target="_blank">Linkedin</a>
+            | <a href="{{resume.personalInfo.youtube}}" target="_blank">Youtube</a>
+
+        </h4>
     </div>
 
     <div class="row section">
@@ -12,35 +21,37 @@
 
         <div class="col-sm-8 col2">
 
-            <h3>Technical Skills</h3>
+            <h2>Technical Skills Summary</h2>
 
-            <table>
-                <tr ng-repeat="technicalSkill in resume.technicalSkills">
-                    <th>{{technicalSkill.category}}</th>
-                    <td>{{technicalSkill.description}}</td>
-                </tr>
-            </table>
-
-            <h3>Experience Summary</h3>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Company</th>
-                        <th>Title</th>
-                        <th>Dates</th>
-                    </tr>
-                </thead>
+            <table class="type1">
                 <tbody>
-                    <tr ng-repeat="company in resume.experience">
-                        <td>{{company.name}}</td>
-                        <td>{{company.title}}</td>
-                        <td>{{company.dates}}</td>
+                    <tr ng-repeat="technicalSkill in resume.technicalSkills">
+                        <th>{{technicalSkill.category}}</th>
+                        <td>{{technicalSkill.description}}</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3>Education</h3>
+            <!--<h2>Experience Summary</h2>-->
+
+            <!--<table class="type1">-->
+                <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>Company</th>-->
+                        <!--<th>Title</th>-->
+                        <!--<th>Dates</th>-->
+                    <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody>-->
+                    <!--<tr ng-repeat="company in resume.experience">-->
+                        <!--<td>{{company.name}}</td>-->
+                        <!--<td>{{company.title}}</td>-->
+                        <!--<td>{{company.dates}}</td>-->
+                    <!--</tr>-->
+                <!--</tbody>-->
+            <!--</table>-->
+
+            <h2>Education</h2>
 
             <ul>
                 <li ng-repeat="school in resume.education">
@@ -48,13 +59,13 @@
                 </li>
             </ul>
 
-            <h3>Strengths</h3>
+            <h2>Strengths</h2>
 
             <ul>
                 <li ng-repeat="strength in resume.strengths">{{strength}}</li>
             </ul>
 
-            <h3>Hobbies & Interestes</h3>
+            <h2>Hobbies & Interestes</h2>
 
             <ul>
                 <li ng-repeat="interest in resume.interests">{{interest}}</li>
@@ -78,7 +89,7 @@
         </div>
 
         <div class="col-sm-8 col2">
-            <h4>{{company.title}}</h4>
+            <h2>{{company.title}}</h2>
 
             <div class="job-description">
                 {{company.jobDescription}}
@@ -86,13 +97,13 @@
 
             <div class="row">
                 <div class="col-sm-6">
-                    <h5>{{company.section1Title}}</h5>
+                    <h3>{{company.section1Title}}</h3>
                     <ul>
                         <li ng-repeat="detail in company.section1Details">{{detail}}</li>
                     </ul>
                 </div>
                 <div class="col-sm-6">
-                    <h5>{{company.section2Title}}</h5>
+                    <h3>{{company.section2Title}}</h3>
                     <ul>
                         <li ng-repeat="detail in company.section2Details">{{detail}}</li>
                     </ul>

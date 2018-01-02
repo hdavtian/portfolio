@@ -1,0 +1,54 @@
+/*
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Old Standard TT', serif;
+  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Special Elite', cursive;
+  font-family: 'Frijole', cursive;
+  font-family: 'Fontdiner Swanky', cursive;
+  font-family: 'Libre Barcode 128 Text', cursive;
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  //font-family: 'Oswald', sans-serif;
+  //font-family: 'Anton', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1.12em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: .75em;
+  margin: 2.33em 0;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  line-height: 135%;
+}

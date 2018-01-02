@@ -1,0 +1,39 @@
+table {
+
+  &.type1 {
+
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    width: 100%;
+    max-width: 950px;
+
+    th {
+      font-weight: bold;
+      background-color: #ccc;
+    }
+
+    th, td {
+      border-bottom: 1px solid #666;
+      border-right: 1px solid #666;
+      vertical-align: top;
+      text-align: left;
+      padding: 5px;
+    }
+
+    thead {
+      th {
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+
+    tbody {
+      th {
+        text-align: left;
+        vertical-align: middle;
+      }
+    }
+
+  }//type1
+
+}//table

@@ -1,397 +1,393 @@
-{
-	"project1": {
-		"companyName": "Ourfalian & Ourfalian Attorneys at Law",
-		"description": "The Ourfalian law firm is a small firm in Glendale Ca, and I first became aware of them as they air their commercials during Lakers home games. I saw an opportunity to redesign their website as there was a noticeable difference in style and professionalism between the TV ad and the website itself. The commercial was professionally done but in contrast the website looked amatuerish. I've maintained a relationship with the firm ever since.",
-		"industry": "legal",
-		"website": "http://www.ourfalianlaw.com",
-		"status": "live",
-		"date": "5/1/2010",
-		"technologies": ["html", "css", "mysql", "php", "flash", "javascript", "jquery"],
-		"images": ["ourfalian-1.png", "ourfalian-2.png", "ourfalian-3.png", "ourfalian-4.png"]
-	},
-
-	"project2": {
-		"companyName": "UCLA Inflammatory Bowel Disease Center",
-		"industry": "Medical",
-		"website": "http://ibd.med.ucla.edu/",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash", "javascript", "jquery"],
-		"images": ["project2.jpg", "path2", "path3"]
-	},
-
-	"project3": {
-		"companyName": "Financial Equipment Company",
-		"industry": "Business",
-		"website": "http://ibd.med.ucla.edu/",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash", "javascript", "jquery"],
-		"images": ["fec-1.png", "fec-2.png", "fec-3.png"]
-	},
-
-	"project4": {
-		"companyName": "ResearchCore",
-		"industry": "Medical",
-		"website": "http://www.researchcore.org/",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["researchcore-1.png", "researchcore-2.png", "researchcore-3.png", "researchcore-4.png"]
-	},
-
-	"project5": {
-		"companyName": "Automated Business Machines",
-		"industry": "Paper handling",
-		"website": "http://www.abmjax.com/",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["abmjax-1.png", "abmjax-2.png", "abmjax-3.png"]
-	},
-
-	"project6": {
-		"companyName": "Vibrato Grill Jazz",
-		"industry": "Restaurant",
-		"website": "http://www.vibratogrilljazz.com/",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["vibrato-1.png", "vibrato-2.png", "vibrato-3.png", "vibrato-4.png", "vibrato-5.png"]
-	},
-
-	"project7": {
-		"companyName": "Ace Business Machines Inc.",
-		"industry": "Paper handling",
-		"website": "http://www.acecount.com/",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["acecount-1.png", "acecount-2.png", "acecount-3.png"]
-	},
-
-	"project8": {
-		"companyName": "Central Valley Bariatrics",
-		"industry": "Medical",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["dssurgery-1.png", "dssurgery-2.png"]
-	},
-
-	"project9": {
-		"companyName": "UCLA Center for Neurobiology of Stress",
-		"industry": "Medical",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["cns-1.png", "cns-2.png"]
-	},
-
-	"project10": {
-		"companyName": "Casper's Famous Hot Dogs",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project11": {
-		"companyName": "Brandview Collection",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project12": {
-		"companyName": "Robert's CAtering Service",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project13": {
-		"companyName": "Paul B. Krekorian",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project14": {
-		"companyName": "Arroyo Chope House",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project15": {
-		"companyName": "Parkway Grill",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project16": {
-		"companyName": "Smitty's Grill",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["smittys-1.png", "smittys-2.png"]
-	},
-
-	"project17": {
-		"companyName": "Smith Brothers Restaurants",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["smithbrothers-1.png", "smithbrothers-2.png", "smithbrothers-3.png"]
-	},
-
-	"project18": {
-		"companyName": "Judy for Mayor",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project19": {
-		"companyName": "United Layer LLC",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["unitedlayer-1.png", "unitedlayer-2.png", "unitedlayer-3.png", "unitedlayer-4.png"]
-	},
-
-	"project20": {
-		"companyName": "Hacob Photography",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["hacob-1.png", "hacob-2.png", "hacob-3.png"]
-	},
-
-	"project21": {
-		"companyName": "Ardy for Clerk",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["ardy-1.png", "ardy-2.png", "ardy-3.png", "ardy-4.png"]
-	},
-
-	"project22": {
-		"companyName": "AGBU Young Professionals",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["agbuypla-1.png", "agbuypla-2.png", "agbuypla-3.png", "agbuypnc-1.png", "agbuypnc-2.png", "agbuypnc-3.png"]
-	},
-
-	"project23": {
-		"companyName": "BW Video Productions",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["bwvideo-1.png", "bwvideo-2.png", "bwvideo-3.png", "bwvideo-4.png"]
-	},
-
-	"project24": {
-		"companyName": "Commerce Escrow Company",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["comescrow-1.png", "comescrow-2.png", "comescrow-3.png", "comescrow-4.png"]
-	},
-
-	"project25": {
-		"companyName": "Simmons For Governor",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["simmons-1.png", "simmons-2.png", "simmons-3.png", "simmons-4.png", "simmons-5.png"]
-	},
-
-	"project26": {
-		"companyName": "Structural Design Concepts",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project27": {
-		"companyName": "AGBU Camp Nubar",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["campnubar-1.png"]
-	},
-
-	"project28": {
-		"companyName": "Sean Young",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["seanyoung-1.png", "seanyoung-2.png", "seanyoung-3.png", "seanyoung-4.png", "seanyoung-5.png"]
-	},
-
-	"project29": {
-		"companyName": "Ammlock Property Management",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": []
-	},
-
-	"project30": {
-		"companyName": "Dana Profili",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["dana-1.png", "dana-2.png", "dana-3.png"]
-	},
-
-	"project31": {
-		"companyName": "Crocodile Cafe",
-		"industry": "Restaurants",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "css", "mysql", "php", "flash"],
-		"images": ["crocodile-1.png", "crocodile-2.png", "crocodile-3.png", "crocodile-4.png"]
-	},
-
-	"project32": {
-		"companyName": "Demo - Rodi Pollack",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["rodi-1.png"]
-	},
-
-	"project33": {
-		"companyName": "Demo - GMSR",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["gmsr-1.png"]
-	},
-
-	"project34": {
-		"companyName": "Demo - Negele",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["negele-1.png"]
-	},
-
-	"project35": {
-		"companyName": "Demo - Prime ECS",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["prime-ecs-1.png"]
-	},
-
-	"project36": {
-		"companyName": "Demo Dockich",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["dockich-1.png"]
-	},
-
-	"project37": {
-		"companyName": "Demo - Margolis",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["margolis-1.png"]
-	},
-
-	"project38": {
-		"companyName": "Demo - Agbu",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["agbu-flash-1.png"]
-	},
-
-	"project39": {
-		"companyName": "Demo - Affma",
-		"industry": "",
-		"website": "",
-		"status": "",
-		"date": "",
-		"technologies": ["html", "flash"],
-		"images": ["affma-1.png"]
-	}
-
-
-
-
-
-}
+[
+  {
+    "id": 10,
+    "companyName": "Ourfalian & Ourfalian Attorneys at Law",
+    "description": "The Ourfalian law firm is a small firm in Glendale Ca, and I first became aware of them as they air their commercials during Lakers home games. I saw an opportunity to redesign their website as there was a noticeable difference in style and professionalism between the TV ad and the website itself. The commercial was professionally done but in contrast the website looked amatuerish. I've maintained a relationship with the firm ever since.",
+    "industry": "legal",
+    "website": "http://www.ourfalianlaw.com",
+    "status": "live",
+    "date": "5/1/2010",
+    "technologies": ["html", "css", "mysql", "php", "flash", "javascript", "jquery"],
+    "images": ["ourfalian-1.png", "ourfalian-2.png", "ourfalian-3.png", "ourfalian-4.png"]
+  },
+  {
+    "id": 20,
+    "companyName": "UCLA Inflammatory Bowel Disease Center",
+    "industry": "Medical",
+    "website": "http://ibd.med.ucla.edu/",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash", "javascript", "jquery"],
+    "images": ["project2.jpg", "path2", "path3"]
+  },
+  {
+    "id": 30,
+    "companyName": "Financial Equipment Company",
+    "industry": "Business",
+    "website": "http://ibd.med.ucla.edu/",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash", "javascript", "jquery"],
+    "images": ["fec-1.png", "fec-2.png", "fec-3.png"]
+  },
+  {
+    "id": 40,
+    "companyName": "ResearchCore",
+    "industry": "Medical",
+    "website": "http://www.researchcore.org/",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["researchcore-1.png", "researchcore-2.png", "researchcore-3.png", "researchcore-4.png"]
+  },
+  {
+    "id": 50,
+    "companyName": "Automated Business Machines",
+    "industry": "Paper handling",
+    "website": "http://www.abmjax.com/",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["abmjax-1.png", "abmjax-2.png", "abmjax-3.png"]
+  },
+  {
+    "id": 60,
+    "companyName": "Vibrato Grill Jazz",
+    "industry": "Restaurant",
+    "website": "http://www.vibratogrilljazz.com/",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["vibrato-1.png", "vibrato-2.png", "vibrato-3.png", "vibrato-4.png", "vibrato-5.png"]
+  },
+  {
+    "id": 70,
+    "companyName": "Ace Business Machines Inc.",
+    "industry": "Paper handling",
+    "website": "http://www.acecount.com/",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["acecount-1.png", "acecount-2.png", "acecount-3.png"]
+  },
+  {
+    "id": 80,
+    "companyName": "Central Valley Bariatrics",
+    "industry": "Medical",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["dssurgery-1.png", "dssurgery-2.png"]
+  },
+  {
+    "id": 90,
+    "companyName": "UCLA Center for Neurobiology of Stress",
+    "industry": "Medical",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["cns-1.png", "cns-2.png"]
+  },
+  {
+    "id": 100,
+    "companyName": "Casper's Famous Hot Dogs",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 110,
+    "companyName": "Brandview Collection",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 120,
+    "companyName": "Robert's Catering Service",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+  "id": 130,
+    "companyName": "Paul B. Krekorian",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 140,
+    "companyName": "Arroyo Chope House",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 150,
+    "companyName": "Parkway Grill",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 160,
+    "companyName": "Smitty's Grill",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["smittys-1.png", "smittys-2.png"]
+  },
+  {
+    "id": 170,
+    "companyName": "Smith Brothers Restaurants",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["smithbrothers-1.png", "smithbrothers-2.png", "smithbrothers-3.png"]
+  },
+  {
+    "id": 180,
+    "companyName": "Judy for Mayor",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 190,
+    "companyName": "United Layer LLC",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["unitedlayer-1.png", "unitedlayer-2.png", "unitedlayer-3.png", "unitedlayer-4.png"]
+  },
+  {
+    "id": 200,
+    "companyName": "Hacob Photography",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["hacob-1.png", "hacob-2.png", "hacob-3.png"]
+  },
+  {
+    "id": 210,
+    "companyName": "Ardy for Clerk",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["ardy-1.png", "ardy-2.png", "ardy-3.png", "ardy-4.png"]
+  },
+  {
+    "id": 220,
+    "companyName": "AGBU Young Professionals",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["agbuypla-1.png", "agbuypla-2.png", "agbuypla-3.png", "agbuypnc-1.png", "agbuypnc-2.png", "agbuypnc-3.png"]
+  },
+  {
+    "id": 230,
+    "companyName": "BW Video Productions",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["bwvideo-1.png", "bwvideo-2.png", "bwvideo-3.png", "bwvideo-4.png"]
+  },
+  {
+    "id": 240,
+    "companyName": "Commerce Escrow Company",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["comescrow-1.png", "comescrow-2.png", "comescrow-3.png", "comescrow-4.png"]
+  },
+  {
+    "id": 250,
+    "companyName": "Simmons For Governor",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["simmons-1.png", "simmons-2.png", "simmons-3.png", "simmons-4.png", "simmons-5.png"]
+  },
+  {
+    "id": 260,
+    "companyName": "Structural Design Concepts",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 270,
+    "companyName": "AGBU Camp Nubar",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["campnubar-1.png"]
+  },
+  {
+    "id": 280,
+    "companyName": "Sean Young",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["seanyoung-1.png", "seanyoung-2.png", "seanyoung-3.png", "seanyoung-4.png", "seanyoung-5.png"]
+  },
+  {
+    "id": 290,
+    "companyName": "Ammlock Property Management",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": []
+  },
+  {
+    "id": 300,
+    "companyName": "Dana Profili",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["dana-1.png", "dana-2.png", "dana-3.png"]
+  },
+  {
+    "id": 310,
+    "companyName": "Crocodile Cafe",
+    "industry": "Restaurants",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "css", "mysql", "php", "flash"],
+    "images": ["crocodile-1.png", "crocodile-2.png", "crocodile-3.png", "crocodile-4.png"]
+  },
+  {
+    "id": 320,
+    "companyName": "Demo - Rodi Pollack",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["rodi-1.png"]
+  },
+  {
+    "id": 330,
+    "companyName": "Demo - GMSR",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["gmsr-1.png"]
+  },
+  {
+    "id": 340,
+    "companyName": "Demo - Negele",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["negele-1.png"]
+  },
+  {
+    "id": 350,
+    "companyName": "Demo - Prime ECS",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["prime-ecs-1.png"]
+  },
+  {
+    "id": 360,
+    "companyName": "Demo Dockich",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["dockich-1.png"]
+  },
+  {
+    "id": 370,
+    "companyName": "Demo - Margolis",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["margolis-1.png"]
+  },
+  {
+    "id": 380,
+    "companyName": "Demo - Agbu",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["agbu-flash-1.png"]
+  },
+  {
+    "id": 390,
+    "companyName": "Demo - Affma",
+    "industry": "",
+    "website": "",
+    "status": "",
+    "date": "",
+    "technologies": ["html", "flash"],
+    "images": ["affma-1.png"]
+  }
+]
