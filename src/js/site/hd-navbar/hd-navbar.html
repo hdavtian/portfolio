@@ -1,16 +1,44 @@
 <div class="hd-navbar-container animated">
 
     <div class="inner-wrapper">
-        <ul>
-            <li ng-repeat="menu in config.menuItems">
-                <a href="javascript:void(0)" ui-sref="{{menu.state}}">{{menu.title}}</a>
-            </li>
-        </ul>
+
+        <div class="code-theme-container">
+
+            <div class="header">
+                /harma.davtian >
+            </div>
+
+            <div class="body">
+                <ul class="menu">
+                    <li class="title">$ menu ></li>
+                    <li class="link" ng-repeat="menu in config.menuItems">
+                        <a href="javascript:void(0)" ui-sref="{{menu.state}}">{{menu.title}}</a>
+                    </li>
+                    <!--
+                    <li class="link"><a href="javascript:void(0)">(r) resume</a></li>
+                    <li class="link"><a href="javascript:void(0)">(a) about</a></li>
+                    <li class="link"><a href="javascript:void(0)">(o) projects</a></li>
+                    <li class="link"><a href="javascript:void(0)">(p) portfolio</a></li>
+                    -->
+                </ul>
+            </div>
+
+        </div>
+
+        <!--
         <button class="hamburger hamburger--slider animated" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
+        -->
+
+        <div class="menu-toggler"></div>
+
+    </div>
+
+    <div class="">
+
     </div>
 
 </div>

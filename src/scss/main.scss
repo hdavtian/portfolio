@@ -4,7 +4,6 @@
 @import 'h';
 @import 'ul';
 @import 'table';
-@import 'hamburgers';
 
 @import 'angular-animations';
 @import 'animate';
@@ -15,6 +14,9 @@
 @import '../js/site/pages/portfolio/portfolio';
 
 @import 'app';
+
+// 3rd party apps
+@import 'hamburgers/hamburgers';
 
 // ui-views
 @import 'ui-views/main-section';

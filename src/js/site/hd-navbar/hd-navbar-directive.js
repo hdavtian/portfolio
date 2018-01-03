@@ -14,15 +14,16 @@ export default function(){
 
             // hamburgers from
             // https://jonsuh.com/hamburgers/
-            var $hamburger = $element.find('.hamburger');
+            /*
+            var $hamburger = $element.find('.menu-toggler');
             $hamburger.on('click', function(){
                 $(this).toggleClass("is-active");
             });
+            */
 
             // menu click
             var $menuBg = $(".hd-navbar-container .inner-wrapper");
             $menuBg.on('click', function(){
-                //$element.toggleClass('hd-bounceOutLeft hd-bounceInLeft');
 
                 if (!$element.hasClass('hd-bounceOutLeft') && !$element.hasClass('hd-bounceInLeft')) {
                     $element.addClass('hd-bounceInLeft');

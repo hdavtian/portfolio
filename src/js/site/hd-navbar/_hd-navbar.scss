@@ -1,12 +1,13 @@
+$hd-menu-width: 250px;
+
+
 .hd-navbar-container {
 
   //display: none;
   position: fixed;
-  left: -400px;
+  left: (-$hd-menu-width);
   height: 100vh;
-  width: 400px;
-  background-color: #333;
-  border-right: 15px solid #ccc;
+  width: $hd-menu-width;
   padding: 15px;
   z-index: 999;
 
@@ -19,19 +20,116 @@
     position: relative;
     width: 100%;
     height: inherit;
-    border:2px solid red;
   }
 
   ul {
-    list-style: none;
     padding: 0;
+    li {
+      list-style-type: none;
+    }
   }
 
   .hamburger {
-    border:2px solid red;
     position: absolute;
     top: 0;
-    right: -125px;
+    right: -85px;
   }
 
+  // ----------------------------------------------------------------------------
+
+  .menu-toggler {
+    position: absolute;
+    top: 18px;
+    right: -45px;
+    width: 25px;
+    height: 10px;
+    background-color: green;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // ---------------------------
+
+  .code-theme-container {
+
+    font-family: 'courier new', courier, arial, sans-serif;
+    border:1px solid #333;
+    font-size: 0.9em;
+
+    .header {
+      background-color: #ccc;
+      color: #666;
+      padding: 8px 8px 8px 12px;
+    }
+
+    .body {
+      background-color: black;
+      color: white;
+      padding: 8px 8px 25px 12px;
+
+      .menu {
+        .title {
+          margin: 8px;
+        }
+        .link {
+          margin-left: 30px;
+          padding: 2px;
+          a {
+            color: inherit;
+            &:hover {
+              color: #409352;
+              text-decoration: none;
+            }
+          }
+
+        }
+      }
+    }
+  }//code-theme-container
+
+}
+
+/*
+  -------------------------------------
+  animations
+  -------------------------------------
+*/
+
+@keyframes hd-bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    //opacity: 0;
+    transform: translate3d( (-$hd-menu-width), 0, 0);
+  }
+
+  to {
+    //transform: none;
+    transform: translate3d($hd-menu-width, 0, 0);
+  }
+}
+
+.hd-bounceInLeft {
+  animation-name: hd-bounceInLeft;
+}
+
+// *********************************************************************************
+
+@keyframes hd-bounceOutLeft {
+  0% {
+    //opacity: 1;
+    transform: translate3d($hd-menu-width, 0, 0);
+  }
+
+  to {
+    //opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hd-bounceOutLeft {
+  animation-name: hd-bounceOutLeft;
 }
