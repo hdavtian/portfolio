@@ -1,16 +1,17 @@
-<div class="hd-navbar-container">
+<div class="hd-navbar-container animated">
 
-    <ul>
-        <li ng-repeat="menu in config.menuItems">
-            <a href="javascript:void(0)" ui-sref="{{menu.state}}">{{menu.title}}</a>
-        </li>
-    </ul>
-
-    <button class="hamburger hamburger--slider" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
+    <div class="inner-wrapper">
+        <ul>
+            <li ng-repeat="menu in config.menuItems">
+                <a href="javascript:void(0)" ui-sref="{{menu.state}}">{{menu.title}}</a>
+            </li>
+        </ul>
+        <button class="hamburger hamburger--slider animated" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+    </div>
 
 </div>
 

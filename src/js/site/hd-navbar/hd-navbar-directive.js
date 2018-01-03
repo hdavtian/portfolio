@@ -14,12 +14,39 @@ export default function(){
 
             // hamburgers from
             // https://jonsuh.com/hamburgers/
-            var hamburger = document.querySelector(".hamburger");
-            // On click
-            hamburger.addEventListener("click", function() {
-                // Toggle class "is-active"
-                hamburger.classList.toggle("is-active");
-                // Do something else, like open/close menu
+            var $hamburger = $element.find('.hamburger');
+            $hamburger.on('click', function(){
+                $(this).toggleClass("is-active");
+            });
+
+            // menu click
+            var $menuBg = $(".hd-navbar-container .inner-wrapper");
+            $menuBg.on('click', function(){
+                //$element.toggleClass('hd-bounceOutLeft hd-bounceInLeft');
+
+                if (!$element.hasClass('hd-bounceOutLeft') && !$element.hasClass('hd-bounceInLeft')) {
+                    $element.addClass('hd-bounceInLeft');
+                    return;
+                };
+
+                if ($element.hasClass('hd-bounceOutLeft')){
+                    $element.removeClass('hd-bounceOutLeft').addClass('hd-bounceInLeft');
+                    return;
+                }
+
+                if ($element.hasClass('hd-bounceInLeft')){
+                    $element.removeClass('hd-bounceInLeft').addClass('hd-bounceOutLeft');
+                    return;
+                }
+
+
+            });
+
+            // stop propagation on links
+            var $links = $(".hd-navbar-container ul");
+            $links.on('click', function(e){
+                e.stopPropagation();
+                // alert('link clicked');
             });
 
         }
