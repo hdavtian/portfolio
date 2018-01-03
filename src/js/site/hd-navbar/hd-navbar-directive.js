@@ -5,11 +5,23 @@ export default function(){
             config: '='
         },
         templateUrl: 'hd-navbar/hd-navbar.html',
-        controller: ['$scope', function($scope){
-            var hdNavbar = this;
-            hdNavbar.msg = 'Kenshiro';
-        }],
         controllerAs: 'hdNavbar',
-        replace: true
+        replace: true,
+        controller: ['$scope', function($scope){
+            //
+        }],
+        link: function($scope, $element, $attrs) {
+
+            // hamburgers from
+            // https://jonsuh.com/hamburgers/
+            var hamburger = document.querySelector(".hamburger");
+            // On click
+            hamburger.addEventListener("click", function() {
+                // Toggle class "is-active"
+                hamburger.classList.toggle("is-active");
+                // Do something else, like open/close menu
+            });
+
+        }
     }
 }
