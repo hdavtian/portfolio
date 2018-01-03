@@ -1,4 +1,4 @@
-$hd-header-height: 75px;
+$hd-header-height: 35px;
 
 .hd-header-container {
   position: fixed;
@@ -8,4 +8,17 @@ $hd-header-height: 75px;
   width: 100%;
   height: $hd-header-height;
   background-color: black;
+
+  h1 {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: white;
+    padding: 0 0 0 55px;
+    margin: 0;
+    line-height: $hd-header-height;
+    span {
+      color: #666;
+    }
+  }
+
 }

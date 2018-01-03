@@ -5,6 +5,7 @@ $hd-menu-width: 250px;
 
   //display: none;
   position: fixed;
+  top: 0;
   left: (-$hd-menu-width);
   height: 100vh;
   width: $hd-menu-width;
@@ -38,16 +39,17 @@ $hd-menu-width: 250px;
   // ----------------------------------------------------------------------------
 
   .menu-toggler {
+
     position: absolute;
-    top: 18px;
+    top: 0;
     right: -45px;
     width: 25px;
     height: 10px;
-    background-color: green;
+    background-color: #cc7832; /* orange from phpstorm ide*/
     &:hover {
       cursor: pointer;
     }
-  }
+  }//menu-toggler
 
   // ---------------------------
 
@@ -56,6 +58,12 @@ $hd-menu-width: 250px;
     font-family: 'courier new', courier, arial, sans-serif;
     border:1px solid #333;
     font-size: 0.9em;
+
+    // drop shadow from
+    // https://www.cssmatic.com/box-shadow
+    -webkit-box-shadow: 3px 4px 9px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 9px -1px rgba(0,0,0,0.75);
+    box-shadow: 3px 4px 9px -1px rgba(0,0,0,0.75);
 
     .header {
       background-color: #ccc;
@@ -73,17 +81,31 @@ $hd-menu-width: 250px;
           margin: 8px;
         }
         .link {
+          position: relative;
           margin-left: 30px;
           padding: 2px;
+
           a {
-            color: inherit;
+            color: #6060ff; /* gitbash purple */
             &:hover {
-              color: #409352;
+              color: #00bf00; /* gitbash green */
               text-decoration: none;
             }
-          }
+          }//a
 
-        }
+          &.active {
+            a {
+              color: #00bf00; /* gitbash green */
+            }
+            &:before{
+              content: '#';
+              position: absolute;
+              left: -10px;
+              top: 3px;
+              color: yellow;
+            }
+          }
+        }//link
       }
     }
   }//code-theme-container
