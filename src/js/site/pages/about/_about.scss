@@ -7,4 +7,56 @@
     color: #808080;
   }
 
+  #scene {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+    .layer {
+      //width: inherit;
+      //height: inherit;
+    }
+
+    .i {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 5px 15px;
+      background-color: #333;
+    }
+
+    .i-html {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      display: inline-block;
+    }
+
+    .i-css {
+      position: absolute;
+      top: 15px;
+      left: 50px;
+    }
+
+    .i-javascript {
+      position: absolute;
+      top: 30px;
+      left: 150px;
+    }
+
+    .i-gulp {
+      position: absolute;
+      top: 45px;
+      left: 40vw;
+    }
+
+    .i-webpack {
+      position: absolute;
+      top: 60px;
+      left: 70vw;
+    }
+
+  }//scene
+
+
 }

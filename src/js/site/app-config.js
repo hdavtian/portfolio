@@ -36,7 +36,7 @@ export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
             views: {
                 'mainSection': {
                     templateUrl: 'pages/about/about.html',
-                    controller: ['$scope', aboutPageCtrl]
+                    controller: ['$scope', '$timeout', aboutPageCtrl]
                 }
             }
 
