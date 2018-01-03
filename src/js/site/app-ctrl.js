@@ -19,5 +19,10 @@ export default function($scope){
                 "state": 'portfolio',
             }
         ]
+    };
+
+    // function to set body background color
+    $scope.setBodyBackgroundColor = function(color){
+      $('body').css('background-color', color)
     }
 }

@@ -1,3 +1,4 @@
+import aboutPageCtrl from './pages/about/about-ctrl';
 import portfolioPageCtrl from './pages/portfolio/portfolio-ctrl';
 import resumePageCtrl from './pages/resume/resume-ctrl';
 
@@ -34,7 +35,8 @@ export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
             url: '/about',
             views: {
                 'mainSection': {
-                    template: '<h1>about</h1>'
+                    templateUrl: 'pages/about/about.html',
+                    controller: ['$scope', aboutPageCtrl]
                 }
             }
 
