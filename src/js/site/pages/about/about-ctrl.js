@@ -17,11 +17,14 @@ export default function($scope, $timeout){
 
     $('.layer').each(function(){
         $(this).attr('data-depth', depth += randomBetween(1,5)/10);
-        randScale = randomBetween(10, 30)/11;
+        randScale = randomBetween(8, 20)/11;
         $(this).find('.i').css({
             'top' : randomBetween(1, scene.offsetHeight - 250) + 'px',
             'left' : randomBetween(1, scene.offsetWidth - 250) + 'px',
             'transform' : 'scale(' + randScale + ',' + randScale +')'
+        });
+        $(this).find('a').css({
+            'background-color' : 'rgba('+randomBetween(0,255)+','+randomBetween(0,255)+','+randomBetween(0,255)+','+0.75+')'
         });
     })
 
