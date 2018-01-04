@@ -1,5 +1,4 @@
-$hd-menu-width: 250px;
-
+$hd-menu-width: 350px;
 
 .hd-navbar-container {
 
@@ -41,8 +40,8 @@ $hd-menu-width: 250px;
   .menu-toggler {
 
     position: absolute;
-    top: 0;
-    right: -45px;
+    top: -2px;
+    right: -55px;
     width: 25px;
     height: 10px;
     background-color: #cc7832; /* orange from phpstorm ide*/

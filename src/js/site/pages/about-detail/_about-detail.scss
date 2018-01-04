@@ -1,0 +1,12 @@
+.about-detail-wrapper {
+
+  position: absolute;
+  //top: $hd-header-height;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: #888;
+  border-left: 15px solid #ccc;
+}

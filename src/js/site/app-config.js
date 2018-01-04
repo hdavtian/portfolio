@@ -1,4 +1,5 @@
 import aboutPageCtrl from './pages/about/about-ctrl';
+import aboutDetailPageCtrl from './pages/about-detail/about-detail-ctrl';
 import portfolioPageCtrl from './pages/portfolio/portfolio-ctrl';
 import resumePageCtrl from './pages/resume/resume-ctrl';
 
@@ -37,6 +38,17 @@ export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
                 'mainSection': {
                     templateUrl: 'pages/about/about.html',
                     controller: ['$scope', '$timeout', aboutPageCtrl]
+                }
+            }
+
+        })
+
+        .state('about.detail', {
+            url: '/:id',
+            views: {
+                'aboutUiView': {
+                    templateUrl: 'pages/about-detail/about-detail.html',
+                    controller: ['$scope', '$timeout', '$stateParams', 'dataService', aboutDetailPageCtrl]
                 }
             }
 
