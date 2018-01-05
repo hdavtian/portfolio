@@ -1,5 +1,6 @@
 import Parallax from 'parallax-js';
-import {TweenMax} from "gsap";
+// import {TimelineMax, Power4} from "gsap";
+// import
 import ScrollMagic from "scrollmagic";
 require('animation.gsap');
 
@@ -40,6 +41,9 @@ export default function($scope, $timeout){
 
     // testing TimelineMax and ScrollMagic
 
+
+    /*
+
     var controller = new ScrollMagic.Controller();
     var topnavAnimation = new TimelineMax({paused:true})
         .to('.about-page-wrapper', 15, {height:'110px', ease: Power4.easeOut}, 'start')
@@ -51,6 +55,17 @@ export default function($scope, $timeout){
     topnavScene.setTween(topnavAnimation.play());
 //topnavScene.addIndicators();
     controller.addScene([topnavScene]);
+    */
+
+
+    var resetThings = function(){
+        var $i = $('.i');
+        new TimelineMax()
+            .staggerTo($i, 2, {left:'110px', ease: Power4.easeOut}, 0.25, 'start')
+    };
+
+    resetThings();
+
 
 
 }
