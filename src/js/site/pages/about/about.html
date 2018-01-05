@@ -10,7 +10,7 @@
     <div id="scene">
         <div class="layer">
             <div class="i">
-                <a href="javascript:void(0)" ui-sref="about.detail({id:'html'})">html</a>
+                <a href="javascript:void(0)" ui-sref="about.detail({id:'html'})" ng-click="thingActions.contract()">html</a>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
 
         <div class="layer">
             <div class="i">
-                <a href="javascript:void(0)">gulp</a>
+                <a href="javascript:void(0)" ng-click="thingActions.expand()">gulp</a>
             </div>
         </div>
 
@@ -96,3 +96,5 @@
     <div ui-view="aboutUiView" class="my-animation"></div>
 
 </div>
+
+
