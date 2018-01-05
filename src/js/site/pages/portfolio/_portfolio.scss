@@ -1,6 +1,8 @@
 .freelance-portfolio-wrapper {
 
   .project {
+    overflow: hidden;
+    position: relative;
     display: inline-block;
     vertical-align: top;
     width: 250px;
@@ -8,6 +10,26 @@
     padding: 15px;
     margin: 15px 15px;
     border:1px solid #ccc;
-  }
+    &:hover {
+      cursor: pointer;
+    }
+
+    @keyframes imageHover {
+      from {background-size:100%}
+      to {background-size: 105%}
+    }
+
+    .bgImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+  }//project
 
 }

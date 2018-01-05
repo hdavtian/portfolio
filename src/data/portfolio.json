@@ -98,7 +98,7 @@
     "status": "",
     "date": "",
     "technologies": ["html", "css", "mysql", "php", "flash"],
-    "images": []
+    "images": ["caspers-1.gif"]
   },
   {
     "id": 110,
@@ -108,7 +108,7 @@
     "status": "",
     "date": "",
     "technologies": ["html", "css", "mysql", "php", "flash"],
-    "images": []
+    "images": ["brandview-1.jpg"]
   },
   {
     "id": 120,
@@ -128,7 +128,7 @@
     "status": "",
     "date": "",
     "technologies": ["html", "css", "mysql", "php", "flash"],
-    "images": []
+    "images": ["paulkrekorian-1.gif"]
   },
   {
     "id": 140,

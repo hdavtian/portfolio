@@ -70,7 +70,7 @@ export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
             views: {
                 'mainSection': {
                     templateUrl: 'pages/portfolio/portfolio.html',
-                    controller: ['$scope', 'dataService', portfolioPageCtrl]
+                    controller: ['$scope', '$timeout', 'dataService', portfolioPageCtrl]
                 }
             }
 
