@@ -1,0 +1,50 @@
+.portfolio-detail-wrapper {
+
+  position: fixed;
+  top: $hd-header-height;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: #666666;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  .inner-wrapper {
+    padding: 25px;
+    color: white;
+  }
+
+  .title {
+    color: #fcc924;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 115%;
+  }
+
+  .description {
+    margin-bottom: 25px;
+  }
+
+  .tech-stack {
+    li {
+      padding: 0;
+    }
+  }
+
+  .images-wrapper {
+
+  }
+
+  .preview-img {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+}

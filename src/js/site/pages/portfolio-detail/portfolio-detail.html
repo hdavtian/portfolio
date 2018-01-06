@@ -1,0 +1,21 @@
+<div class="portfolio-detail-wrapper">
+    <div class="inner-wrapper">
+        <h1 class="title">{{project.companyName}}</h1>
+        <h4>{{project.date}}</h4>
+        <div class="description">
+            {{project.description}}
+        </div>
+
+        <div class="tech-stack">
+            <ul>
+                <li ng-repeat="technology in project.technologies">{{technology}}</li>
+            </ul>
+        </div>
+
+        <div class="images-wrapper">
+            <div class="preview-img" ng-repeat="img in project.images" style="background-image: url(images/portfolio/preview/{{img}})">
+            </div>
+        </div>
+
+    </div>
+</div>

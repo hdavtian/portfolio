@@ -1,7 +1,8 @@
-import aboutPageCtrl from './pages/about/about-ctrl';
-import aboutDetailPageCtrl from './pages/about-detail/about-detail-ctrl';
-import portfolioPageCtrl from './pages/portfolio/portfolio-ctrl';
-import resumePageCtrl from './pages/resume/resume-ctrl';
+import aboutPageCtrl                    from './pages/about/about-ctrl';
+import aboutDetailPageCtrl              from './pages/about-detail/about-detail-ctrl';
+import portfolioPageCtrl                from './pages/portfolio/portfolio-ctrl';
+import portfolioDetailPageCtrl          from './pages/portfolio-detail/portfolio-detail-ctrl';
+import resumePageCtrl                   from './pages/resume/resume-ctrl';
 
 export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider){
 
@@ -73,7 +74,16 @@ export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
                     controller: ['$scope', '$timeout', 'dataService', portfolioPageCtrl]
                 }
             }
+        })
 
+        .state('portfolio.detail', {
+            url: '/:id',
+            views: {
+                'portfolioDetail': {
+                    templateUrl: 'pages/portfolio-detail/portfolio-detail.html',
+                    controller: ['$scope', '$stateParams', '$timeout', 'dataService', portfolioDetailPageCtrl]
+                }
+            }
         })
 
 }]

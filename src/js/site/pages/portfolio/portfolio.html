@@ -1,6 +1,7 @@
 <div class="freelance-portfolio-wrapper">
-    <div ng-repeat="project in portfolio" class="project">
+    <div ng-repeat="project in portfolio" class="project" ui-sref="portfolio.detail({id:project.id})">
         <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
         <h4>{{project.companyName}}</h4>
     </div>
+    <div ui-view="portfolioDetail" class="my-animation"></div>
 </div>
