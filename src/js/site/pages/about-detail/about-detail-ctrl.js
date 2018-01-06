@@ -13,8 +13,4 @@ export default function($scope, $timeout, $stateParams, dataService){
         }
     },100)
 
-
-    // get thing detail
-
-
 }

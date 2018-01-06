@@ -17,6 +17,7 @@
     "owl.carousel": "^2.2.1",
     "gsap": "^1.20.3",
     "scrollmagic": "^2.0.5",
-    "bootstrap": "v4.0.0-beta"
+    "bootstrap": "v4.0.0-beta",
+    "components-font-awesome": "^4.7.0"
   }
 }

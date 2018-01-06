@@ -1,9 +1,15 @@
 <div class="portfolio-detail-wrapper">
     <div class="inner-wrapper">
+
         <h1 class="title">{{project.companyName}}</h1>
         <h4>{{project.date}}</h4>
+
         <div class="description">
             {{project.description}}
+        </div>
+
+        <div class="close-button">
+            <i class="fa fa-times fa-2x" aria-hidden="true" ui-sref="portfolio" ng-click="expandPortfolioWidth()"></i>
         </div>
 
         <div class="tech-stack">

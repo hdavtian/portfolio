@@ -14,6 +14,15 @@
       cursor: pointer;
     }
 
+    /*
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    */
+    transition: all 0.2s;
+
     @keyframes imageHover {
       from {background-size:100%}
       to {background-size: 105%}

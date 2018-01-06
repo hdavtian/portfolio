@@ -1,9 +1,14 @@
 <div class="about-detail-wrapper">
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <h1>{{thing.name}}</h1>
-    <div>
-        {{thing.description}}
+    <div class="inner-content">
+
+        <div class="close-button">
+            <i class="fa fa-times fa-2x" aria-hidden="true" ui-sref="about" ng-click="thingActions.expand()"></i>
+        </div>
+
+        <h1 class="title">{{thing.name}}</h1>
+
+        <div class="description">
+            {{thing.description}}
+        </div>
     </div>
 </div>

@@ -2,7 +2,7 @@ import Parallax from 'parallax-js';
 // import {TimelineMax, Power4} from "gsap";
 // import
 import ScrollMagic from "scrollmagic";
-require('animation.gsap');
+// require('animation.gsap');
 
 export default function($scope, $timeout){
 

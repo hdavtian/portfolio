@@ -54,6 +54,34 @@ export default function($scope, $timeout, dataService){
                 moduleMouseoutAnimation(tis);
             });
         });
-    },100)
+
+        //applying isotope for smooth div re-positioning
+
+        /*
+        var grid = document.querySelector('.freelance-portfolio-wrapper');
+        var iso = new Isotope( grid, {
+            // options...
+            itemSelector: '.project',
+            masonry: {
+                columnWidth: 200
+            }
+        });
+        */
+
+    },100);
+
+    // reduce portfolio thumbnails wrapper div width to fit
+    // 50vw
+    $scope.reducePortfolioWidth = function(){
+        new TimelineMax()
+            .to('.freelance-portfolio-wrapper', 1, {width: '50%', ease: Power4.easeOut}, 'start')
+            .staggerTo('.project', 0.25, {width: '150px', height: '150px', ease: Power4.easeOut}, 0.05, 'start')
+    };
+
+    $scope.expandPortfolioWidth = function(){
+        new TimelineMax()
+            .to('.freelance-portfolio-wrapper', 1, {width: '100%', ease: Power4.easeOut}, 'start')
+            .staggerTo('.project', 0.25, {width: '250px', height: '250px', ease: Power4.easeOut}, 0.05, 'start')
+    };
 
 }
