@@ -32,13 +32,16 @@ export default function($scope, $timeout){
         });
     })
 
+    // parallax effect
+    /*
     var parallaxInstance = new Parallax(scene, {
         // relativeInput: true,
         // clipRelativeInput: true,
         // hoverOnly: true,
         pointerEvents: true
     });
-
+    */
+    
     $scope.thingActions = (function(){
 
         var $i = $('.i');
