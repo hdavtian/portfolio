@@ -1,5 +1,5 @@
 <div class="freelance-portfolio-wrapper">
-    <div ng-repeat="project in portfolio" class="project" ui-sref="portfolio.detail({id:project.id})" ng-click="reducePortfolioWidth()">
+    <div ng-repeat="project in portfolio" class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
         <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
         <h4>{{project.companyName}}</h4>
     </div>
