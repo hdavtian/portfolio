@@ -21,33 +21,41 @@ export default function(){
             });
             */
 
+            var showAnimation = function(){
+                new TimelineMax()
+                    .to($element, 0.75, {left: 0, ease: Power4.easeOut});
+                $element.removeClass('hiding').addClass('showing');
+            };
+
+            var hideAnimation = function(){
+                new TimelineMax()
+                    .to($element, 0.75, {left: ($element.outerWidth()*-1)+'px', ease: Power4.easeOut});
+                $element.removeClass('showing').addClass('hiding');
+            };
+
+            var toggleState = function(){
+                if ($element.hasClass('showing')) {
+                    hideAnimation();
+                } else if ($element.hasClass('hiding')) {
+                    showAnimation();
+                }
+            };
+
             // menu click
             var $menuBg = $(".hd-navbar-container .inner-wrapper");
             $menuBg.on('click', function(){
-
-                if (!$element.hasClass('hd-bounceOutLeft') && !$element.hasClass('hd-bounceInLeft')) {
-                    $element.addClass('hd-bounceInLeft');
-                    return;
-                };
-
-                if ($element.hasClass('hd-bounceOutLeft')){
-                    $element.removeClass('hd-bounceOutLeft').addClass('hd-bounceInLeft');
-                    return;
-                }
-
-                if ($element.hasClass('hd-bounceInLeft')){
-                    $element.removeClass('hd-bounceInLeft').addClass('hd-bounceOutLeft');
-                    return;
-                }
-
-
+                toggleState();
             });
 
-            // stop propagation on links
+            // hide on mouseleave
+            $('.code-theme-container').on('mouseleave', function(){
+                toggleState();
+            });
+
+            // stop propagation on links so menu doesn't toggle on link clicks
             var $links = $(".hd-navbar-container ul");
             $links.on('click', function(e){
                 e.stopPropagation();
-                // alert('link clicked');
             });
 
         }
