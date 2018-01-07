@@ -1,7 +1,63 @@
 <div class="freelance-portfolio-wrapper">
-    <div ng-repeat="project in portfolio" class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
-        <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
-        <h4>{{project.companyName}}</h4>
+
+    <div class="tabs">
+        <ul>
+            <li>
+                <a href="javascript:void(0)"
+                   ng-class="{'active':projectType=='employer'}"
+                   ng-click="projectType='employer'">
+                    @companies
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"
+                   ng-class="{'active':projectType=='freelance'}"
+                   ng-click="projectType='freelance'">
+                    @freelance
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"
+                   ng-class="{'active':projectType=='old'}"
+                   ng-click="projectType='old'">
+                    @old
+                </a>
+            </li>
+        </ul>
     </div>
+
+    <!-- @todo
+        when using ng-repeat and filter, there's a flicker, I've tried the recommended approaches
+        using ng-cloak and track by $index, but havn't been able to eliminate the flicker.
+        Resorting to this horrible repeated code and multiple json files for now. Need to find
+        correct solution
+     -->
+    <div class="projects-wrapper" ng-show="projectType=='freelance'">
+
+        <div class="description">
+            <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
+        </div>
+
+        <div ng-repeat="project in portfolio track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
+            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
+            <h4>{{project.companyName}}</h4>
+        </div>
+    </div>
+
+    <div class="projects-wrapper" ng-show="projectType=='employer'">
+        <div ng-repeat="project in portfolioEmployer track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
+            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
+            <h4>{{project.companyName}}</h4>
+        </div>
+    </div>
+
+    <div class="projects-wrapper" ng-show="projectType=='old'">
+        <div ng-repeat="project in portfolioOld track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
+            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
+            <h4>{{project.companyName}}</h4>
+        </div>
+    </div>
+
     <div ui-view="portfolioDetail" class="my-animation"></div>
+
 </div>

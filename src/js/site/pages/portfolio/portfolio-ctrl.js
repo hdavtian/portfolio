@@ -1,11 +1,22 @@
 export default function($scope, $timeout, dataService){
+
     $scope.setBodyBackgroundColor('#fff');
+    $scope.projectType = '';
+
     dataService.getData('portfolio.json').then(function(response){
         $scope.portfolio = response.data;
     });
 
+    dataService.getData('portfolio-old.json').then(function(response){
+        $scope.portfolioOld = response.data;
+    });
+
+    dataService.getData('portfolio-employer.json').then(function(response){
+        $scope.portfolioEmployer = response.data;
+    });
+
     // hover animations
-    function moduleMouseoverAnimation(_el) {
+    var moduleMouseoverAnimation = function(_el) {
 
         var $el = _el.find('.bgImg');
         var $title = _el.find('.wrapper h2');
@@ -13,14 +24,14 @@ export default function($scope, $timeout, dataService){
 
         var animation = new TimelineMax({ paused: true })
             .add('part1')
-            .to($el, 1.5, { transform: 'scale(1.1)', ease: Power4.easeOut, y: 0 }, 'part1')
+            .to($el, 1.5, { transform: 'scale(1.5)', ease: Power4.easeOut, y: 0 }, 'part1')
             .to($line, 1.5, {width: '100%', ease: Power4.easeOut}, 'part1')
             .add('end');
 
         animation.play();
     };
 
-    function moduleMouseoutAnimation(_el) {
+    var moduleMouseoutAnimation = function (_el) {
 
         var $el = _el.find('.bgImg');
         var $title = _el.find('.wrapper h2');
@@ -35,8 +46,7 @@ export default function($scope, $timeout, dataService){
         animation.play();
     };
 
-    // modules without crowtoons (with real bg image)
-
+    // div hover animations
     $timeout(function(){
         $('.project').each(function () {
             var tis = $(this);
@@ -71,19 +81,18 @@ export default function($scope, $timeout, dataService){
     },100);
 
     // reduce portfolio thumbnails wrapper div width to fit
-    // 50vw
     $scope.reducePortfolioWidth = function(){
         new TimelineMax()
-            // .to('.freelance-portfolio-wrapper', 1, {width: '50%', ease: Power4.easeOut}, 'start')
-            .set('.freelance-portfolio-wrapper', {width: '50vw'})
-            .staggerTo('.project', 0.25, {width: '150px', height: '150px', ease: Power4.easeOut}, 0.05, 'start')
+            .set('.freelance-portfolio-wrapper', {width: '40vw'})
+            // .staggerTo('.project', 0.25, {width: '150px', height: '150px', ease: Power4.easeOut}, 0.05, 'start')
+            .to('.project', 0.25, {width: '150px', height: '150px', ease: Power4.easeOut})
     };
 
     $scope.expandPortfolioWidth = function(){
         new TimelineMax()
-            // .to('.freelance-portfolio-wrapper', 1, {width: '100%', ease: Power4.easeOut}, 'start')
             .set('.freelance-portfolio-wrapper', {width: '100%'})
-            .staggerTo('.project', 0.25, {width: '250px', height: '250px', ease: Power4.easeOut}, 0.05, 'start')
+            // .staggerTo('.project', 0.25, {width: '250px', height: '250px', ease: Power4.easeOut}, 0.05, 'start')
+            .to('.project', 0.25, {width: '250px', height: '250px', ease: Power4.easeOut})
     };
 
 }

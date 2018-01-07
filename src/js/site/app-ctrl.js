@@ -25,5 +25,5 @@ export default function($scope){
     $scope.setBodyBackgroundColor = function(color){
       $('body').css('background-color', color)
     }
-    
+
 }

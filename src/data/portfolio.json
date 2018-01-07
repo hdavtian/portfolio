@@ -1,6 +1,7 @@
 [
   {
     "id": 10,
+    "type": "freelance",
     "companyName": "Ourfalian & Ourfalian Attorneys at Law",
     "description": "The Ourfalian law firm is a small firm in Glendale Ca, and I first became aware of them as they air their commercials during Lakers home games. I saw an opportunity to redesign their website as there was a noticeable difference in style and professionalism between the TV ad and the website itself. The commercial was professionally done but in contrast the website looked amatuerish. I've maintained a relationship with the firm ever since.",
     "industry": "legal",
@@ -12,6 +13,7 @@
   },
   {
     "id": 20,
+    "type": "freelance",
     "companyName": "UCLA Inflammatory Bowel Disease Center",
     "industry": "Medical",
     "website": "http://ibd.med.ucla.edu/",
@@ -22,6 +24,7 @@
   },
   {
     "id": 30,
+    "type": "freelance",
     "companyName": "Financial Equipment Company",
     "industry": "Business",
     "website": "http://ibd.med.ucla.edu/",
@@ -32,6 +35,7 @@
   },
   {
     "id": 40,
+    "type": "freelance",
     "companyName": "ResearchCore",
     "industry": "Medical",
     "website": "http://www.researchcore.org/",
@@ -42,6 +46,7 @@
   },
   {
     "id": 50,
+    "type": "freelance",
     "companyName": "Automated Business Machines",
     "industry": "Paper handling",
     "website": "http://www.abmjax.com/",
@@ -52,6 +57,7 @@
   },
   {
     "id": 60,
+    "type": "freelance",
     "companyName": "Vibrato Grill Jazz",
     "industry": "Restaurant",
     "website": "http://www.vibratogrilljazz.com/",
@@ -62,6 +68,7 @@
   },
   {
     "id": 70,
+    "type": "freelance",
     "companyName": "Ace Business Machines Inc.",
     "industry": "Paper handling",
     "website": "http://www.acecount.com/",
@@ -72,6 +79,7 @@
   },
   {
     "id": 80,
+    "type": "freelance",
     "companyName": "Central Valley Bariatrics",
     "industry": "Medical",
     "website": "",
@@ -82,6 +90,7 @@
   },
   {
     "id": 90,
+    "type": "freelance",
     "companyName": "UCLA Center for Neurobiology of Stress",
     "industry": "Medical",
     "website": "",
@@ -92,6 +101,7 @@
   },
   {
     "id": 100,
+    "type": "freelance",
     "companyName": "Casper's Famous Hot Dogs",
     "industry": "Restaurants",
     "website": "",
@@ -102,6 +112,7 @@
   },
   {
     "id": 110,
+    "type": "freelance",
     "companyName": "Brandview Collection",
     "industry": "Restaurants",
     "website": "",
@@ -112,6 +123,7 @@
   },
   {
     "id": 120,
+    "type": "freelance",
     "companyName": "Robert's Catering Service",
     "industry": "Restaurants",
     "website": "",
@@ -122,6 +134,7 @@
   },
   {
   "id": 130,
+    "type": "freelance",
     "companyName": "Paul B. Krekorian",
     "industry": "Restaurants",
     "website": "",
@@ -132,6 +145,7 @@
   },
   {
     "id": 140,
+    "type": "freelance",
     "companyName": "Arroyo Chope House",
     "industry": "Restaurants",
     "website": "",
@@ -142,6 +156,7 @@
   },
   {
     "id": 150,
+    "type": "freelance",
     "companyName": "Parkway Grill",
     "industry": "Restaurants",
     "website": "",
@@ -152,6 +167,7 @@
   },
   {
     "id": 160,
+    "type": "freelance",
     "companyName": "Smitty's Grill",
     "industry": "Restaurants",
     "website": "",
@@ -162,6 +178,7 @@
   },
   {
     "id": 170,
+    "type": "freelance",
     "companyName": "Smith Brothers Restaurants",
     "industry": "Restaurants",
     "website": "",
@@ -172,6 +189,7 @@
   },
   {
     "id": 180,
+    "type": "freelance",
     "companyName": "Judy for Mayor",
     "industry": "Restaurants",
     "website": "",
@@ -181,17 +199,8 @@
     "images": []
   },
   {
-    "id": 190,
-    "companyName": "United Layer LLC",
-    "industry": "Restaurants",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "css", "mysql", "php", "flash"],
-    "images": ["unitedlayer-1.png", "unitedlayer-2.png", "unitedlayer-3.png", "unitedlayer-4.png"]
-  },
-  {
     "id": 200,
+    "type": "freelance",
     "companyName": "Hacob Photography",
     "industry": "Restaurants",
     "website": "",
@@ -202,6 +211,7 @@
   },
   {
     "id": 210,
+    "type": "freelance",
     "companyName": "Ardy for Clerk",
     "industry": "Restaurants",
     "website": "",
@@ -212,6 +222,7 @@
   },
   {
     "id": 220,
+    "type": "freelance",
     "companyName": "AGBU Young Professionals",
     "industry": "Restaurants",
     "website": "",
@@ -222,6 +233,7 @@
   },
   {
     "id": 230,
+    "type": "freelance",
     "companyName": "BW Video Productions",
     "industry": "Restaurants",
     "website": "",
@@ -232,6 +244,7 @@
   },
   {
     "id": 240,
+    "type": "freelance",
     "companyName": "Commerce Escrow Company",
     "industry": "Restaurants",
     "website": "",
@@ -242,6 +255,7 @@
   },
   {
     "id": 250,
+    "type": "freelance",
     "companyName": "Simmons For Governor",
     "industry": "Restaurants",
     "website": "",
@@ -252,6 +266,7 @@
   },
   {
     "id": 260,
+    "type": "freelance",
     "companyName": "Structural Design Concepts",
     "industry": "Restaurants",
     "website": "",
@@ -262,6 +277,7 @@
   },
   {
     "id": 270,
+    "type": "freelance",
     "companyName": "AGBU Camp Nubar",
     "industry": "Restaurants",
     "website": "",
@@ -272,6 +288,7 @@
   },
   {
     "id": 280,
+    "type": "freelance",
     "companyName": "Sean Young",
     "industry": "Restaurants",
     "website": "",
@@ -282,6 +299,7 @@
   },
   {
     "id": 290,
+    "type": "freelance",
     "companyName": "Ammlock Property Management",
     "industry": "Restaurants",
     "website": "",
@@ -292,8 +310,9 @@
   },
   {
     "id": 300,
+    "type": "freelance",
     "companyName": "Dana Profili",
-    "industry": "Restaurants",
+    "industry": "Apparel",
     "website": "",
     "status": "",
     "date": "",
@@ -302,6 +321,7 @@
   },
   {
     "id": 310,
+    "type": "freelance",
     "companyName": "Crocodile Cafe",
     "industry": "Restaurants",
     "website": "",
@@ -309,85 +329,5 @@
     "date": "",
     "technologies": ["html", "css", "mysql", "php", "flash"],
     "images": ["crocodile-1.png", "crocodile-2.png", "crocodile-3.png", "crocodile-4.png"]
-  },
-  {
-    "id": 320,
-    "companyName": "Demo - Rodi Pollack",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["rodi-1.png"]
-  },
-  {
-    "id": 330,
-    "companyName": "Demo - GMSR",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["gmsr-1.png"]
-  },
-  {
-    "id": 340,
-    "companyName": "Demo - Negele",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["negele-1.png"]
-  },
-  {
-    "id": 350,
-    "companyName": "Demo - Prime ECS",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["prime-ecs-1.png"]
-  },
-  {
-    "id": 360,
-    "companyName": "Demo Dockich",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["dockich-1.png"]
-  },
-  {
-    "id": 370,
-    "companyName": "Demo - Margolis",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["margolis-1.png"]
-  },
-  {
-    "id": 380,
-    "companyName": "Demo - Agbu",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["agbu-flash-1.png"]
-  },
-  {
-    "id": 390,
-    "companyName": "Demo - Affma",
-    "industry": "",
-    "website": "",
-    "status": "",
-    "date": "",
-    "technologies": ["html", "flash"],
-    "images": ["affma-1.png"]
   }
 ]

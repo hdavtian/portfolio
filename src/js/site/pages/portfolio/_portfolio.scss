@@ -1,50 +1,98 @@
 .freelance-portfolio-wrapper {
 
-  .project {
-    overflow: hidden;
+  .tabs {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 250px;
-    height: 250px;
-    padding: 15px;
-    margin: 15px 15px;
-    border:1px solid #ccc;
+    top: 1px;
 
-    &:hover {
-      cursor: pointer;
-    }
-
-    &.active {
-      border-radius: 50%;
-      border:5px solid #fcc924;
-    }
-
-    /*
-    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    */
-    transition: all 0.2s;
-
-    @keyframes imageHover {
-      from {background-size:100%}
-      to {background-size: 105%}
-    }
-
-    .bgImg {
-      position: absolute;
-      top: 0;
-      left: 0;
+    ul {
       width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+
+      li {
+        float: left;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #666;
+
+        &:first-of-type {
+          border-left: 1px solid #666;
+        }
+
+        a {
+          display: block;
+          font-family: arial, verdana, sans-serif;
+          font-size: 0.9em;
+          padding: 3px 16px;
+          border-bottom: 1px solid #666;
+          background-color: white;
+          border-right: 1px solid #666;
+          
+          &:hover {
+            text-decoration: none;
+          }
+
+          &.active {
+            background-color: #666;
+            color: white;
+          }
+
+        }//a
+      }//li
+    }//ul
+
+  }//tabs
+
+  .projects-wrapper {
+
+    position: relative;
+    border: 1px solid #666;
+    padding: 5px 0 0 5px;
+
+    .description {
+      text-align: left;
+      background-color: black;
+      color: green;
     }
 
-  }//project
+    .project {
+
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 250px;
+      height: 250px;
+      padding: 15px;
+      margin: 0 5px 5px 0;
+      border:1px solid #ccc;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.active {
+        border-radius: 50%;
+        border:5px solid #fcc924;
+      }
+
+      transition: border-radius 0.2s;
+
+      .bgImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+    }//project
+
+  }//projects-wrapper
 
 }

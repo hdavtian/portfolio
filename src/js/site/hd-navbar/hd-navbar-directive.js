@@ -48,16 +48,17 @@ export default function(){
             });
 
             // hide on mouseleave
-            $('.code-theme-container').on('mouseleave', function(){
-                toggleState();
-            });
+            // $('.code-theme-container').on('mouseleave', function(){
+            //     toggleState();
+            // });
 
             // stop propagation on links so menu doesn't toggle on link clicks
+            /*
             var $links = $(".hd-navbar-container ul");
             $links.on('click', function(e){
                 e.stopPropagation();
             });
-
+            */
         }
     }
 }
