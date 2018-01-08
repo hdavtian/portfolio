@@ -32,6 +32,30 @@
         Resorting to this horrible repeated code and multiple json files for now. Need to find
         correct solution
      -->
+
+    <!-- @employer ------------------------------------------------------ -->
+    <div class="projects-wrapper" ng-show="projectType=='employer'">
+
+        <div class="description">
+            <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
+        </div>
+
+        <div ng-repeat="project in portfolioEmployer track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
+            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
+
+            <div class="info">
+                <div class="title">
+                    {{project.title}}
+                </div>
+                <div class="short-description">
+                    {{project.shortDescription}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- @freelance ------------------------------------------------------ -->
     <div class="projects-wrapper" ng-show="projectType=='freelance'">
 
         <div class="description">
@@ -40,21 +64,37 @@
 
         <div ng-repeat="project in portfolio track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
             <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
-            <h4>{{project.companyName}}</h4>
+
+            <div class="info">
+                <div class="title">
+                    {{project.companyName}}
+                </div>
+                <div class="short-description">
+                    {{project.shortDescription}}
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="projects-wrapper" ng-show="projectType=='employer'">
-        <div ng-repeat="project in portfolioEmployer track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
-            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
-            <h4>{{project.companyName}}</h4>
-        </div>
-    </div>
-
+    <!-- @old ------------------------------------------------------ -->
     <div class="projects-wrapper" ng-show="projectType=='old'">
+
+        <div class="description">
+            <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
+        </div>
+
         <div ng-repeat="project in portfolioOld track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
             <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
-            <h4>{{project.companyName}}</h4>
+
+            <div class="info">
+                <div class="title">
+                    {{project.companyName}}
+                </div>
+                <div class="short-description">
+                    {{project.shortDescription}}
+                </div>
+            </div>
         </div>
     </div>
 
