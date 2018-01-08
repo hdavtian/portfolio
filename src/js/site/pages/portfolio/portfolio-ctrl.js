@@ -19,7 +19,7 @@ export default function($scope, $timeout, dataService){
 
             } else if (response.data[i].type=='freelance') {
                 $scope.portfolio.freelance.push(response.data[i]);
-                
+
             } else if (response.data[i].type=='old') {
                 $scope.portfolio.old.push(response.data[i]);
             };

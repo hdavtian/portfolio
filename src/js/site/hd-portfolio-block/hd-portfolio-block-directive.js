@@ -38,30 +38,6 @@ export default function(){
             };
 
             // div hover animations
-            /*
-            $('.project').each(function () {
-                var tis = $(this);
-
-                // exception class
-                if (tis.hasClass('do-not-animate')) {
-                    return;
-                };
-
-                tis.on('mouseenter', function () {
-                    moduleMouseoverAnimation(tis)
-                });
-
-                tis.on('mouseleave', function () {
-                    moduleMouseoutAnimation(tis);
-                });
-            });
-            */
-
-            // exception class
-            if ($element.hasClass('do-not-animate')) {
-                return;
-            };
-
             $element.on('mouseenter', function () {
                 moduleMouseoverAnimation($element)
             });
@@ -70,22 +46,17 @@ export default function(){
                 moduleMouseoutAnimation($element);
             });
 
-
-
-                //applying isotope for smooth div re-positioning
-
-                /*
-                var grid = document.querySelector('.freelance-portfolio-wrapper');
-                var iso = new Isotope( grid, {
-                    // options...
-                    itemSelector: '.project',
-                    masonry: {
-                        columnWidth: 200
-                    }
-                });
-                */
-
-
+            /*
+            //applying isotope for smooth div re-positioning
+            var grid = document.querySelector('.freelance-portfolio-wrapper');
+            var iso = new Isotope( grid, {
+                // options...
+                itemSelector: '.project',
+                masonry: {
+                    columnWidth: 200
+                }
+            });
+            */
 
         }
     }
