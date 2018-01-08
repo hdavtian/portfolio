@@ -68,7 +68,7 @@ $project-div-space: 15px;
       padding: 15px;
       margin: 0 $project-div-space $project-div-space 0;
       border: 5px solid #ccc;
-      transition: border-radius 0.2s;
+      transition: all 0.2s;
 
       &:hover {
         cursor: pointer;

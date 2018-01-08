@@ -40,7 +40,12 @@
             <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
         </div>
 
-        <div ng-repeat="project in portfolioEmployer track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
+        <div
+                ng-repeat="project in portfolio.employers | filter:{type: projectType} track by project.id"
+                class="project"
+                ui-sref="portfolio.detail({id:project.id})"
+                ui-sref-active="active"
+                ng-click="reducePortfolioWidth()">
             <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
 
             <div class="info">
@@ -62,12 +67,17 @@
             <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
         </div>
 
-        <div ng-repeat="project in portfolio track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
+        <div
+                ng-repeat="project in portfolio.freelance | filter:{type: projectType} track by project.id"
+                class="project"
+                ui-sref="portfolio.detail({id:project.id})"
+                ui-sref-active="active"
+                ng-click="reducePortfolioWidth()">
             <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
 
             <div class="info">
                 <div class="title">
-                    {{project.companyName}}
+                    {{project.title}}
                 </div>
                 <div class="short-description">
                     {{project.shortDescription}}
@@ -84,17 +94,23 @@
             <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
         </div>
 
-        <div ng-repeat="project in portfolioOld track by project.id " class="project" ui-sref="portfolio.detail({id:project.id})" ui-sref-active="active" ng-click="reducePortfolioWidth()">
+        <div
+                ng-repeat="project in portfolio.old | filter:{type: projectType} track by project.id"
+                class="project"
+                ui-sref="portfolio.detail({id:project.id})"
+                ui-sref-active="active"
+                ng-click="reducePortfolioWidth()">
             <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
 
             <div class="info">
                 <div class="title">
-                    {{project.companyName}}
+                    {{project.title}}
                 </div>
                 <div class="short-description">
                     {{project.shortDescription}}
                 </div>
             </div>
+
         </div>
     </div>
 

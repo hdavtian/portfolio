@@ -3,16 +3,27 @@ export default function($scope, $timeout, dataService){
     $scope.setBodyBackgroundColor('#fff');
     $scope.projectType = '';
 
+    $scope.portfolio = {};
+    $scope.portfolio.employers = [];
+    $scope.portfolio.freelance = [];
+    $scope.portfolio.old = [];
+
     dataService.getData('portfolio.json').then(function(response){
-        $scope.portfolio = response.data;
-    });
 
-    dataService.getData('portfolio-old.json').then(function(response){
-        $scope.portfolioOld = response.data;
-    });
+        // add id
+        for (var i=0, l=response.data.length; i<l; i++) {
+            response.data[i].id = i;
 
-    dataService.getData('portfolio-employer.json').then(function(response){
-        $scope.portfolioEmployer = response.data;
+            if (response.data[i].type=='employer') {
+                $scope.portfolio.employers.push(response.data[i]);
+            } else if (response.data[i].type=='freelance') {
+                $scope.portfolio.freelance.push(response.data[i]);
+            } else if (response.data[i].type=='old') {
+                $scope.portfolio.old.push(response.data[i]);
+            };
+
+        };
+
     });
 
     // hover animations
@@ -82,7 +93,7 @@ export default function($scope, $timeout, dataService){
         });
         */
 
-    },100);
+    },1000);
 
     // reduce portfolio thumbnails wrapper div width to fit
     $scope.reducePortfolioWidth = function(){
