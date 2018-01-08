@@ -26,92 +26,14 @@
         </ul>
     </div>
 
-    <!-- @todo
-        when using ng-repeat and filter, there's a flicker, I've tried the recommended approaches
-        using ng-cloak and track by $index, but havn't been able to eliminate the flicker.
-        Resorting to this horrible repeated code and multiple json files for now. Need to find
-        correct solution
-     -->
-
-    <!-- @employer ------------------------------------------------------ -->
-    <div class="projects-wrapper" ng-show="projectType=='employer'">
+    <div class="projects-wrapper">
 
         <div class="description">
             <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
         </div>
 
-        <div
-                ng-repeat="project in portfolio.employers | filter:{type: projectType} track by project.id"
-                class="project"
-                ui-sref="portfolio.detail({id:project.id})"
-                ui-sref-active="active"
-                ng-click="reducePortfolioWidth()">
-            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
+        <hd-portfolio-block ng-repeat="project in portfolio[projectType] | filter:{type: projectType} track by project.id" project="project"></hd-portfolio-block>
 
-            <div class="info">
-                <div class="title">
-                    {{project.title}}
-                </div>
-                <div class="short-description">
-                    {{project.shortDescription}}
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- @freelance ------------------------------------------------------ -->
-    <div class="projects-wrapper" ng-show="projectType=='freelance'">
-
-        <div class="description">
-            <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
-        </div>
-
-        <div
-                ng-repeat="project in portfolio.freelance | filter:{type: projectType} track by project.id"
-                class="project"
-                ui-sref="portfolio.detail({id:project.id})"
-                ui-sref-active="active"
-                ng-click="reducePortfolioWidth()">
-            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
-
-            <div class="info">
-                <div class="title">
-                    {{project.title}}
-                </div>
-                <div class="short-description">
-                    {{project.shortDescription}}
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- @old ------------------------------------------------------ -->
-    <div class="projects-wrapper" ng-show="projectType=='old'">
-
-        <div class="description">
-            <p>These are some of my freelance projects. What I love is that you get to experiment with whatever technologies you like, as long as you deliver on time of course!</p>
-        </div>
-
-        <div
-                ng-repeat="project in portfolio.old | filter:{type: projectType} track by project.id"
-                class="project"
-                ui-sref="portfolio.detail({id:project.id})"
-                ui-sref-active="active"
-                ng-click="reducePortfolioWidth()">
-            <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
-
-            <div class="info">
-                <div class="title">
-                    {{project.title}}
-                </div>
-                <div class="short-description">
-                    {{project.shortDescription}}
-                </div>
-            </div>
-
-        </div>
     </div>
 
     <div ui-view="portfolioDetail" class="my-animation"></div>

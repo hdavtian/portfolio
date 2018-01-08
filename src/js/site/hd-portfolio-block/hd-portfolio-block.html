@@ -1,0 +1,17 @@
+<div
+        class="project"
+        ui-sref="portfolio.detail({id:project.id})"
+        ui-sref-active="active"
+        ng-click="reducePortfolioWidth()">
+    <div class="bgImg" style="background-image: url(images/portfolio/preview/{{project.images[0]}})"></div>
+
+    <div class="info">
+        <div class="title">
+            {{project.title}}
+        </div>
+        <div class="short-description">
+            {{project.shortDescription}}
+        </div>
+    </div>
+
+</div>
