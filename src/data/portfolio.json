@@ -4,8 +4,26 @@
     "companyName": "RPA",
     "industry": "Advertising",
     "title": "Gulp Integration",
-    "shortDescription": "",
-    "description": "",
+    "shortDescription": "Wrote gulp script for dev team",
+    "description": "<p>As a senior developer, I was tasked with writing a gulp script to help our team quickly bootstrap different web projects. I wrote the gulp script with following features.</p><ul><li>alo</li></ul><p>a sample link: <a href='http://www.google.com' target='_blank'>google</a></p>",
+    "randomContent": [
+      {
+        "type": "normal",
+        "title": "Something",
+        "description": "bla bla bla bla bla bla bla bla bla"
+      },
+      {
+        "type": "orderedList",
+        "title": "title",
+        "description": "optional - description",
+        "points": [
+          "point 1",
+          "point 2",
+          "point 3",
+          "point 4"
+        ]
+      }
+    ],
     "website": "",
     "status": "",
     "date": "",
@@ -18,7 +36,7 @@
     "industry": "Advertising",
     "title": "Website redesign",
     "shortDescription": "Complete redesign of company website including animation, and wordpress as cms integration",
-    "description": "RPA website redesign",
+    "description": "I was the lead front end developer for rpa.com and developed the responsive grid, styleguide and all animations including the hover effects and page top animations. Also wrote a number of wordpress shortcodes to be used by content editors during content updates.",
     "website": "",
     "status": "",
     "date": "",
@@ -43,8 +61,8 @@
     "companyName": "RPA",
     "industry": "Advertising",
     "title": "racewithhonda.com",
-    "shortDescription": "",
-    "description": "",
+    "shortDescription": "Lead full stack developer. Used php laravel, angularJS and GSAP to create two versions for the honda racing website",
+    "description": "I managed and developed the website for racewithhonda.com for two consecutive years. The larger RPA team was responsible for all the creative and campaigns, I was the lead web developer for the website portion of the project. Prior versions did not include any animation.",
     "website": "",
     "status": "",
     "date": "",

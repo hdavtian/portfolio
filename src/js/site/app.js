@@ -1,5 +1,6 @@
 import uiRouter                 from 'angular-ui-router';
 import ngAnimate                from 'angular-animate';
+import ngSanitize               from 'angular-sanitize';
 import appConfig                from './app-config';
 import appCtrl                  from './app-ctrl';
 import dataService              from './services/hd-data-service';
@@ -9,7 +10,7 @@ import hdPortfolioBlock         from './hd-portfolio-block/hd-portfolio-block-di
 
 // app --------------------------------------------------------------
 
-const app = angular.module('app',[uiRouter, ngAnimate]);
+const app = angular.module('app',[uiRouter, ngAnimate, ngSanitize]);
 
 app
     .config(appConfig)

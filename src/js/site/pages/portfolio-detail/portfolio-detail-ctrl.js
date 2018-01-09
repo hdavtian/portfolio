@@ -1,4 +1,4 @@
-export default function($scope, $stateParams, $timeout, dataService){
+export default function($scope, $stateParams, $timeout, $sce, dataService){
 
     $scope.setBodyBackgroundColor('#fff');
     dataService.getData('portfolio.json').then(function(response){
@@ -15,6 +15,11 @@ export default function($scope, $stateParams, $timeout, dataService){
             }
         }
 
+        // trusted html
     });
+
+    $scope.trustHtml = function(content){
+        return $sce.trustAsHtml(content)
+    }
 
 }

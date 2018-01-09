@@ -81,7 +81,7 @@ export default ['$stateProvider', '$urlRouterProvider', '$locationProvider', fun
             views: {
                 'portfolioDetail': {
                     templateUrl: 'pages/portfolio-detail/portfolio-detail.html',
-                    controller: ['$scope', '$stateParams', '$timeout', 'dataService', portfolioDetailPageCtrl]
+                    controller: ['$scope', '$stateParams', '$timeout', '$sce', 'dataService', portfolioDetailPageCtrl]
                 }
             }
         })

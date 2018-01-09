@@ -4,8 +4,8 @@
         <h1 class="title">{{project.companyName}}</h1>
         <h4>{{project.date}}</h4>
 
-        <div class="description">
-            {{project.description}}
+        <div class="description" ng-bind-html="project.description">
+            {{trustHtml(project.description)}}
         </div>
 
         <div class="close-button">
